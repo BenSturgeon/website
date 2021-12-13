@@ -1,0 +1,24 @@
+<template>
+  <v-container class="grey lighten-5">
+    <v-row>
+      <v-col>
+        <v-card
+          class="pa-2"
+          outlined
+          tile
+        >
+        heyo
+        </v-card>
+      </v-col>
+            <v-col>
+        <v-card
+          class="pa-2"
+          outlined
+          tile
+        >
+        heyo
+        </v-card>
+      </v-col>
+    </v-row>
+  </v-container>
+</template>
