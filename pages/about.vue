@@ -1,14 +1,22 @@
 <template>
-  <v-row justify="center" align="center">
+  <!-- <v-row justify="center" align="center">
     <v-col cols="12" sm="8" md="6">
-      <h1>About:</h1>
-      <p>This is a page that has information about me.</p>
     </v-col>
-  </v-row>
+  </v-row> -->
+  <article>
+    <p>Posted: {{ formatDate(doc.updatedAt) }}</p>
+    <nuxt-content :document="doc" />
+    <pre> {{ doc }} </pre>
+  </article>
 </template>
 
 <script>
 export default {
+  async asyncData({ $content, params }) {
+    const doc = await $content(params.slug || "index").fetch();
+
+    return { doc };
+  },
   head() {
     return {
       title: "About me",
@@ -21,6 +29,12 @@ export default {
       ],
     };
   },
+  methods: {
+    formatDate(date) {
+      const options = { year: 'numeric', month: 'long', day: 'numeric' }
+      return new Date(date).toLocaleDateString('en', options)
+    }
+ }
 };
 </script>
 
