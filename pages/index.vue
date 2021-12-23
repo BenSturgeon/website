@@ -45,46 +45,5 @@ export default {
 
 
 <style scoped>
-ul .a:hover {
-    color: rgb(0, 27, 27);
-  }
-  
-  .content {
-    width: 100%;
-    background: white;
-  
-    height: 100%;
-  }
-  
-  .container {
-    padding: 1rem 2rem;
-    background: red;
-    /* left: 50%;
-    top: 50%;
-    position: fixed;
-    transform: translate(-50%, -55%); */
-  }
-  
-  h2 {
-    font-weight: 600;
-    font-style: normal;
-    font-family: "valkyrie_c4";
-    font-weight: normal;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    /* margin-top: 2em; */
-    line-height: 1em;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    font-size: 1.6em;
-  }
-  
 
-  body {
-  
-    color: black;
-    line-height: 30px;
-    /* padding: 5px; */
-    max-width: 40em;
-  }
 </style>

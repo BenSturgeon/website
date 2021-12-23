@@ -1,13 +1,13 @@
 <template>
-  <!-- <v-row justify="center" align="center">
+  <v-row justify="center" align="center">
     <v-col cols="12" sm="8" md="6">
-    </v-col>
-  </v-row> -->
-  <article>
+        <article>
     <p>Posted: {{ formatDate(doc.updatedAt) }}</p>
     <nuxt-content :document="doc" />
-    <pre> {{ doc }} </pre>
   </article>
+    </v-col>
+  </v-row>
+
 </template>
 
 <script>
