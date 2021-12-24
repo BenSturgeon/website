@@ -1,6 +1,6 @@
 <template>
   <v-row justify="center" align="center">
-    <v-col cols="12" sm="8" md="6">
+    <v-col cols="12" sm="8" md="8" lg="10">
   <div>
     <h2>Me in 10 seconds</h2>
     <p>
