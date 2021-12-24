@@ -1,11 +1,9 @@
 <template>
-  <v-row justify="center" align="center">
-    <v-col cols="12" sm="8" md="6">
+ 
     <header >
       <nuxt-link to="/" class="header">Benjamin Sturgeon</nuxt-link>
     </header>
-    </v-col>
-  </v-row>
+
 </template>
 <script>
 export default {

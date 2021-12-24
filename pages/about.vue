@@ -1,12 +1,9 @@
 <template>
-  <v-row justify="center" align="center">
-    <v-col cols="12" sm="8" md="6">
         <article>
     <p>Posted: {{ formatDate(doc.updatedAt) }}</p>
     <nuxt-content :document="doc" />
   </article>
-    </v-col>
-  </v-row>
+
 
 </template>
 
