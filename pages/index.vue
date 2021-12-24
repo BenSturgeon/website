@@ -19,7 +19,7 @@
         </p>
         <p>Currently living in Cape Town South Africa.</p>
 
-        <h2>Me in many seconds</h2>
+        <h2 class="font-weight-medium">Me in many seconds</h2>
         <p>
           link to my <nuxt-link to="/about" class="link">about</nuxt-link> page
         </p>
