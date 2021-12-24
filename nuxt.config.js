@@ -3,11 +3,14 @@ import colors from 'vuetify/es5/util/colors'
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
+  
+  publicPath: 'http://benjaminsturgeon.com/',
+  
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - ben_website',
-    title: 'ben_website',
+    titleTemplate: '%s - Benjamin Sturgeon website',
+    title: 'Benjamin Sturgeon website',
     htmlAttrs: {
       lang: 'en'
     },

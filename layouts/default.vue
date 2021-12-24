@@ -3,7 +3,7 @@
     <v-main>
       <v-container fluid>
         <v-row justify="center" align="center">
-          <v-col cols="12" sm="8" md="6" lg="4">
+          <v-col cols="12" sm="8" md="6" lg="5">
             <AppHeader />
 
             <Nuxt />
@@ -25,6 +25,12 @@ export default {
 
 
 <style>
+@font-face {
+  font-family: "valkyrieC4";
+  src: local("ValkyrieC4"),
+   url("../fonts/ValkyrieC4/Valkyrie C4.ttf") format("truetype");
+}
+
 a {
   text-decoration: none;
 }
@@ -46,16 +52,15 @@ ul .a:hover {
 }
 
 h2 {
-  font-weight: 600;
+  font-weight: 500;
   font-style: normal;
-  font-family: "valkyrie_c4";
-  font-weight: normal;
+  font-family: "valkyrieC4";
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   line-height: 1em;
   margin-block-start: 1em;
   margin-block-end: 1em;
-  font-size: 1.6em;
+  font-size: 30px;
 }
 
 .nuxt-content h2,
