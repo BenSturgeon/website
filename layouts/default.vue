@@ -28,7 +28,7 @@ export default {
 @font-face {
   font-family: "valkyrieC4";
   src: local("ValkyrieC4"),
-   url("../fonts/ValkyrieC4/Valkyrie C4.ttf") format("truetype");
+   url(../fonts/ValkyrieC4/ValkyrieC4.ttf) format("truetype");
 }
 
 a {
