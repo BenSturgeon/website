@@ -45,7 +45,23 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    '@nuxt/content'
+    '@nuxt/content',
+    [  '@nuxtjs/firebase',
+    {
+      config: {
+        apiKey: "AIzaSyAXf49oUoLuzFTNeFukbThqGJnEAe9Lvbc",
+        authDomain: "personal-f9db9.firebaseapp.com",
+        databaseURL: "https://personal-f9db9-default-rtdb.europe-west1.firebasedatabase.app",
+        projectId: "personal-f9db9",
+        storageBucket: "personal-f9db9.appspot.com",
+        messagingSenderId: "732308394978",
+        appId: "1:732308394978:web:610a78f144af24da959fbb"
+      },
+      services: {
+        database: true // Just as example. Can be any other service.
+      }
+    }]
+    
   ],
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
