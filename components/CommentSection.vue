@@ -1,13 +1,41 @@
 <template>
-  <CommentForm/>
+  <v-container class="grey lighten-5">
+    <v-row>
+      <v-col cols="12" sm="6" md="3">
+        <v-text-field
+          label="Solo"
+          placeholder="Placeholder"
+          solo
+        ></v-text-field>
+      </v-col>
+    </v-row>
+    <v-row>
+      <v-col cols="12" sm="6" md="3">
+        <v-text-field
+          v-model="testText"
+          label="Solo"
+          placeholder="Placeholder"
+          solo
+        ></v-text-field>
+        <p>Message is: {{ testText }}</p>
+      </v-col>
+    </v-row>
+    <v-row>
+      <v-btn @click="testDb()"> press me, I test things! </v-btn>
+    </v-row>
+        <v-row>
+      <v-btn @click="readFromDb()"> I get what you wrote from the db! </v-btn>
+    </v-row>
+    <v-row>
+      <p>{{readText}}</p>
+    </v-row>
+  </v-container>
 </template>
 
 <script>
 import { getDatabase, ref, set } from "firebase/database";
-import CommentForm from '../components/CommentForm.vue';
 
 export default {
-  components: { CommentForm },
   name: "AppHeader",
   data: function () {
     return {
