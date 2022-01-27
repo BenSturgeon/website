@@ -57,13 +57,13 @@ h2 {
   font-family: "valkyrieC4";
   margin-inline-start: 0px;
   margin-inline-end: 0px;
-  line-height: 1em;
+  line-height: 1.5em;
   margin-block-start: 1em;
   margin-block-end: 1em;
   font-size: 30px;
 }
 
-.nuxt-content h2,
+.nuxt-content h2, h4,
 h1 {
   font-weight: 600;
   font-style: normal;
@@ -76,8 +76,10 @@ h1 {
   margin-block-start: 1em;
   margin-block-end: 1em;
 }
-.nuxt-content h3 {
-  font-weight: bold;
+ h3 {
+  font-family: "valkyrie_c4";
+  font-weight: normal;
+
   font-size: 22px;
 }
 .nuxt-content p,
