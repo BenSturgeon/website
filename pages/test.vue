@@ -17,14 +17,7 @@ export default {
     };
   },
   methods: {
-    writeUserData(name, email, comment) {
-      const db = getDatabase();
-      set(ref(db, "test/" + name), {
-        username: name,
-        email: email,
-        comment: comment,
-      });
-    },
+
     async testDb() {
       try {
         const messageRef = this.$fire.database.ref("test/" + "1");
