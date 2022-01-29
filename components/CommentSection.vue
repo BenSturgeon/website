@@ -3,10 +3,15 @@
     <v-row>
       <v-list>
         <v-list-item
-          v-for="(item, index) in comments"
+          v-for="(item, index) in sortedComments"
           :key="index"
         >
-        {{item.name}}
+        
+          <v-list-item-content>
+            <v-list-item-title class="commentTitle"> <em>{{index}}.</em> {{item.name}} ({{item.timeStamp.split(' ')[0]}})</v-list-item-title>
+            <v-list-item-subtitle class="commentText" v-html="item.comment"></v-list-item-subtitle>
+          </v-list-item-content>
+
         </v-list-item>
       </v-list>
     </v-row>
@@ -40,33 +45,32 @@ export default {
     const commentsRef = ref(db, "abc123425/");
     onValue(commentsRef, (snapshot) => {
       this.commentData = snapshot.val();
-      console.log(this.commentData);
       this.comments = []
       snapshot.forEach((childSnapshot) => {
         var comment = {
           name: childSnapshot.val().name,
           comment: childSnapshot.val().comment,
-          timeStamp: String(childSnapshot.val().dateTime),
+          timeStamp: childSnapshot.val().dateTime,
         };
         this.comments.push(comment)
         const childKey = childSnapshot.key;
         const childData = childSnapshot.val().comment;
         // console.log(childData)
       });
-      console.log(this.comments)
     });
   },
-  // computed: {
-  //   comments() {
-  //     var comments = [];
-  //     this.commentData.forEach((childSnapshot) => {
-
-  //       comments.push(comment);
-  //     });
-  //     console.log(comments);
-  //     return comments
-  //   },
-  // },
+  computed: {
+    sortedComments() {
+      const sortedComments = this.comments.sort((a, b) => b.dateTime - a.dateTime)
+      // this.comments.forEach((comment) =>{
+      //   var date = comment.dateTime
+      //   console.log(date)
+      // }
+      
+      // )
+      return sortedComments
+    },
+  },
   methods: {
     writeUserData(name, email, comment) {
       const db = getDatabase();
@@ -103,3 +107,27 @@ export default {
 };
 </script>
 
+<style scoped>
+.commentTitle{
+  font-size: 20px;
+  font-family: valkyrieC4;
+  padding-top: 10px;
+  padding-bottom: 18px;
+  color: rgb(116, 116, 116);
+  
+}
+.commentTitle em{
+  font-style: normal;
+  color: rgb(0, 0, 0);
+  
+}
+.commentText{
+  font-size: 20px;
+  font-family: Georgia;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 12px;
+  color: rgb(0, 0, 0) !important;
+  
+}
+</style>

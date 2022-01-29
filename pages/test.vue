@@ -1,7 +1,7 @@
 <template>
   <v-container>
-    <CommentForm />
     <CommentSection />
+    <CommentForm />
   </v-container>
 </template>
 
