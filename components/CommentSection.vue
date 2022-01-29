@@ -8,7 +8,7 @@
         >
         
           <v-list-item-content>
-            <v-list-item-title class="commentTitle"> <em>{{index}}.</em> {{item.name}} ({{item.timeStamp.split(' ')[0]}})</v-list-item-title>
+            <v-list-item-title class="commentTitle"> <em>{{index+1}}.</em> {{item.name}} ({{item.timeStamp.split(' ')[0]}})</v-list-item-title>
             <v-list-item-subtitle class="commentText" v-html="item.comment"></v-list-item-subtitle>
           </v-list-item-content>
 
