@@ -6,7 +6,7 @@
     </h2>
     <v-form ref="form" v-model="form" class="">
       <v-row>
-        <v-col cols="12" xs="3" class="form_container pt-0 pl-8">
+        <v-col cols="12"  class="form_container pt-0 pl-8">
           <h3>Your name:</h3>
 
           <v-text-field
@@ -18,7 +18,7 @@
         </v-col>
       </v-row>
       <v-row>
-        <v-col cols="12" xs="3" sm="6" md="6" lg="6"
+        <v-col cols="12" 
          class="formContainer pt-0  pl-8">
           <h3 class="formEmail">Your email: <em>(Private. For my eyes only)</em></h3>
 
@@ -31,7 +31,7 @@
         </v-col>
       </v-row>
       <v-row>
-        <v-col cols="12" sm="6" md="10" class="pt-0 pl-8">
+        <v-col cols="12"  md="10" lg="6" class="pt-0 pl-8">
           <h3 class="mt-0">Your words:</h3>
           <v-textarea
             class="text-wrap"
