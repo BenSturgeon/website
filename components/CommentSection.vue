@@ -1,39 +1,20 @@
 <template>
-  <v-container class="grey lighten-5">
+  <v-container>
     <v-row>
-      <v-col cols="12" sm="6" md="3">
-        <v-text-field
-          label="Solo"
-          placeholder="Placeholder"
-          solo
-        ></v-text-field>
-      </v-col>
-    </v-row>
-    <v-row>
-      <v-col cols="12" sm="6" md="3">
-        <v-text-field
-          v-model="testText"
-          label="Solo"
-          placeholder="Placeholder"
-          solo
-        ></v-text-field>
-        <p>Message is: {{ testText }}</p>
-      </v-col>
-    </v-row>
-    <v-row>
-      <v-btn @click="testDb()"> press me, I test things! </v-btn>
-    </v-row>
-        <v-row>
-      <v-btn @click="readFromDb()"> I get what you wrote from the db! </v-btn>
-    </v-row>
-    <v-row>
-      <p>{{readText}}</p>
+      <v-list>
+        <v-list-item
+          v-for="(item, index) in comments"
+          :key="index"
+        >
+        {{item.name}}
+        </v-list-item>
+      </v-list>
     </v-row>
   </v-container>
 </template>
 
 <script>
-import { getDatabase, ref, set } from "firebase/database";
+import { getDatabase, ref, set, onValue } from "firebase/database";
 
 export default {
   name: "AppHeader",
@@ -41,9 +22,51 @@ export default {
     return {
       testText: null,
       slug: String(this.$route.path).substring(1),
-      readText: null
+      commentData: null,
+      comments: []
     };
   },
+  created() {
+    const db = getDatabase();
+    // const pageRef = ref(db, "pageRefs/" + this.slug);
+    // onValue(pageRef, (snapshot) => {
+    //   this.pageId = snapshot.val();
+    //   const commentsRef = ref(this.pageId + "/");
+    //   // onValue(commentsRef, (snapshot) => {
+    //   //   this.commentData = snapshot.val();
+    //   //   console.log(this.commentData)
+    //   // });
+    // });
+    const commentsRef = ref(db, "abc123425/");
+    onValue(commentsRef, (snapshot) => {
+      this.commentData = snapshot.val();
+      console.log(this.commentData);
+      this.comments = []
+      snapshot.forEach((childSnapshot) => {
+        var comment = {
+          name: childSnapshot.val().name,
+          comment: childSnapshot.val().comment,
+          timeStamp: String(childSnapshot.val().dateTime),
+        };
+        this.comments.push(comment)
+        const childKey = childSnapshot.key;
+        const childData = childSnapshot.val().comment;
+        // console.log(childData)
+      });
+      console.log(this.comments)
+    });
+  },
+  // computed: {
+  //   comments() {
+  //     var comments = [];
+  //     this.commentData.forEach((childSnapshot) => {
+
+  //       comments.push(comment);
+  //     });
+  //     console.log(comments);
+  //     return comments
+  //   },
+  // },
   methods: {
     writeUserData(name, email, comment) {
       const db = getDatabase();
@@ -68,19 +91,15 @@ export default {
     async readFromDb() {
       const messageRef = this.$fire.database.ref("test/" + "1");
       try {
-        const snapshot = await messageRef.once('value')
-        alert(snapshot.val().phrase);
+        const snapshot = await messageRef.once("value");
+        alert(snapshot.val());
       } catch (e) {
         alert(e);
         return;
       }
     },
   },
-  // computed: {
-  //   readText: function(){
-      
-  //   }
-  // }
+
 };
 </script>
 

@@ -3,7 +3,7 @@
     <v-main>
       <v-container fluid>
         <v-row justify="center" align="center">
-          <v-col cols="12" sm="8" md="6" lg="5">
+          <v-col cols="12" sm="12" md="12" lg="8">
             <AppHeader />
 
             <Nuxt />

@@ -1,23 +1,26 @@
 <template>
-  <CommentForm/>
+  <v-container>
+    <CommentForm />
+    <CommentSection />
+  </v-container>
 </template>
 
 <script>
 import { getDatabase, ref, set } from "firebase/database";
-import CommentForm from '../components/CommentForm.vue';
+import CommentForm from "../components/CommentForm.vue";
+import CommentSection from "../components/CommentSection.vue";
 
 export default {
-  components: { CommentForm },
+  components: { CommentForm, CommentSection },
   name: "AppHeader",
   data: function () {
     return {
       testText: null,
       slug: String(this.$route.path).substring(1),
-      readText: null
+      readText: null,
     };
   },
   methods: {
-
     async testDb() {
       try {
         const messageRef = this.$fire.database.ref("test/" + "1");
@@ -33,7 +36,7 @@ export default {
     async readFromDb() {
       const messageRef = this.$fire.database.ref("test/" + "1");
       try {
-        const snapshot = await messageRef.once('value')
+        const snapshot = await messageRef.once("value");
         alert(snapshot.val().phrase);
       } catch (e) {
         alert(e);
@@ -43,7 +46,7 @@ export default {
   },
   // computed: {
   //   readText: function(){
-      
+
   //   }
   // }
 };

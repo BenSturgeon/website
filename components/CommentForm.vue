@@ -1,50 +1,52 @@
 <template>
-  <v-container class="grey lighten-5">
-    <h2 class="mt-1 mb-1 pa-4 ">
+  <v-container class="grey lighten-5" md="10" lg="11">
+    <h2 class="mt-1 mb-1 pa-4">
       Comments, questions, thoughts?<br />
-      Share them down below:
+      Share them below:
     </h2>
-    <v-form
-      ref="form"
-      v-model="form"
-      class="pa-4 pt-6"
-    >
-    <v-row>
-      <v-col cols="12" sm="6" md="3">
-        <h3>Your name:</h3>
+    <v-form ref="form" v-model="form" class="pa-1">
+      <v-row>
+        <v-col cols="12" xs="3" class="form_container">
+          <h3>Your name:</h3>
 
-        <v-text-field v-model="name" solo :rules="[rules.length(1)]" ></v-text-field>
-      </v-col>
-    </v-row>
-    <v-row>
-      <v-col cols="12" sm="6" md="3">
-        <h3>Your email:</h3>
+          <v-text-field
+            class="form"
+            width="100px"
+            v-model="name"
+            solo
+          ></v-text-field>
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col cols="12" xs="3" sm="6" md="6" lg="6"
+         class="form_container">
+          <h3>Your email:</h3>
 
-        <v-text-field v-model="email" solo :rules="[rules.email]"></v-text-field>
-      </v-col>
-    </v-row>
-    <v-row>
-      <v-col cols="12" sm="6" md="8">
-        <h3>Your words:</h3>
-        <v-textarea
-          class="text-wrap"
-          :rules="[rules.length(5)]"
-          filled
-          height="150px"
-          v-model="comment"
-          solo
-        ></v-textarea>
-      </v-col>
-    </v-row>
+          <v-text-field
+            class="form"
+            v-model="email"
+            solo
+            :rules="[rules.email]"
+          ></v-text-field>
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col cols="12" sm="6" md="10">
+          <h3 class="mt-0">Your words:</h3>
+          <v-textarea
+            class="text-wrap"
+            filled
+            height="150px"
+            v-model="comment"
+            solo
+          ></v-textarea>
+        </v-col>
+      </v-row>
     </v-form>
     <v-row>
-      <v-btn class="mx-8 " @click="writeUserData()" :disabled="!form"> submit </v-btn>
-    </v-row>
-    <!-- <v-row>
-      <v-btn @click="readFromDb()"> I get what you wrote from the db! </v-btn>
-    </v-row> -->
-    <v-row>
-      <p>{{ pageId }}</p>
+      <v-btn class="ma-4 mt-0" @click="writeUserData()" :disabled="!form">
+        submit
+      </v-btn>
     </v-row>
   </v-container>
 </template>
@@ -77,17 +79,24 @@ export default {
       console.log(snapshot.val());
       this.pageId = snapshot.val();
     });
+    
   },
   methods: {
     writeUserData() {
       const db = getDatabase();
       var id = this.name + Math.random().toString(16).slice(2)
       console.log(id)
-      // set(ref(db, "test/" + id), {
-      //   username: this.name,
-      //   email: this.email,
-      //   comment: this.comment,
-      // });
+      var today = new Date(); 
+      var date = today.getFullYear()+'-'+ (today.getMonth()+1)+'-'+ today.getDate();
+      var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+      var dateTime = date+' '+time;
+      set(ref(db, this.pageId + "/" + id), {
+        name: this.name,
+        email: this.email,
+        comment: this.comment,
+        dateTime: dateTime
+      });
+      this.$refs.form.reset()
     },
     async testDb() {
       try {
@@ -130,4 +139,16 @@ export default {
 </script>
 
 <style scoped>
+.form{
+  max-width: 240px;
+  margin-top: 4px;
+  margin-bottom: 1px;
+  padding-bottom: 1px;
+}
+.form_container{
+  margin-top: 1px;
+  margin-bottom: 1px;
+  padding-bottom: 1px;
+  padding-top: 1px;
+}
 </style>
