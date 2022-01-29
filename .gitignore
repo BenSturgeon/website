@@ -41,6 +41,10 @@ jspm_packages/
 # TypeScript v1 declaration files
 typings/
 
+
+# Build folder
+dist/
+
 # Optional npm cache directory
 .npm
 
@@ -67,6 +71,7 @@ typings/
 
 # nuxt.js build output
 .nuxt
+
 
 # vuepress build output
 .vuepress/dist
