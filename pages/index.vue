@@ -23,7 +23,7 @@
 
     <h2>Posts</h2>
     <p>
-      <nuxt-link to="articles/first" class="link"
+      <nuxt-link to="first" class="link"
         >Lessons from my first 10 day Vipassana</nuxt-link
       >
     </p>
