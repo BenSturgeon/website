@@ -20,6 +20,6 @@ export default {
   padding-bottom: 0.5rem;
   font-size: 3rem;
   color: black;
-  font-family: "Roboto Slab", serif;
+  font-family: valkyrieC4;
 }
 </style>

@@ -3,10 +3,11 @@
     <v-main>
       <v-container fluid>
         <v-row justify="center" align="center">
-          <v-col cols="12" sm="12" md="12" lg="8">
-            <AppHeader />
-
-            <Nuxt />
+          <v-col  d-flex flex-column justify-center align-center>
+            <v-sheet>
+              <AppHeader />
+              <Nuxt />
+            </v-sheet>
           </v-col>
         </v-row>
       </v-container>
@@ -28,7 +29,7 @@ export default {
 @font-face {
   font-family: "valkyrieC4";
   src: local("ValkyrieC4"),
-   url(../fonts/ValkyrieC4/ValkyrieC4.ttf) format("truetype");
+    url(../fonts/ValkyrieC4/ValkyrieC4.ttf) format("truetype");
 }
 
 a {
@@ -39,8 +40,8 @@ a:hover {
 }
 
 p {
-  margin-block-start: 1em;
-  margin-block-end: 1em;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   font-family: "Georgia", serif;
@@ -58,13 +59,13 @@ h2 {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   line-height: 1.5em;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
+  margin-block-start: 0.8em;
+  margin-block-end: 0em;
   font-size: 30px;
 }
 
-.nuxt-content h2, h4,
-h1 {
+.nuxt-content h2,
+h4, h1 {
   font-weight: 600;
   font-style: normal;
   font-family: "valkyrie_c4";
@@ -76,7 +77,20 @@ h1 {
   margin-block-start: 1em;
   margin-block-end: 1em;
 }
- h3 {
+
+.nuxt-content h1 {
+
+    display: flex;
+  margin: 3px;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  font-size: 2rem;
+  color: black;
+  font-family: valkyrieC4;
+}
+
+h3 {
   font-family: "valkyrie_c4";
   font-weight: normal;
 
@@ -90,5 +104,17 @@ ul {
   margin-inline-end: 0px;
   font-family: "Georgia", serif;
   font-size: 20px;
+  text-overflow: ellipsis;
+  max-width: 650px;
+}
+body{
+	max-width:40em;
+	margin:0 auto;
+	padding:5px;
+	font-family:Georgia,sans-serif;
+	font-size:20px;
+	line-height:30px;
+	background-color:#fff;
+	color:#000
 }
 </style>
