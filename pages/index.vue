@@ -27,6 +27,12 @@
         >Lessons from my first 10 day Vipassana</nuxt-link
       >
     </p>
+    
+        <p>
+      <nuxt-link to="learn" class="link"
+        >Learning how to learn</nuxt-link
+      >
+    </p>
 
     <!-- <li>
                 <nuxt-link to='/about' class="page" >Posts</nuxt-link>

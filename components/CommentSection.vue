@@ -37,13 +37,22 @@ export default {
   },
   created() {
     const db = getDatabase();
-    const pageRef = ref(db, "pageRefs/" + this.slug);
-    onValue(pageRef, (snapshot) => {
+    const pageRef = ref(db, "pageRefs/");
+    onValue(pageRef, (snapshot) => { 
       this.pageId = snapshot.val();
-      const commentsRef = ref(db, this.pageId + "/");
+      var key = null
+      snapshot.forEach((childSnapshot) => {
+        if (childSnapshot.val() == this.slug ){
+          key = childSnapshot.key
+        }
+      })
+      const commentsRef = ref(db, "pages/" +key + "/");
+      console.log(commentsRef)
+      
       onValue(commentsRef, (snapshot) => {
         this.commentData = snapshot.val();
         this.comments = [];
+
         snapshot.forEach((childSnapshot) => {
           var comment = {
             name: childSnapshot.val().name,
@@ -54,7 +63,7 @@ export default {
           const childKey = childSnapshot.key;
           const childData = childSnapshot.val().comment;
         });
-      });
+      })
 
     });
   },
