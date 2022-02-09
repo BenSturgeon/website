@@ -154,7 +154,52 @@ This interview was [[particularly good]].
 
 It's like [[playing an instrument]]. When you're in practice you can easily pick it up and play. When you let the [[practice]] decay for a long term it's much harder to play well coming back to it.
 
-You can hardwire your brain to [[solve problems]] by working with [[problems]] every day. 
+You can hardwire your brain to [[solve problems]] by working with novel [[problems]] every day. He did this by working through every exercise in the [[textbook]] relentlessly.
 
-A great source of varied and novel problems are maths olympiads.
+Taking [[breaks]] at both the macro and micro levels is critical. But you also need to be working hard.
 
+Choose a [[career]] where you enjoy solving those kinds of problems.
+
+Sometimes you don't love the subject immediately. In some subjects that [[love]] is a long time coming. 
+
+When you're still getting started work with examples that make it easy for you to get started. Don't get stuck trying to solve hard stuff at first.
+
+#### Interview with Keith Devlin The Math Guy
+His advice for when you first look at a [[math problem]]:
+1. Don't panic. 
+2. figure out
+	1. What are you trying to achieve?
+	2. What are you trying to do here? Perhaps imagine the problem visually. 
+	3. What information do you have available?
+
+Often the traditional school systems encourages speed in maths. You don't need to go fast. 
+
+Perhaps you can draw a [[diagram]] of the problem.
+
+Can you apply a known [[solution]] to solve this [[problem]]?
+
+Can you adapt a [[strategy]] to solve this problem?
+
+Can you figure out a [[novel]] strategy? (This is the fun one)
+
+If you've been [[struggling]] for a while, take a break.
+
+You need to have tried every [[approach]] you can think of.
+
+[[Think slowly]]. Slow down your [[problem solving]]. Don't rush.
+
+When dealing with a massive problem for a long time Keith starts to think of the problem like a member of his [[family]]. Often thinking back to it and wondering if something he's learned might affect it or provide a solution. 
+
+You are busy growing the [[neural structures]] to think about this [[problem]] as you grapple with it.
+
+Doing [[physical activity]] like [[climbing]], [[cycling]], [[running]] etc can help stimulate your [[thinking]].
+
+[[Multi tasking]] isn't possible. 
+
+Work [[flat out]] and with [[intense focus]] for periods of time. 
+
+You don't need [[willpower]] all the time, just when you start doing something.
+
+Whenever you [[switch tasks]] or projects [[procrastination]] can be an issue.
+
+Remove all alerts and [[distractions]] from your [[workspace]].
