@@ -49,7 +49,7 @@ It is critical to take breaks when you're learning. Both at the large scale and 
 
 If a certain learning strategy isn't working for you after a decent length of time, you need to change your strategy.
 
-Use mnemonics. Eg tish for table in German. tissues -> tish etc.
+Use mnemonics. For example, tish for table in German. tissues -> tish etc.
 
 ## Creativity and problem solving
 
@@ -125,7 +125,7 @@ Einstellung means 'mindset' in German. In learning it refers to a repeated menta
 
 Be careful if you find yourself trying to solve a problem using the same strategy over and over.
 
-<img-cont src="a_000232_large.jpg" />
+<img-cont src="a_000232_large.jpg" alt="vehicle in a rut"> </img-cont>
 
 Interleaving is when you try and generalise your understanding of a chunk by varying the context or altering the parameters of the problem. For example, doing a harder set of examples of the problem. This helps to improve flexibility.
 
@@ -160,7 +160,7 @@ Recall is the best way to consolidate your knowledge.
 
 ## Interview with Dr Fortenberry
 
-<img-cont src="Fortenberry-alt-2-edited-300x224.jpg"  />
+<img-cont src="Fortenberry-alt-2-edited-300x224.jpg"  alt="Dr Fortenberry"/> </img-cont>
 
 Working alone is deadly. You need to do your learning as a member of some kind of community.
 
@@ -173,7 +173,7 @@ When you take breaks from your learning, make sure you actually relax your brain
 Use as many modes of input as possible in your learning. Use sounds, visuals, vivid concepts, gamify it, explain it to others. When you convert a concept into a different form, you build new connections in your brain that help make it sick.
 
 ## Interview with Scott Young
-<img-cont src="Z58FB04s_400x400.png"  />
+<img-cont src="Z58FB04s_400x400.png" alt="Scott Young" /> </img-cont>
 
 Scott Young took on and completed the learning challenge of learning the 4 year undergrad computer science course at MIT in 1 year of independent learning. 
 
@@ -181,7 +181,7 @@ Always do a problem yourself before looking at the solution. Only look at the so
 
 When reviewing a problem, write down how you solved it. See where the fuzzy areas are in your recall. Those are your weak spots.
 
-Try to turn your learning into specific projects. Eg learning everything about this subject in 1 month. Make it time bound. 
+Try to turn your learning into specific projects. For example: learning everything about this subject in 1 month. Make it time bound. 
 
 When you don't study with intensity you end up taking longer to learn a subject. Your learning sessions should be like short, intense sprints. 
 
@@ -197,15 +197,13 @@ Using willpower is expensive. You shouldn't have to use it to fight procrastinat
 
 The discomfort or pain of starting something new, normally only lasts 8 seconds or so.
 
-<img-cont src="willpower.png" />
-
 We procrastinate to relieve pain or discomfort from doing certain activities. Boredom is uncomfortable, and if you observe carefully you can feel the uncomfortable sensations in your body when working. 
 
 Your habits consist of 4 parts:
 
 * The cue, which is whatever triggers the habit.
 * The routine. This is the zombie mode where your brain falls into a state of lower energy usage and follows a familiar pattern.
-* The reward. This is a certain sensation you get to indicate the end of the habit cycle. Eg the feeling of clean teeth after brushing.
+* The reward. This is a certain sensation you get to indicate the end of the habit cycle.For example: the feeling of clean teeth after brushing.
 * The underlying belief. This is the belief that drives the habit. 
 
 ## To avoid procrastination
@@ -220,10 +218,10 @@ Analyse your habits based on their 4 parts.
 
 ### Part 1: The cue
 Each of these can be a potential cue for habit execution.
-* Location. Eg, at your desk.
-* Time. Eg, first thing in the morning.
-* Feeling. Eg, Tired, angry, or stressed.
-* Reaction to stimulus. Eg, Seeing a certain image, song or person.
+* Location -> At your desk.
+* Time -> First thing in the morning.
+* Feeling -> Tired, angry, or stressed.
+* Reaction to stimulus -> Seeing a certain image, song or person.
 
 All of these stimulate certain sensations on the body. These sensations are what lead to a reaction, which is the beginning of the routine part of the habit. 
 
@@ -290,9 +288,9 @@ Astrocytes are a key component in brain function and learning. Here are some of 
 ## Meaningful groups
 Create meaningful groups of information to help you remember them.
 
-Eg Vampires are repelled by Garlic, Rosemary, Hawthorne, and Mustard. GRHM -> Graham cracker. 
+Vampires are repelled by Garlic, Rosemary, Hawthorne, and Mustard. GRHM -> Graham cracker. 
 
-<img-cont src="images.jpeg" />
+<img-cont src="images.jpeg" alt="willpower from What I've Learned youtube channel" /> </img-cont>
 
 Medical students use the sentence "Some lovers try positions they can't handle" to remember the first letters of all the bones in the hand.
 
@@ -313,7 +311,7 @@ To get information into long term memory you need to consolidate it over a few d
 
 When you've learned a concept well it takes up less space in working memory due to chunking.
 
-Relate ideas to things that interest you. Eg when trying to remember a specific number, think of a number in a field you like already. For example 1105 might be a significant date you need to remember in history, and for a runner this might be a good time in which to run 2km(11:05), so they can link these things together to remember the date.
+Relate ideas to things that interest you. For example, when trying to remember a specific number, think of a number in a field you like already. For example 1105 might be a significant date you need to remember in history, and for a runner this might be a good time in which to run 2km(11:05), so they can link these things together to remember the date.
 
 By learning things quickly and well with tools like memory palaces, you can quickly achieve mastery.
 
@@ -339,7 +337,7 @@ How to keep your memory sharp:
 
 ## Interview with Robert Gamache
 
-<img-cont src="Gamache-Robert-800-opt_tcm18-255306.jpg"  />
+<img-cont src="Gamache-Robert-800-opt_tcm18-255306.jpg" alt="Robert Gamache" /> </img-cont>
 
 Study every subject every day. If you spend just 15 minutes reviewing your knowledge of all of the important subjects, you'll have a wonderful ability to work with them in your daily life.
 
