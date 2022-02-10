@@ -24,7 +24,7 @@ The pomodoro technique is a great way to engage bouts of focused mode thinking. 
 Your neural connections or patterns get stronger with repeated exercise. To build strong neural connections you need to practice them each day over a longer period. You can't build a sturdy structure in a day. Sleep is actually the firming agent that helps to consolidate the memories from the day.
 ## Intro to memory
  
-analogy is a useful tool for learning as it makes things more memorable.
+Analogy is a useful tool for learning as it makes things more memorable.
  
 Long term memory can be compared to a storehouse where you can store an incredible amount of data but where that data is difficult or slow to access. Often we don't actually forget information, but simply lose the ability to access it. This is why shower thoughts can be so interesting, because for brief moments we get access to things normally beyond our reach.
  
@@ -50,7 +50,7 @@ It is critical to take breaks when you're learning. Both at the large scale and 
  
 If a certain learning strategy isn't working for you after a decent length of time, you need to change your strategy.
  
-Use mnemonics. For example, tish for table in German. tissues -> tish etc.
+Use mnemonics. For example, tish for table in German. Tissues -> tish etc.
  
 ## Creativity and problem solving
  
@@ -63,10 +63,10 @@ Discomfort is the sign of change occurring.
 OCEAN abbreviation for characteristics:
  
 * Openness -> correlated with creativity
-* conscientiousness
-* extraversion
-* agreeableness -> negatively correlated with creativity.
-* neuroticism
+* Conscientiousness
+* Extraversion
+* Agreeableness -> negatively correlated with creativity.
+* Neuroticism
  
 This means that being less agreeable is an important aspect of creative people. Probably because you need to disagree in order to think in an original way.
  
@@ -107,9 +107,9 @@ Brain chemicals to know about:
  
 Acetocholyne -> released when focusing
  
-dopamine -> released when receiving an unexpected reward.
+Dopamine -> released when receiving an unexpected reward.
  
-serotonin -> Induces a feeling of satisfaction and goodness. In primate communities, alpha males tend to have the most serotonin, while lower ranked primates tend to have less.
+Serotonin -> Induces a feeling of satisfaction and goodness. In primate communities, alpha males tend to have the most serotonin, while lower ranked primates tend to have less.
  
 ## The value of a chunk library
 Your expertise in a subject is strongly correlated with the number of chunks you have in that subject. These chunks can be drawn upon to help you solve problems.
@@ -278,7 +278,7 @@ To remember something:
  
 The process of remembering stuff can be thought of as a cycle between our active working memories and our inactive long term memories.
  
-Every time we re-activate some information and move it to our working memory we reconsolidate that information, and make it easier to access from our long term memory.
+Every time we re-activate some information and move it to our working memory we re-consolidate that information, and make it easier to access from our long term memory.
  
 Astrocytes are a key component in brain function and learning. Here are some of their features:
  
@@ -344,7 +344,7 @@ Study every subject every day. If you spend just 15 minutes reviewing your knowl
  
 It's like playing an instrument. When you're in practice you can easily pick it up and play. When you let the practice decay for a long term it's much harder to play well coming back to it.
  
-You can hardwire your brain to solve problems by working with novel problems every day. He did this by working through every exercise in the textbook relentlessly.
+You can hard-wire your brain to solve problems by working with novel problems every day. He did this by working through every exercise in the textbook relentlessly.
  
 Taking breaks at both the macro and micro levels is critical. But you also need to be working hard.
  
