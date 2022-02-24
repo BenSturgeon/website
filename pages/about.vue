@@ -3,7 +3,8 @@
     <p class="timePosted">{{ formatDate(doc.updatedAt) }}</p>
     <nuxt-content :document="doc" />
     <CommentSection />
-    <CommentForm />
+    <!-- <CommentForm /> -->
+    
   </article>
 
 
@@ -12,7 +13,7 @@
 <script>
 export default {
   async asyncData({ $content, params }) {
-    const doc = await $content(params.slug || "index").fetch();
+    const doc = await $content(params.slug || "about").fetch();
 
     return { doc };
   },
