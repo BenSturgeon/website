@@ -3,7 +3,9 @@
     <h2>Me in 11 seconds</h2>
     <p></p>
     <p>
-      I am a programmer, writer, machine learning engineer and AI enthusiast.
+      I am a
+      <a href="https://github.com/BenSturgeon/Odom_parser">programmer</a>,
+      writer, machine learning engineer and AI enthusiast.
     </p>
 
     <p>
@@ -27,10 +29,14 @@
         >Lessons from my first 10 day Vipassana</nuxt-link
       >
     </p>
-    
-        <p>
-      <nuxt-link to="learn" class="link"
-        >Learning how to learn</nuxt-link
+
+    <p>
+      <nuxt-link to="learn" class="link">Learning how to learn</nuxt-link>
+    </p>
+
+    <p>
+      <nuxt-link to="arcitechnologies_first" class="link"
+        >Arcitechnologies semantic segmentation case study</nuxt-link
       >
     </p>
 

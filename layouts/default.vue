@@ -59,8 +59,8 @@ h2 {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   line-height: 1.5em;
-  margin-block-start: 0.8em;
-  margin-block-end: 0em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
   font-size: 30px;
 }
 

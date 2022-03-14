@@ -7,19 +7,41 @@ description: A page with an autobiographical flair. A description of Benjamin.
 
 # About me 
 
-This page is a long description of me, and is somewhat autobiographical in nature. It currently is a bit of a snapshot of me at age 25 while I live in Cape in 2022, but I tried to include some timeless ideas too.
+This page is a long description of me, and is somewhat autobiographical in nature. I hope to convey both the raw facts and some of the important ideas which have shaped me over the years.
 
-I am a human male. I measure 192cm in height. I currently weigh about 78kg. I am trying to eat vegetarian, though I sometimes take meat when it is offered by others.
+1066
+: September. Harald Hardrada, King of Norway, invades England
+: October. William of Normandy defeats and kills Harold II at Hastings.
 
-I live in Cape Town, but I would like to experience what it's like to live in many other places. The longest I've stayed in another country was for 2 months in Japan. I have an unusual enthusiasm for Japan, and find many aspects of the culture extremely aesthetically appealing to me. In particular a feeling of sacredness and sincerity towards one's work and actions. I would love to live there one day, but right now America is also an appealing place to me mostly because of the kind of AI work that is happening there. 
+1070
+: William the Conqueror subdues the north of England
+: First Norman stone castle is built in Wales.
 
-Reading is a huge passion of mine. Currently I consume most of my books through audio, and find it difficult to find the time to sit and read. I definitely feel I am hugely missing out on the opportunity to take notes as I read, as I often find those notes come back in wonderful ways, but right now I can barely imagine finding the time to sit down for reading sessions. 
+1076
+: 'Revolt of the Earls' ends with the execution of Waltheof, Earl of Northumbria.
+
+1077
+: Bayeux Tapestry illustrating the Battle of Hastings is completed.
+
+1085
+: Domesday Book is instituted to survey the English lands of William the Conqueror.
+
+1086
+: Landholders swear loyalty to William the Conqueror at Salisbury.
+
+1087
+: William the Conqueror dies at Rouen, Normandy.
+
+1087
+: William II is crowned at Westminster Abbey.
 
 I have, as of 2020 been a user of Linux. In my beginner stages of Linux I used Ubuntu and switched to Arch after a few months. I've since become a huge fan of the feeling of control, stability and flexibility of Arch. There were a few panic stages when I was still learning the system, and I honestly still feel like quite a newbie as I haven't been experimenting much in the last few months, but I still want to call myself a fan. 
 
-I studied computer science and philosophy, and spent 5 years studying them at university. I then pivoted into AI after becoming incredibly inspired from reading the book Life 3.0 by Max Tegmark. I decided that AI was the most important problem of our time and that I was in a good position to contribute towards solving the problem of AGI. I am currently unsure of what exactly that will look like, but I believe in a lot of the ideas espoused by the Effective Altruism movement, and have been trying to get more of the skills required to work in AI safety. For me, these involve software engineering, machine learning, and deep learning. 
+I studied computer science and philosophy, and spent 5 years studying them at university. I then pivoted into AI after becoming incredibly inspired from reading the book Life 3.0 by Max Tegmark. I decided that AI was the most important problem of our time and that I was in a good position to contribute towards solving the problem of AGI. I am currently unsure of what exactly that will look like, but I believe in a lot of the ideas espoused by the Effective Altruism movement, and have been trying to get more of the skills required to work in AI safety. For me, these involve software engineering, machine learning, deep learning, as well as writing and research. 
 
-Currently I work at Cape AI, which is an AI consulting firm based in Cape Town. It's a very pleasant place to work, with fantastic people, and lots of interesting problems to be exposed to. I feel very fortunate to be able to do the kind of work that I do, but I am trying to spend a lot of time outside of work hours learning so that I can eventually work directly on AI safety issues. 
+Currently I work at Cape AI, which is an AI consulting firm based in Cape Town. It's a very pleasant place to work, with fantastic people, and lots of interesting problems to be exposed to. I feel very fortunate to be able to do the kind of work that I do.
+
+I am a strong believer in self-development and self-education. In line with this belief I chose to pursue a self-study approach to AI in my career rather than to continue down a research path at university. I experienced the effectiveness with which it is possible to self-teach while I was working as an intern and decided that a lot of the curriculum at university seemed to cover stuff I was familiar with already, and came with the cost of tuition and following class schedules. 
 
 I have spent most of my life in South Africa. I was born at home in Parkhurst Johannesburg (I think) and spent my early years growing on a farm in Lanseria. As I got larger my parents decided to grow me in the city of Johannesburg itself. Eventually they separated, and each individually moved to Cape Town where I would spend my teenage years. 
 

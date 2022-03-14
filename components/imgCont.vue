@@ -1,7 +1,6 @@
 <template>
   <div >
     <img class="img-cont" :src="getImg()" />
-    <!-- <span v-if="false" class="img-caption">{{ alt }}</span> -->
   </div>
 </template>
 
@@ -39,7 +38,7 @@ export default {
 
 <style>
 .img-cont {
-  max-width: 500px;
-  max-height: 500px
+  max-width: 800px;
+  max-height: 400px
 }
 </style>
