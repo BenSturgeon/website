@@ -1,42 +1,46 @@
 <template>
-  <article>
+        <article>
     <p class="timePosted">{{ formatDate(doc.updatedAt) }}</p>
     <nuxt-content :document="doc" />
     <CommentSection />
-    <!-- <CommentForm /> -->
+    <CommentForm />
   </article>
+
+
 </template>
 
 <script>
 export default {
   async asyncData({ $content, params }) {
-    const doc = await $content(params.slug || "about").fetch();
+    const doc = await $content(params.slug || "learning_how_to_learn").fetch();
 
     return { doc };
   },
   head() {
     return {
-      title: "About me",
+      title: "Learning How to Learn",
       meta: [
         {
+        
           hid: "description",
           name: "description",
-          content: "Information about Benjamin",
+          content: "Notes on how to learn.",
         },
       ],
     };
   },
   methods: {
     formatDate(date) {
-      var cat = null;
-      const options = { year: "numeric", month: "long", day: "numeric" };
-      return new Date(date).toLocaleDateString("en-GB", options);
-    },
-  },
+      const options = { year: 'numeric', month: 'long', day: 'numeric' }
+      return new Date(date).toLocaleDateString('en-GB', options)
+    }
+ }
 };
 </script>
 
 <style scoped>
+
+
 /* h1 {
   font-weight: 400;
   font-style: normal;
@@ -50,7 +54,7 @@ export default {
   border-bottom: 3px solid #526488;
   margin-bottom: -3px;
 } */
-.timePosted {
+.timePosted{
   color: rgb(116, 116, 116);
 }
 </style>
