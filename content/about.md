@@ -1,36 +1,42 @@
 ---
 title: About Benjamin
 description: A page with an autobiographical flair. A description of Benjamin.
-# img: first-blog-post.jpg
-# alt: my first blog post
 ---
 
 # About me 
 
-This page is a long description of me, and is somewhat autobiographical in nature. I hope to convey both the raw facts and some of the important ideas which have shaped me over the years.
+I am currently a 26 year old South African, living in Cape Town.
 
-I studied computer science and philosophy, and spent 5 years studying them at university. I then pivoted into AI after becoming incredibly inspired from reading the book Life 3.0 by Max Tegmark. I decided that AI was the most important problem of our time and that I was in a good position to contribute towards solving the problem of AGI. I am currently unsure of what exactly that will look like, but I believe in a lot of the ideas espoused by the Effective Altruism movement, and have been trying to get more of the skills required to work in AI safety. For me, these involve software engineering, machine learning, deep learning, as well as writing and research. 
+I am passionate about philsophy, AI, self-development, reading, writing, and spiritual development. 
 
-Currently I work at Cape AI, which is an AI consulting firm based in Cape Town. It's a very pleasant place to work, with fantastic people, and lots of interesting problems to be exposed to. I feel very fortunate to be able to do the kind of work that I do.
+# Philosophies
+Recently I have also become a big proponent of effective altruism, as I find it aligns with many of my deeply held values. I would like to contribute to the dream of establishing of an effective altruism hub here in Cape Town where maybe in future we can have a co-working space and EA house to share ideas and help to build effective altruism on the African continent.
 
-I am a strong believer in self-development and self-education. In line with this belief I chose to pursue a self-study approach to AI in my career rather than to continue down a research path at university. I experienced the effectiveness with which it is possible to self-teach while I was working as an intern and decided that a lot of the curriculum at university seemed to cover stuff I was familiar with already, and came with the cost of tuition and following class schedules. 
+I also am a huge fan of Stoicism. Its ideas about self-mastery, equanimity, and doing what is right are hugely inspiring to me. Ryan Holiday is a huge influence, but the book that I think most clearly captures the main ideas of stoicism is a Guide to The Good Life. 
 
-I have spent most of my life in South Africa. I was born at home in Parkhurst Johannesburg (I think) and spent my early years growing on a farm in Lanseria. As I got larger my parents decided to grow me in the city of Johannesburg itself. Eventually they separated, and each individually moved to Cape Town where I would spend my teenage years. 
+Taoism is also one philosophy that I have to mention. Taoism (or Daoism) seem to capture a deep truth about the world. I know that whatever happens there is a peace in the zen that lies in the stillness and fullness of the tao. My favourite texts in this space are the Zhuangze (chapters 1 to 7) and the Tao Te Ching (ideally the most unabridged version you can find).
 
-Those teenage years were spent at an interesting school called Cedar House, which took a broader view than most of what a school should look like, and which gave a lot of freedom and autonomy to its students. By my estimation, it was a very good education. I moved on from there to a university called Rhodes, which I felt lucky to go to for many reasons. The people were very dynamic and interesting, and came from many places, the education was decent, and the town and the feeling of being in an isolated community was a wonderful way to develop some independence. 
+# AI alignment
+My key target in life is to contribute towards the solving of the alignment problem, and to that end I have become a machine learning engineer and enthusiast of all things AI. 
 
-I was mostly quite lazy throughout highschool, but I became more vigorous about working at university. As I found more reasons to work and my world view became clearer and more rational, I was able to better understand the value of hard work. I found fewer reasons to focus on my own distraction and self-satisfaction. That shift in perspective happened in large part in 2019, and I am not sure what drove me to it. Maybe a lot of isolation, being forced to reconcile some difficult problems, and being able to experience a lot of the things I'd always been so drawn to. Once I saw what those things were really like and their limited value, I was forced to re-assess my priorities. Maybe it also had something to do with my starting meditation and journaling more seriously around this time. I still count those 2 things among my most valuable habits.
+I love software development generally and all the things that it makes possible but the incredible potential of AI has made a deep impression on me, and I think we are living in a critical time period in human history where the choices we make around the development of AI will have a profound impact on the future.
 
-That year I also spent much of my time reading, and listening to podcasts. I gained new mentors such as Tim Ferris, Derek Sivers, and read books like Awareness by Anthony De Mello, which gave me a better framework for understanding spirituality. It shifted my thinking from trying to numb the unpleasant sensations and constantly try to experience positive ones, but rather to look beyond the structures of living that had held me for so long. I began to realise that you've already got everything you need right there, in your body. I began to understand the value of inhabiting the present more fully. 
+# Meditation
+The spiritual aspect of my life became significant in the year of 2019 when I read a book called Awareness by Anthony de Mello which became a wonderful framework for understanding a lot of concepts that really exist to me as an operating system for a deep and honest understanding of the whole separate to the layers that I had built on top of my perceptions of the world. 
 
-At the beginning of 2020 I began a serious vipassana meditation practice following a 10 day course with S.N Goenka. I now do about 50 hours of meditation a month. 1 hour in the morning, and I aim to do 1 hour in the evening though I am currently not meeting that target as well as I would like. I find it to be an extraordinarily powerful force for good in my life. I don't think I could trust myself to be a good human without that practice to centre me and help me to calm my raucous mind. The last thing I would want to do is go out and do harm in the world unintentionally, and I find that is far less likely after meditation. To keep all of one's actions in the positive, and as few as possible in the negative. A remarkably simple shift, but so powerful. 
+I followed this up with a 10 day meditation course at Dhamma Pataka in Worcester and since have been back multiple times and plan to continue doing so in the future. The experience had a world-shattering impact on me and I believe that in following that practice I have taken steps to actually remove those layers on my perception which I had previously discovered.
 
-I am passionate about coding, and love the challenge and experience of focusing in on a problem and solving it. I am currently in the process of trying to put more projects in front of myself, and am actually loving having those productive pursuits in front of me. For a long time I played video games, or distracted myself on the internet instead of pursuing things which I felt I really needed to be doing. Currently I feel very little attachment to those pursuits. It feels easy to slip into doing stuff I would previously have seen as "work", but which now feels like play. 
+# ADD
+My brain seems to be an ADD brain, and I have struggled with this condition since I was young. There is always contraversy around this term but I have been diagnosed by many professionals with ADD and thus I take it seriously. Many of the deepest struggles that I face in my day to day life come back to my being ADD, especially around motivation and being able to focus and do difficult tasks that I put before myself. 
 
-I also am a huge fan of stoicism. Its ideas about hard work, equanimity, and doing what is right are hugely inspiring to me. I am trying to be a better stoic, as I still often fall prey to my cravings and aversions, but I aim to improve. I also love how much overlap there is between stoicism and what the Buddha taught. It feels like a wonderful confirmation of both sets of ideas. 
+A huge part of my self development journey as well as my meditation journey have been about trying to soothe the symptoms of the ADD. I have found that unless I take it seriously and create an environment which supports me then my life becomes very difficult.
 
-Brazilian jiu jitsu has also had a huge impact on me. It's so fun and strange and ego smashing, it feels like it's making me wiser. 
+# Reading and Writing
+I am a passionate reader and writer. My first series which I remember being my favourite for a long time was the His Dark Materials trilogy. My love of fantasy and sci-fi stories was and still is an unquenchable fire. 
 
-I will be updating this page as time goes by, and hope that it has given some insight and maybe even some entertainment. 
+I have since spread out and now I read from a broad spectrum, especially in the self-development, maths/science and spiritual spheres. But everything which isn't speculative fiction is still some effort to read, while I am always utterly consumed by good speculative fiction.
 
+Now I am trying to give back to the genre by polishing my writing skills and putting together the pieces for a first novel.
+
+# Acknowledgments
 This website's format is largely based on [Derek Siver's website](sive.rs). He's such an inspiration to me, and shifted the course of my life through his book recommendations and thinking. 
