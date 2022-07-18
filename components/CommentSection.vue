@@ -1,12 +1,12 @@
 <template>
   <v-container>
     <v-row v-if="!enabled" class="sep">
-    <H1 class="header">Questions, thoughts?</H1>
+      <H1 class="header">Questions, thoughts?</H1>
       <p>No comments here, this page is too personal.</p>
     </v-row>
     <v-row v-if="enabled">
-    <H1 class="header">Comments</H1>
-      
+      <H1 class="header">Comments</H1>
+
       <v-list>
         <v-list-item v-for="(item, index) in sortedComments" :key="index">
           <v-list-item-content>
@@ -88,10 +88,10 @@ export default {
 </script>
 
 <style scoped>
-
 .sep {
-    padding-top: 20px;
+  padding-top: 20px;
 }
+
 .commentTitle {
   font-size: 20px;
   font-family: valkyrieC4;
@@ -99,6 +99,7 @@ export default {
   padding-bottom: 18px;
   color: rgb(116, 116, 116);
 }
+
 .commentTitle em {
   font-style: normal;
   color: rgb(0, 0, 0);
