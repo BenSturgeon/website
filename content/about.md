@@ -10,11 +10,15 @@ I am currently a 26 year old South African, living in Cape Town.
 I am passionate about philsophy, AI, self-development, reading, writing, and spiritual development. 
 
 # Philosophies
+I am a huge fan of Stoicism. Its ideas about self-mastery, equanimity, and doing what is right are hugely inspiring to me. Ryan Holiday is a huge influence, but the book that I think most clearly captures the main ideas of stoicism is a Guide to The Good Life. 
+
 Recently I have also become a big proponent of effective altruism, as I find it aligns with many of my deeply held values. I would like to contribute to the dream of establishing of an effective altruism hub here in Cape Town where maybe in future we can have a co-working space and EA house to share ideas and help to build effective altruism on the African continent.
 
-I also am a huge fan of Stoicism. Its ideas about self-mastery, equanimity, and doing what is right are hugely inspiring to me. Ryan Holiday is a huge influence, but the book that I think most clearly captures the main ideas of stoicism is a Guide to The Good Life. 
-
 Taoism is also one philosophy that I have to mention. Taoism (or Daoism) seem to capture a deep truth about the world. I know that whatever happens there is a peace in the zen that lies in the stillness and fullness of the tao. My favourite texts in this space are the Zhuangze (chapters 1 to 7) and the Tao Te Ching (ideally the most unabridged version you can find).
+
+I love a lot of what is contained in the essence of the Buddha's teachings, though I don't call myself buddhist. There is a rich tradition of writing and ideas in the Buddhist tradition however, and I connect very strongly with the ideas of how to conduct oneself and the fundamental world view of the Buddha which is that through delusion we become unable to make clear sense of our reality.
+
+I am also a subscriber to the ideas of rationalism and am a huge fan of Eliezer Yudkowsky and the way that he sees things. Most importantly the attitude of constant adjustment of one's views in response to new information and trying to not hold onto particular ideas too strongly.
 
 # AI alignment
 My key target in life is to contribute towards the solving of the alignment problem, and to that end I have become a machine learning engineer and enthusiast of all things AI. 
