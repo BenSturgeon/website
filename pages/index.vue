@@ -55,10 +55,10 @@
         Download my resumé
       </a>
     </p>
-    <h2>Evidence of my humanity</h2>
+    <!-- <h2>Evidence of my humanity</h2>
     <p>
       <a href="https://www.instagram.com/bensturgeon/">Instagram</a>
-    </p>
+    </p> -->
 
     <div style="height: 200px"></div>
   </div>
