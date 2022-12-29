@@ -39,6 +39,6 @@ export default {
 <style>
 .img-cont {
   max-width: 800px;
-  max-height: 400px
+  max-height: 800px
 }
 </style>

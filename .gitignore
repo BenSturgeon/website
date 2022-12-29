@@ -90,4 +90,4 @@ sw.*
 
 # Vim swap files
 *.swp
-node_modules
+node_modules/

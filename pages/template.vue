@@ -12,18 +12,18 @@
 <script>
 export default {
   async asyncData({ $content, params }) {
-    const doc = await $content(params.slug || "What I learned from my first 10 day Vipassana").fetch();
+    const doc = await $content(params.slug || "CHANGE ME TO THE NAME OF THE MARKDOWN FILE").fetch();
     
     return { doc };
   },
   head() {
     return {
-      title: "My first 10 day",
+      title: "CHANGE ME TO A SNAPPY TITLE",
       meta: [
         {
-          hid: "First",
-          name: "Lessons from my first 10 day Vipassana",
-          content: "Some of the lessons that were learned on my first 10 day course are discussed.",
+          hid: "CHANGE ME TO SLUG NAME",
+          name: "CHANGE ME TO A LONGER NAME OF THE ARTICLE",
+          content: "CHANGE ME TO A DESCRIPTION OF THE DOCUMENT FOR SEO",
         },
       ],
     };
@@ -38,21 +38,6 @@ export default {
 </script>
 
 <style scoped>
-
-
-/* h1 {
-  font-weight: 400;
-  font-style: normal;
-  font-family: "valkyrie_c4";
-  font-weight: normal;
-  margin-block-end: 1em;
-  font-size: 1.6em;
-}
-
-.header .title:hover {
-  border-bottom: 3px solid #526488;
-  margin-bottom: -3px;
-} */
 .timePosted{
   color: rgb(116, 116, 116);
 }

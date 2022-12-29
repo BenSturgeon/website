@@ -1,11 +1,15 @@
 <template>
-  <v-container>
-    <v-row v-if="!enabled" class="sep">
+  <v-container >
+
+    <v-row  class="sep">
       <H1 class="header">Questions, thoughts?</H1>
-      <p>No comments here, this page is too personal.</p>
+      <p v-if="personal">No comments here, this page is too personal.</p>
+    
     </v-row>
-    <v-row v-if="enabled">
-      <H1 class="header">Comments</H1>
+  
+    <v-row >
+
+
 
       <v-list>
         <v-list-item v-for="(item, index) in sortedComments" :key="index">
@@ -29,7 +33,10 @@
 <script>
 import { getDatabase, ref, set, onValue } from "firebase/database";
 
+
+
 export default {
+  props: ['personal'],
   name: "AppHeader",
   data: function () {
     return {
@@ -39,6 +46,7 @@ export default {
       comments: [],
       pageId: null,
       enabled: false,
+      // personal: false,
     };
   },
   created() {

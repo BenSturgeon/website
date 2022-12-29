@@ -2,6 +2,7 @@
         <article>
     <p class="timePosted">{{ formatDate(doc.updatedAt) }}</p>
     <nuxt-content :document="doc" />
+    
     <CommentSection />
     <CommentForm />
   </article>
@@ -12,18 +13,18 @@
 <script>
 export default {
   async asyncData({ $content, params }) {
-    const doc = await $content(params.slug || "What I learned from my first 10 day Vipassana").fetch();
+    const doc = await $content(params.slug || "explore_word2vec").fetch();
     
     return { doc };
   },
   head() {
     return {
-      title: "My first 10 day",
+      title: "Building a word2vec model",
       meta: [
         {
-          hid: "First",
-          name: "Lessons from my first 10 day Vipassana",
-          content: "Some of the lessons that were learned on my first 10 day course are discussed.",
+          hid: "word2vec",
+          name: "A code exploration of building a word2vec model",
+          content: "This is a project where I build a word2vec model from scratch to get a better understanding of vector embeddings.",
         },
       ],
     };
@@ -38,21 +39,6 @@ export default {
 </script>
 
 <style scoped>
-
-
-/* h1 {
-  font-weight: 400;
-  font-style: normal;
-  font-family: "valkyrie_c4";
-  font-weight: normal;
-  margin-block-end: 1em;
-  font-size: 1.6em;
-}
-
-.header .title:hover {
-  border-bottom: 3px solid #526488;
-  margin-bottom: -3px;
-} */
 .timePosted{
   color: rgb(116, 116, 116);
 }

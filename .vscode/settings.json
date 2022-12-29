@@ -8,5 +8,6 @@
     "[vue]": {
       "editor.defaultFormatter": "octref.vetur"
     },
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "javascript.updateImportsOnFileMove.enabled": "prompt",
 }

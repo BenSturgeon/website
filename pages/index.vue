@@ -34,18 +34,33 @@
       <nuxt-link to="learn" class="link">Learning how to learn</nuxt-link>
     </p>
 
+
+
+    <h2>Projects</h2>
     <p>
-      <nuxt-link to="arcitechnologies_first" class="link"
-        >Arcitechnologies semantic segmentation case study</nuxt-link
-      >
+      <nuxt-link to="word2vec" class="link">
+        Building a word2vec model
+      </nuxt-link>
     </p>
 
-    <!-- <li>
-                <nuxt-link to='/about' class="page" >Posts</nuxt-link>
-            </li>
-            <li>
-                <nuxt-link to='/about' class="page">Projects</nuxt-link>
-            </li> -->
+    <p>
+      <nuxt-link to="arcitechnologies_first" class="link"
+        >Building a semantic segmentation model with Arcitechnologies
+      </nuxt-link>
+    </p>
+
+    <h2>My Resumé</h2>
+    <p>
+      <a href="https://www.overleaf.com/download/project/5d9b02c3b8ff81000152e049/build/1855d51b33a-fe1529340dff9869/output/output.pdf?compileGroup=standard&clsiserverid=clsi-pre-emp-e2-c-f-vm1n&enable_pdf_caching=true&popupDownload=true"> 
+        Download my resumé
+      </a>
+    </p>
+    <h2>Evidence of my humanity</h2>
+    <p>
+      <a href="https://www.instagram.com/bensturgeon/">Instagram</a>
+    </p>
+
+    <div style="height: 200px"></div>
   </div>
 </template>
 
