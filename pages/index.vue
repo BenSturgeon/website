@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>Me in 11 seconds</h2>
+    <h2>Me in 10 seconds</h2>
     <p></p>
     <p>
       I am a
@@ -8,15 +8,9 @@
       writer, machine learning engineer and AI enthusiast.
     </p>
 
-    <p>
-      My role is to find interesting and important ideas and distribute them to
-      others in a way that adds value.
-    </p>
-    <p>
-      I want to help people by removing tedious or superfluous activities from
-      their lives so they have more time for awareness and contemplation.
-    </p>
-    <p>Currently living in Cape Town South Africa.</p>
+      <p>I am a 26-year-old South African residing in Cape Town, fueled by my passions for philosophy, AI, personal growth, reading, writing, and spiritual advancement. My main aim in life is to make a difference in the world of AI and contribute to solving the alignment problem, which is why I have pursued a career in machine learning. </p>
+    <p>I am deeply inspired by Stoicism, effective altruism, Taoism, and the teachings of the Buddha. 
+    <p>The spiritual aspect of my life has undergone a huge shift for me in the last few years and has helped me to develop a truer understanding of the world, and I plan to continue my journey in this area in the future.</p></p>
 
     <h2 class="font-weight-medium">Me in many seconds</h2>
     <p>link to my <nuxt-link to="/about" class="link">about</nuxt-link> page</p>
