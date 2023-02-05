@@ -4,7 +4,7 @@
     <p></p>
     <p>
       I am a
-      <a href="https://github.com/BenSturgeon/Odom_parser">programmer</a>,
+      <a href="https://github.com/BenSturgeon/">programmer</a>,
       writer, machine learning engineer and AI enthusiast.
     </p>
 
