@@ -51,7 +51,7 @@
 
     <h2>My Resumé</h2>
     <p>
-      <a href="https://www.overleaf.com/download/project/5d9b02c3b8ff81000152e049/build/1855d51b33a-fe1529340dff9869/output/output.pdf?compileGroup=standard&clsiserverid=clsi-pre-emp-e2-c-f-vm1n&enable_pdf_caching=true&popupDownload=true"> 
+      <a href="https://drive.google.com/uc?export=download&id=1s7UxkojnVKwGw5-eqOzrvfwOG_7qq1qN"> 
         Download my resumé
       </a>
     </p>
