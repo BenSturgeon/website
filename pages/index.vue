@@ -5,12 +5,12 @@
     <p>
       I am a
       <a href="https://github.com/BenSturgeon/">programmer</a>,
-      writer, machine learning engineer and AI enthusiast.
+      and philosopher.
     </p>
 
-      <p>I am a 26-year-old South African residing in Cape Town, fueled by my passions for philosophy, AI, personal growth, reading, writing, and spiritual advancement. My main aim in life is to make a difference in the world of AI and contribute to solving the alignment problem, which is why I have pursued a career in machine learning. </p>
-    <p>I am deeply inspired by Stoicism, effective altruism, Taoism, and the teachings of the Buddha. 
-    <p>The spiritual aspect of my life has undergone a huge shift for me in the last few years and has helped me to develop a truer understanding of the world, and I plan to continue my journey in this area in the future.</p></p>
+      <p>I am a 26-year-old South African residing in Cape Town. My main aim in life is to make a positive impact by helping to align powerful AI systems. </p>
+    <p>I am deeply inspired by Stoicism, effective altruism, and the teachings of the Buddha. 
+    <p>I also meditate like it's my part time job.</p></p>
 
     <h2 class="font-weight-medium">Me in many seconds</h2>
     <p>link to my <nuxt-link to="/about" class="link">about</nuxt-link> page</p>
@@ -33,13 +33,13 @@
     <h2>Projects</h2>
     <p>
       <nuxt-link to="word2vec" class="link">
-        Building a word2vec model
+        Building and training a word embedding system
       </nuxt-link>
     </p>
 
     <p>
       <nuxt-link to="arcitechnologies_first" class="link"
-        >Building a semantic segmentation model with Arcitechnologies
+        >Adding self-navigation to an automated farm robot
       </nuxt-link>
     </p>
 

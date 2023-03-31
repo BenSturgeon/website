@@ -122,7 +122,7 @@ ul {
   font-size: 20px;
   text-overflow: ellipsis;
   max-width: 650px;
-  background-color:#17191a;
+  background-color:#0f1213;
 }
 body{
 	max-width:40em;
@@ -132,16 +132,17 @@ body{
 	font-family:Georgia,sans-serif;
 	font-size:20px;
 	line-height:30px;
-	background-color:#17191a;
-	color:#17191a
+	background-color:#0f1213;
+	color:#0f1213
 }
 
 .v-application {
-  background-color: #17191a !important;
+  background-color: #0f1213 !important;
 }
 
-.v-sheet {
-  background-color: #17191a !important;
+.v-sheet, html {
+  background-color: #0f1213 !important;
   color: #f7fafb !important;
 }
 </style>
+
