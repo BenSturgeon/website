@@ -10,5 +10,6 @@ echo 'www.benjaminsturgeon.com' > CNAME
 git init
 git add -A
 git commit -m 'deploy'
+git branch -m master main
 git push -f git@github.com:BenSturgeon/website.git main:gh-pages
 cd -
