@@ -10,6 +10,8 @@ description: description
 
 These are notes that I made as I did the course in Learning How To Learn, a course hosted on coursera and given by Barbara Oakley and Dr. Terrence Sejnowski. [Link](https://www.coursera.org/learn/learning-how-to-learn)
 
+
+
 ## Focused and diffuse mode
 The focused mode is a mode of attention where we intentionally direct all our working memory and cognitive power on a single problem.
 

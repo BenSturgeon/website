@@ -1,5 +1,7 @@
 <template>
-  <v-container class="grey lighten-5" md="10" lg="11">
+  <v-container class="grey lighten-5" md="10" lg="11" >
+    <div v-if="!personal" >
+    <H1 class="header">Comments</H1>
     <h2 class="mt-0 mb-1 pa-4 pt-0">
       Comments, questions, thoughts?<br />
       Share them below:
@@ -54,6 +56,7 @@
         Submit comment
       </v-btn>
     </v-row>
+  </div>
   </v-container>
 </template>
 
@@ -61,6 +64,7 @@
 import { getDatabase, ref, set, onValue } from "firebase/database";
 
 export default {
+  props: ['personal'],
   name: "AppHeader",
   data: function () {
     return {

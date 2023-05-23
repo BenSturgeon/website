@@ -1,10 +1,10 @@
 <template>
   <v-app>
     <v-main>
-      <v-container fluid>
+      <v-container  fluid>
         <v-row justify="center" align="center">
           <v-col  d-flex flex-column justify-center align-center>
-            <v-sheet>
+            <v-sheet >
               <AppHeader />
               <Nuxt />
             </v-sheet>
@@ -18,6 +18,12 @@
 <script>
 import AppHeader from "../components/AppHeader";
 export default {
+  name: 'App',
+  // computed:{
+  //   theme(){
+  //     return (this.$vuetify.theme.dark) ? 'dark' : 'light'
+  //   }
+  // },
   components: {
     AppHeader,
   },
@@ -46,6 +52,7 @@ p {
   margin-inline-end: 0px;
   font-family: "Georgia", serif;
   font-size: 20px;
+  color: #E8E1E1;;
 }
 
 ul .a:hover {
@@ -76,8 +83,17 @@ h4, h1 {
   line-height: 1em;
   margin-block-start: 1em;
   margin-block-end: 1em;
+
 }
 
+
+.header {
+  font-family: "valkyrie_c4";
+  font-weight: normal;
+  font-size: 1.6em;
+  margin-block-end: 1em;
+  color: #f7fafb !important;
+}
 .nuxt-content h1 {
 
     display: flex;
@@ -86,7 +102,7 @@ h4, h1 {
   margin-bottom: 1rem;
   padding-bottom: 0.5rem;
   font-size: 2rem;
-  color: black;
+  color: rgb(245, 242, 242);
   font-family: valkyrieC4;
 }
 
@@ -106,15 +122,27 @@ ul {
   font-size: 20px;
   text-overflow: ellipsis;
   max-width: 650px;
+  background-color:#0f1213;
 }
 body{
 	max-width:40em;
 	margin:0 auto;
 	padding:5px;
+  border: 0ch;
 	font-family:Georgia,sans-serif;
 	font-size:20px;
 	line-height:30px;
-	background-color:#fff;
-	color:#000
+	background-color:#0f1213;
+	color:#0f1213
+}
+
+.v-application {
+  background-color: #0f1213 !important;
+}
+
+.v-sheet, html {
+  background-color: #0f1213 !important;
+  color: #f7fafb !important;
 }
 </style>
+
