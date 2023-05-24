@@ -1,16 +1,11 @@
 <template>
-  <v-container >
-
-    <v-row  class="sep">
+  <v-container>
+    <v-row class="sep">
       <H1 class="header">Questions, thoughts?</H1>
       <p v-if="personal">No comments here, this page is too personal.</p>
-    
     </v-row>
-  
-    <v-row >
 
-
-
+    <v-row>
       <v-list>
         <v-list-item v-for="(item, index) in sortedComments" :key="index">
           <v-list-item-content>
@@ -33,10 +28,8 @@
 <script>
 import { getDatabase, ref, set, onValue } from "firebase/database";
 
-
-
 export default {
-  props: ['personal'],
+  props: ["personal"],
   name: "AppHeader",
   data: function () {
     return {
@@ -110,7 +103,7 @@ export default {
 
 .commentTitle em {
   font-style: normal;
-  color: rgb(0, 0, 0);
+  color: rgb(0 230 255 / 87%);
 }
 .commentText {
   font-size: 20px;
@@ -128,7 +121,7 @@ export default {
   /* margin-bottom: 1rem; */
   padding-bottom: 0.5rem;
   font-size: 3rem;
-  color: black;
+  color: rgb(255, 255, 255);
   font-family: valkyrieC4;
 }
 </style>
