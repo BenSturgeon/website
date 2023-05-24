@@ -1,10 +1,10 @@
 <template>
   <v-app>
     <v-main>
-      <v-container  fluid>
+      <v-container fluid>
         <v-row justify="center" align="center">
-          <v-col  d-flex flex-column justify-center align-center>
-            <v-sheet >
+          <v-col d-flex flex-column justify-center align-center>
+            <v-sheet>
               <AppHeader />
               <Nuxt />
             </v-sheet>
@@ -18,7 +18,7 @@
 <script>
 import AppHeader from "../components/AppHeader";
 export default {
-  name: 'App',
+  name: "App",
   // computed:{
   //   theme(){
   //     return (this.$vuetify.theme.dark) ? 'dark' : 'light'
@@ -52,7 +52,7 @@ p {
   margin-inline-end: 0px;
   font-family: "Georgia", serif;
   font-size: 20px;
-  color: #E8E1E1;;
+  color: #e8e1e1;
 }
 
 ul .a:hover {
@@ -70,9 +70,18 @@ h2 {
   margin-block-end: 1em;
   font-size: 30px;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: rgb(0 230 255 / 87%);
+}
 
 .nuxt-content h2,
-h4, h1 {
+h4,
+h1 {
   font-weight: 600;
   font-style: normal;
   font-family: "valkyrie_c4";
@@ -83,26 +92,21 @@ h4, h1 {
   line-height: 1em;
   margin-block-start: 1em;
   margin-block-end: 1em;
-
 }
-
 
 .header {
   font-family: "valkyrie_c4";
   font-weight: normal;
   font-size: 1.6em;
   margin-block-end: 1em;
-  color: #f7fafb !important;
 }
 .nuxt-content h1 {
-
-    display: flex;
+  display: flex;
   margin: 3px;
   align-items: center;
   margin-bottom: 1rem;
   padding-bottom: 0.5rem;
   font-size: 2rem;
-  color: rgb(245, 242, 242);
   font-family: valkyrieC4;
 }
 
@@ -122,25 +126,25 @@ ul {
   font-size: 20px;
   text-overflow: ellipsis;
   max-width: 650px;
-  background-color:#0f1213;
+  background-color: #0f1213;
 }
-body{
-	max-width:40em;
-	margin:0 auto;
-	padding:5px;
+body {
+  max-width: 40em;
+  margin: 0 auto;
+  padding: 5px;
   border: 0ch;
-	font-family:Georgia,sans-serif;
-	font-size:20px;
-	line-height:30px;
-	background-color:#0f1213;
-	color:#0f1213
+  font-family: Georgia, sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  background-color: #0f1213;
 }
 
 .v-application {
   background-color: #0f1213 !important;
 }
 
-.v-sheet, html {
+.v-sheet,
+html {
   background-color: #0f1213 !important;
   color: #f7fafb !important;
 }

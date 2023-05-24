@@ -176,6 +176,14 @@ export default {
   font-style: normal;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: whitesmoke;
+}
 ::v-deep .theme--light.v-btn.formButton {
   font-family: "valkyrieC4";
   font-weight: 400;

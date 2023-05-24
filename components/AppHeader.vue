@@ -1,9 +1,7 @@
 <template>
- 
-    <header >
-      <nuxt-link to="/" class="header">Benjamin Sturgeon</nuxt-link>
-    </header>
-
+  <header>
+    <nuxt-link to="/" class="header">Benjamin Sturgeon</nuxt-link>
+  </header>
 </template>
 <script>
 export default {
@@ -19,7 +17,7 @@ export default {
   /* margin-bottom: 1rem; */
   padding-bottom: 0.5rem;
   font-size: 3rem;
-  color: black;
-  font-family: valkyrieC4;
+  font-family: valkyrieC4 !important;
+  color: white;
 }
 </style>
