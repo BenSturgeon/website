@@ -4,13 +4,18 @@
     <p></p>
     <p>
       I am a
-      <a href="https://github.com/BenSturgeon/">programmer</a>,
-      and philosopher.
+      <a href="https://github.com/BenSturgeon/">programmer</a>, and philosopher.
     </p>
 
-      <p>I am a 26-year-old South African residing in Cape Town. My main aim in life is to make a positive impact by helping to align powerful AI systems. </p>
-    <p>I am deeply inspired by Stoicism, effective altruism, and the teachings of the Buddha. 
-    <p>I also meditate like it's my part time job.</p></p>
+    <p>
+      I am a 27-year-old South African residing in Cape Town. My main aim in
+      life is to make a positive impact by helping to align powerful AI systems.
+    </p>
+    <p>
+      I am deeply inspired by Stoicism, effective altruism, and the teachings of
+      the Buddha.
+    </p>
+    <p>I also meditate like it's my part time job.</p>
 
     <h2 class="font-weight-medium">Me in many seconds</h2>
     <p>link to my <nuxt-link to="/about" class="link">about</nuxt-link> page</p>
@@ -28,8 +33,6 @@
       <nuxt-link to="learn" class="link">Learning how to learn</nuxt-link>
     </p>
 
-
-
     <h2>Projects</h2>
     <p>
       <nuxt-link to="word2vec" class="link">
@@ -45,7 +48,9 @@
 
     <h2>My Resumé</h2>
     <p>
-      <a href="https://drive.google.com/uc?export=download&id=1s7UxkojnVKwGw5-eqOzrvfwOG_7qq1qN"> 
+      <a
+        href="https://drive.google.com/uc?export=download&id=1s7UxkojnVKwGw5-eqOzrvfwOG_7qq1qN"
+      >
         Download my resumé
       </a>
     </p>
