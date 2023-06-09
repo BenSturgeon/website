@@ -39,6 +39,11 @@
         Building and training a word embedding system
       </nuxt-link>
     </p>
+    <p>
+      <nuxt-link to="minigpt" class="link"
+        >Creating a small GPT from scratch in Pytorch
+      </nuxt-link>
+    </p>
 
     <p>
       <nuxt-link to="arcitechnologies_first" class="link"
