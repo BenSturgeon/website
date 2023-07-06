@@ -54,7 +54,7 @@
     <h2>My Resumé</h2>
     <p>
       <a
-        href="https://drive.google.com/uc?export=download&id=1pB4wEGjGtVABTKjePweXqnwdSPThz1O8"
+        href="https://drive.google.com/uc?export=download&id=1Om1qdspAmgB3ewTAjXLpgBIWU9P16dqF"
       >
         Download my resumé
       </a>
