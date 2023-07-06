@@ -46,15 +46,15 @@
     </p>
 
     <p>
-      <nuxt-link to="arcitechnologies_first" class="link"
-        >Adding self-navigation to an automated farm robot
+      <nuxt-link to="arcitechnologies_first" class="link">
+        Adding vision and navigation to an autonomous farm robot
       </nuxt-link>
     </p>
 
     <h2>My Resumé</h2>
     <p>
       <a
-        href="https://drive.google.com/uc?export=download&id=1s7UxkojnVKwGw5-eqOzrvfwOG_7qq1qN"
+        href="https://drive.google.com/uc?export=download&id=1pB4wEGjGtVABTKjePweXqnwdSPThz1O8"
       >
         Download my resumé
       </a>
