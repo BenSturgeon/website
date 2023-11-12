@@ -14,7 +14,6 @@
   "dependencies": {
     "@nuxt/content": "^1.15.1",
     "@nuxtjs/firebase": "^8.2.2",
-    "@vue/composition-api": "^1.7.1",
     "axios": "^0.24.0",
     "consola": "^2.15.3",
     "core-js": "^3.27.0",
@@ -32,5 +31,10 @@
     "sass-loader": "^10.4.1",
     "vue-jest": "^3.0.7",
     "webpack": "^4.46.0"
-  }
+  },
+  "description": "This website is a collection of stuff that I have written and want to keep a public record of.",
+  "main": "nuxt.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

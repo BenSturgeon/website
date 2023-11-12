@@ -148,5 +148,23 @@ html {
   background-color: #0f1213 !important;
   color: #f7fafb !important;
 }
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+  max-width: 90%; /* or whatever you prefer */
+  max-height: 90%; /* or whatever you prefer */
+}
 </style>
 

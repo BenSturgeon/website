@@ -13,9 +13,8 @@
     </p>
     <p>
       I am deeply inspired by Stoicism, effective altruism, and the teachings of
-      the Buddha.
+      the Buddha. Pretty into meditation.
     </p>
-    <p>I also meditate like it's my part time job.</p>
 
     <h2 class="font-weight-medium">Me in many seconds</h2>
     <p>link to my <nuxt-link to="/about" class="link">about</nuxt-link> page</p>
@@ -31,6 +30,11 @@
 
     <p>
       <nuxt-link to="learn" class="link">Learning how to learn</nuxt-link>
+    </p>
+    <p>
+      <nuxt-link to="Agency" class="link"
+        >Why pursue conceptions of agency for AI safety</nuxt-link
+      >
     </p>
 
     <h2>Projects</h2>
@@ -50,6 +54,32 @@
         Adding vision and navigation to an autonomous farm robot
       </nuxt-link>
     </p>
+
+    <h2>Talks</h2>
+    <p>
+      <a href="https://youtu.be/UdWziLLKsWU"> An intro to AI Safety </a>
+    </p>
+
+    <h2>Pictures</h2>
+    <v-row>
+      <v-col
+        cols="12"
+        sm="6"
+        md="4"
+        v-for="(image, index) in images"
+        :key="index"
+      >
+        <v-img
+          :src="image"
+          class="mx-auto"
+          aspect-ratio="1.5"
+          @click="openModal(image)"
+        ></v-img>
+      </v-col>
+    </v-row>
+    <div v-if="modalImage" class="modal" @click="closeModal">
+      <img :src="modalImage" class="modal-content" />
+    </div>
 
     <h2>My Resumé</h2>
     <p>
@@ -71,6 +101,23 @@
 <script>
 export default {
   name: "AppHeader",
+  data() {
+    return {
+      images: [
+        require("@/assets/images/Ben pic.jpeg"),
+        require("@/assets/images/IMG_0241_final.jpeg"),
+        require("@/assets/images/IMG-20230208-WA0006.jpeg"),
+      ],
+      modalImage: null,
+    };
+  },
+  methods: {
+    openModal(image) {
+      this.modalImage = image;
+    },
+    closeModal() {
+      this.modalImage = null;
+    },
+  },
 };
 </script>
-
