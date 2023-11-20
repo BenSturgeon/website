@@ -60,6 +60,22 @@
       <a href="https://youtu.be/UdWziLLKsWU"> An intro to AI Safety </a>
     </p>
 
+    <h2>Papers</h2>
+    <p>
+      <a
+        href="https://drive.google.com/file/d/18WRi_JkB0n3op77usTL_CGXxW0eUfiph/view?usp=drive_link"
+        >Investigating Factored Cognition in Large Language Models For Answering
+        Ethically Nuanced Questions</a
+      >
+    </p>
+    <p>
+      <a
+        href="https://drive.google.com/file/d/1wrXeUoi3qYw-AG5CyB2a6aVWxb_ZvuYO/view?usp=sharing"
+      >
+        A Security Analysis of the Linux RNG Protocol in Virtual Machines</a
+      >
+    </p>
+
     <h2>Pictures</h2>
     <v-row>
       <v-col
