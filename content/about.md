@@ -5,7 +5,9 @@ description: A page with an autobiographical flair. A description of Benjamin.
 
 # About me 
 
-I am currently a 27 year old South African, living in Cape Town.
+AI safety researcher residing in Cape Town. My main aim in life is to make a positive impact by helping to align powerful AI systems. Currently pursuing an Mphil in Applied Mathematics at the University of Cape Town.
+
+My main research interest is in conceptions of agency and thinking about the preservation of human agency as a key alignment goal.
 
 I am passionate about philsophy, AI, self-development, reading, writing, and spiritual development. 
 

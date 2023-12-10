@@ -8,8 +8,9 @@
     </p>
 
     <p>
-      I am a 27-year-old South African residing in Cape Town. My main aim in
-      life is to make a positive impact by helping to align powerful AI systems.
+      AI safety researcher residing in Cape Town. My main aim in life is to make
+      a positive impact by helping to align powerful AI systems. Currently
+      pursuing an Mphil in Applied Mathematics at the University of Cape Town.
     </p>
     <p>
       I am deeply inspired by Stoicism, effective altruism, and the teachings of
