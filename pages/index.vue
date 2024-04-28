@@ -55,6 +55,14 @@
         Adding vision and navigation to an autonomous farm robot
       </nuxt-link>
     </p>
+    <p>
+      <a
+        href="https://github.com/BenSturgeon/ai-safety-camp-2024-model-agents/tree/main/src"
+      >
+        Developing toy models of agency. A mechanistic interpretability
+        project.</a
+      >
+    </p>
 
     <h2>Talks</h2>
     <p>
