@@ -38,6 +38,15 @@
       >
     </p>
 
+    <p>
+      <a
+        href="https://www.lesswrong.com/posts/SFHiWyNfWQAtvMBx2/vipassana-meditation-and-active-inference-a-framework-for-understanding-suffering-and-its-cessation"
+      >
+        Vipassana Meditation and Active Inference: A Framework for Understanding
+        Suffering and its Cessation
+      </a>
+    </p>
+
     <h2>Projects</h2>
     <p>
       <nuxt-link to="word2vec" class="link">
@@ -109,7 +118,7 @@
     <h2>My Resumé</h2>
     <p>
       <a
-        href="https://drive.google.com/uc?export=download&id=1Om1qdspAmgB3ewTAjXLpgBIWU9P16dqF"
+        href="https://drive.google.com/file/d/1Xy6G_x73E2cfW_2QRnVkt5BH1fA0-XvT/view?usp=sharing"
       >
         Download my resumé
       </a>
@@ -125,24 +134,24 @@
 
 <script>
 export default {
-  name: "AppHeader",
+  name: 'AppHeader',
   data() {
     return {
       images: [
-        require("@/assets/images/Ben pic.jpeg"),
-        require("@/assets/images/IMG_0241_final.jpeg"),
-        require("@/assets/images/IMG-20230208-WA0006.jpeg"),
+        require('@/assets/images/Ben pic.jpeg'),
+        require('@/assets/images/IMG_0241_final.jpeg'),
+        require('@/assets/images/IMG-20230208-WA0006.jpeg'),
       ],
       modalImage: null,
-    };
+    }
   },
   methods: {
     openModal(image) {
-      this.modalImage = image;
+      this.modalImage = image
     },
     closeModal() {
-      this.modalImage = null;
+      this.modalImage = null
     },
   },
-};
+}
 </script>
