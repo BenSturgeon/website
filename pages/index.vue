@@ -22,6 +22,11 @@
     <!-- <h2>Test func</h2>
     <p>link to my <nuxt-link to="/test" class="link">test</nuxt-link> page</p> -->
 
+    <h2 class="font-weight-medium">Now Now Now</h2>
+    <p>
+      What I'm doing <nuxt-link to="/nownownow" class="link">now</nuxt-link>
+    </p>
+
     <h2>Posts</h2>
     <p>
       <nuxt-link to="first" class="link"
