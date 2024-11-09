@@ -123,7 +123,7 @@
     <h2>My Resumé</h2>
     <p>
       <a
-        href="https://drive.google.com/file/d/1lvJVZMMjDDrK5PUN-8ujo-J19N3MbewW/view?usp=sharing"
+        href="https://drive.google.com/uc?export=download&id=1njfKpOSkZMdGax20bjNyePBlysDyBC1P"
       >
         Download my resumé
       </a>
