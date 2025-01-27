@@ -1,20 +1,26 @@
 <template>
   <div>
     <h2>Me in 10 seconds</h2>
-    <p></p>
+
     <p>
-      I am a
-      <a href="https://github.com/BenSturgeon/">programmer</a>, and philosopher.
+      I'm a researcher working at the intersection of AI safety and machine
+      learning, with a focus on understanding and evaluating AI systems.
+      Currently pursuing an MPhil in Applied Mathematics at the University of
+      Cape Town, where I study mechanistic interpretability of deep learning
+      models.
     </p>
 
     <p>
-      AI safety researcher residing in Cape Town. My main aim in life is to make
-      a positive impact by helping to align powerful AI systems. Currently
-      pursuing an Mphil in Applied Mathematics at the University of Cape Town.
+      My work combines technical ML research with philosophical inquiry into
+      questions of AI alignment and safety. Recent projects include developing
+      benchmarks for evaluating language models and investigating goal
+      representations in reinforcement learning systems.
     </p>
+
     <p>
-      I am deeply inspired by Stoicism, effective altruism, and the teachings of
-      the Buddha. Pretty into meditation.
+      Outside of research, I draw inspiration from Buddhist philosophy,
+      Stoicism, and effective altruism in thinking about how to make meaningful
+      contributions to the field of AI safety.
     </p>
 
     <h2 class="font-weight-medium">Me in many seconds</h2>

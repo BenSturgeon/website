@@ -5,22 +5,23 @@ description: A page with an autobiographical flair. A description of Benjamin.
 
 # About me 
 
-AI safety researcher residing in Cape Town. My main aim in life is to make a positive impact by helping to align powerful AI systems. Currently pursuing an Mphil in Applied Mathematics at the University of Cape Town.
+I'm a researcher working at the intersection of AI safety and machine learning, with a focus on understanding and evaluating AI systems. Currently pursuing an MPhil in Applied Mathematics at the University of Cape Town, where I study mechanistic interpretability of deep learning models.
 
-My main research interest is in conceptions of agency and thinking about the preservation of human agency as a key alignment goal.
+My work combines technical ML research with philosophical inquiry into questions of AI alignment and safety. Recent projects include developing benchmarks for evaluating language models and investigating goal representations in reinforcement learning systems.
 
-I am passionate about philsophy, AI, self-development, reading, writing, and spiritual development. 
+
+Outside of research, I draw inspiration from Buddhist philosophy, Stoicism, and effective altruism in thinking about how to make meaningful contributions to the field of AI safety.
 
 # Philosophies
 I am a huge fan of stoicism. From Marcus Aurelius, to Ryan Holiday, to Seneca. There's something incredibly satisfying about absording these ancient ideas and applying them in life. It's a really powerful operating system in general.
 
-Recently I have also become a big proponent of effective altruism, as I find it aligns with many of my deeply held values. I would like to contribute to the dream of establishing of an effective altruism hub here in Cape Town where maybe in future we can have a co-working space and EA house to share ideas and help to build effective altruism on the African continent.
+I have been significantly impacted by effective altruism, as I find it aligns with many of my deeply held values, and I think it's a useful framework for directing action. I think while its most public failures have been dramatic they reflect a failure of implementation and not a failure of the intrinsic quality of the ideas. For most of 2023 and 2024 I spent a lot of time doing field building work for AI safety in Cape Town which I think has helped grow a more vibrant space for these kinds of activities.
 
-Taoism is also one philosophy that I have to mention. Taoism (or Daoism) seem to capture a deep truth about the world. I know that whatever happens there is a peace in the zen that lies in the stillness and fullness of the tao. My favourite texts in this space are the Zhuangze (chapters 1 to 7) and the Tao Te Ching (ideally the most unabridged version you can find).
+Taoism is also one philosophy that I have to mention. Taoism (or Daoism) seem to capture a deep truth about the world. My favourite texts in this space are the Zhuangze (chapters 1 to 7) and the Tao Te Ching (ideally the most unabridged version you can find). I look forward to the day when I can truly stop seeking external validation and just exist for the sake of existing itself.
 
-I love a lot of what is contained in the essence of the Buddha's teachings, though I don't call myself buddhist. There is a rich tradition of writing and ideas in the Buddhist tradition however, and I connect very strongly with the ideas of how to conduct oneself and the fundamental world view of the Buddha which is that through delusion we become unable to make clear sense of our reality.
+I love a lot of what is contained in the essence of the Buddha's teachings. There is a rich tradition of writing and ideas in the Buddhist tradition and I connect very strongly with the ideas of how to conduct oneself and the fundamental world view of the Buddha which is that we manufacture our own reality based on a self-serving world view that often involves a lot of unneccessary suffering and through this we become unable to make clear sense of our reality.
 
-I love rationality, scientific thinking, mathematics, art, music, good design, and being in nature.
+I love rationality, scientific thinking, mathematics, art, music, good design, and being around plants.
 
 # Biographical info
 
@@ -43,9 +44,9 @@ I love code, computers, technology, and AI. Currently I am working on technical 
 My current work aims to focus on instilling moral values into RL agents, and trying to make RL agents more interpretable through techniques developed in the natural language processing domain. I am also very interested in developing evaluations for testing alignment in large language models.
 
 # Reading and Writing
-I am a passionate reader and nascent writer. My first series which I remember being my favourite for a long time was the His Dark Materials trilogy. My love of fantasy and sci-fi stories was and still is an unquenchable fire. 
+I am a passionate reader and my plan for early retirement involves switching to being a fantasy author. The first series which I remember being my favourite was the "His Dark Materials" trilogy. My love of fantasy and sci-fi stories was and still is an unquenchable fire. 
 
-I have since spread out and now I read from a broad spectrum, but I find it easiest to get obsessively stuck to reading fantasy and sci-fi.
+I have since spread out and now I read from a broad spectrum, but I find it easiest to get obsessively stuck reading fantasy and sci-fi.
 
 # Acknowledgments
 This website's format is largely based on [Derek Siver's website](https://sive.rs/). He's such an inspiration to me, and shifted the course of my life through his book recommendations and thinking. 
