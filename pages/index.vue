@@ -104,21 +104,28 @@
         A Security Analysis of the Linux RNG Protocol in Virtual Machines</a
       >
     </p>
-
+    <p>
+      <a
+        href="https://drive.google.com/file/d/1uewIN57VyaBjWFwPlSEUExc7IIUEhppp/view?usp=drive_link"
+        >HumanAgencyBench: Do Language Models Support Human Agency?</a
+      >
+    </p>
     <h2>Pictures</h2>
     <v-row>
       <v-col
-        cols="12"
-        sm="6"
-        md="4"
+        cols="10"
+        sm="10"
+        md="8"
+        offset-md="0"
         v-for="(image, index) in images"
         :key="index"
       >
         <v-img
           :src="image"
-          class="mx-auto"
-          aspect-ratio="1.5"
+          class="mb-4"
+          aspect-ratio="1.8"
           @click="openModal(image)"
+          align="left"
         ></v-img>
       </v-col>
     </v-row>
@@ -134,10 +141,36 @@
         Download my resumé
       </a>
     </p>
-    <!-- <h2>Evidence of my humanity</h2>
-    <p>
-      <a href="https://www.instagram.com/bensturgeon/">Instagram</a>
-    </p> -->
+    <h2 class="connect-heading">Connect</h2>
+    <div class="social-links">
+      <a href="mailto:bwm.sturgeon@gmail.com" aria-label="Email">
+        <v-icon large color="white">mdi-email</v-icon>
+      </a>
+      <a
+        href="https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=kPfAAe0AAAAJ"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Google Scholar"
+      >
+        <v-icon large color="white">mdi-school</v-icon>
+      </a>
+      <a
+        href="https://github.com/bensturgeon/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="GitHub"
+      >
+        <v-icon large color="white">mdi-github</v-icon>
+      </a>
+      <a
+        href="https://www.linkedin.com/in/benjamin-sturgeon-41221241/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="LinkedIn"
+      >
+        <v-icon large color="white">mdi-linkedin</v-icon>
+      </a>
+    </div>
 
     <div style="height: 200px"></div>
   </div>
@@ -149,9 +182,9 @@ export default {
   data() {
     return {
       images: [
-        require('@/assets/images/Ben pic.jpeg'),
-        require('@/assets/images/IMG_0241_final.jpeg'),
-        require('@/assets/images/IMG-20230208-WA0006.jpeg'),
+        require('@/assets/images/webp/Ben_pic.webp'),
+        require('@/assets/images/webp/IMG_0241_final.webp'),
+        require('@/assets/images/webp/IMG-20230208-WA0006.webp'),
       ],
       modalImage: null,
     }
@@ -166,3 +199,21 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.social-links {
+  display: flex;
+  gap: 1.5rem;
+  margin: 1rem 0;
+}
+
+.social-links a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.social-links a:hover {
+  color: #e4e2e2;
+}
+</style>
