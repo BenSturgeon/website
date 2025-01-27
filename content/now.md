@@ -10,6 +10,6 @@ I recently started a company focusing on evaluations for frontier AI models, spe
 
 I am working on a master's degree as part of [Shocklab](https://shocklab.net/supervising/), with Jonathan Shock as my supervisor. The current focus of my work is doing mechanistic interpretability to better understand how RL policy agents work. The specific model we're looking at is trained to solve mazes that require it to find multiple keys. It's a tricky network, but we're learning a lot!
 
-I recently got accepted into [ARENA](https://www.arena.education/), which I am very excited about. I will be travelling to London for the month of September to take part in that. After that I'll be staying at [CEELAR](https://www.ceealar.org/) for most of October and then traveling to America EAG Boston at the beginning of November. 
+I'll be attending AAAI to present a [workshop paper](https://drive.google.com/file/d/1uewIN57VyaBjWFwPlSEUExc7IIUEhppp/view?usp=drive_link) there and before that will be stopping in at EAG bay area. I'll be around the Bay for around a week after the conference and would love to spend time connecting with as many people as I can so if you're reading this and would like to connect there please do reach out!
 
-I am currently trying to relocate myself either to the UK or US, so if you know any good ways to do this, please let me know!
+I am currently trying to relocate myself either to the UK or US, so if you have any good opportunities for this, please let me know!
