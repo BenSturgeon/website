@@ -23,6 +23,17 @@
       contributions to the field of AI safety.
     </p>
 
+    <p>
+      I welcome feedback on how I'm doing! If you'd like to share, please feel
+      encouraged to do so using this
+      <a
+        href="https://forms.gle/v3S3dGb9kY3xdc389"
+        target="_blank"
+        rel="noopener noreferrer"
+        >feedback form</a
+      >.
+    </p>
+
     <h2 class="font-weight-medium">Me in many seconds</h2>
     <p>link to my <nuxt-link to="/about" class="link">about</nuxt-link> page</p>
     <!-- <h2>Test func</h2>
