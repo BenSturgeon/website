@@ -147,7 +147,7 @@
     <h2>My Resumé</h2>
     <p>
       <a
-        href="https://drive.google.com/uc?export=download&id=1njfKpOSkZMdGax20bjNyePBlysDyBC1P"
+        href="https://drive.google.com/uc?export=download&id=1YzkRRPR034sXnjl9aNWjbNDO7Vnlpsjd"
       >
         Download my resumé
       </a>
