@@ -5,12 +5,11 @@ description: A page with an autobiographical flair. A description of Benjamin.
 
 # About me 
 
-I'm a researcher working at the intersection of AI safety and machine learning, with a focus on understanding and evaluating AI systems. Currently pursuing an MPhil in Applied Mathematics at the University of Cape Town, where I study mechanistic interpretability of deep learning models.
+I'm a researcher working on AI safety, with a focus on understanding agency, both in AI systems, and to understand how powerful AI will impact human agency. Currently pursuing an MPhil in Applied Mathematics at the University of Cape Town, where I'm studying the application of mechanistic interpretability to deeply understand RL models. I also have strong interest in evaluative frameworks and creative ways that we can learn to measure and understand LLMs.
 
-My work combines technical ML research with philosophical inquiry into questions of AI alignment and safety. Recent projects include developing benchmarks for evaluating language models and investigating goal representations in reinforcement learning systems.
+I am also passionate about teaching and growing the field of AI safety, and co-founded AI Safety Cape Town to contribute to that effort. 
 
-
-Outside of research, I draw inspiration from Buddhist philosophy, Stoicism, and effective altruism in thinking about how to make meaningful contributions to the field of AI safety.
+Outside of research, I draw inspiration from Buddhist philosophy, Stoicism, and effective altruism in thinking about how to make meaningful contributions to the field of AI safety. To recharge I spend time playing beach volleyball, watching anime, reading epic fantasy/sci-fi and hiking. 
 
 # Philosophies
 I am a huge fan of stoicism. From Marcus Aurelius, to Ryan Holiday, to Seneca. There's something incredibly satisfying about absording these ancient ideas and applying them in life. It's a really powerful operating system in general.
