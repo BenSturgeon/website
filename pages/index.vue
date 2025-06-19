@@ -3,15 +3,35 @@
     <h2>Me in 10 seconds</h2>
 
     <p>
-      I'm a researcher working on AI safety, with a focus on understanding agency, both in AI systems, and to understand how powerful AI will impact human agency. Currently pursuing an MPhil in Applied Mathematics at the University of Cape Town with <a href="https://shocklab.net/" target="_blank" rel="noopener noreferrer">Jonathan Shock</a>, where I'm studying the application of mechanistic interpretability to deeply understand RL models. I also have strong interest in evaluative frameworks and creative ways that we can learn to measure and understand LLMs.
+      I'm a researcher working on AI safety, with a focus on understanding
+      agency, both in AI systems, and to understand how powerful AI will impact
+      human agency. Currently pursuing an MPhil in Applied Mathematics at the
+      University of Cape Town with
+      <a href="https://shocklab.net/" target="_blank" rel="noopener noreferrer"
+        >Jonathan Shock</a
+      >, where I'm studying the application of mechanistic interpretability to
+      deeply understand RL models. I also have strong interest in evaluative
+      frameworks and creative ways that we can learn to measure and understand
+      LLMs.
     </p>
 
     <p>
-      I am also passionate about teaching and growing the field of AI safety, and co-founded <a href="https://www.aisafetyct.com/" target="_blank" rel="noopener noreferrer">AI Safety Cape Town</a> to contribute to that effort. 
+      I am also passionate about teaching and growing the field of AI safety,
+      and co-founded
+      <a
+        href="https://www.aisafetyct.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >AI Safety Cape Town</a
+      >
+      to contribute to that effort.
     </p>
 
     <p>
-      Outside of research, I draw inspiration from Buddhist philosophy, Stoicism, and effective altruism in thinking about how to make meaningful contributions to the field of AI safety. To recharge I spend time playing beach volleyball, watching anime, reading epic fantasy/sci-fi and hiking. 
+      Outside of research, I draw inspiration from Buddhist philosophy,
+      Stoicism, and effective altruism in thinking about how to make meaningful
+      contributions to the field of AI safety. To recharge I spend time playing
+      beach volleyball, watching anime, reading epic fantasy/sci-fi and hiking.
     </p>
 
     <p>
