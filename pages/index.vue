@@ -29,7 +29,7 @@
 
     <p>
       Outside of research, I draw inspiration from Buddhist philosophy,
-      Stoicism, and effective altruism in thinking about how to make meaningful
+      Stoicism, and Kantian ethics in thinking about how to make meaningful
       contributions to the field of AI safety. To recharge I spend time playing
       beach volleyball, watching anime, reading epic fantasy/sci-fi and hiking.
     </p>
@@ -158,7 +158,7 @@
     <h2>My Resumé</h2>
     <p>
       <a
-        href="https://drive.google.com/uc?export=download&id=1YzkRRPR034sXnjl9aNWjbNDO7Vnlpsjd"
+        href="https://drive.google.com/uc?export=download&id=1jwMmr6mH5s3CuyPdbI-k-YnT1BZWuCGn "
       >
         Download my resumé
       </a>
