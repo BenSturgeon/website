@@ -9,12 +9,10 @@ I'm a researcher working on AI safety, with a focus on understanding agency, bot
 
 I am also passionate about teaching and growing the field of AI safety, and co-founded AI Safety Cape Town to contribute to that effort. 
 
-Outside of research, I draw inspiration from Buddhist philosophy, Stoicism, and effective altruism in thinking about how to make meaningful contributions to the field of AI safety. To recharge I spend time playing beach volleyball, watching anime, reading epic fantasy/sci-fi and hiking. 
+Outside of research, I draw inspiration from Buddhism philosophy, Stoicism, and Kantian ethics  in thinking about how to make meaningful contributions to the field of AI safety. To recharge I spend time playing beach volleyball, watching anime, reading epic fantasy/sci-fi and hiking. 
 
 # Philosophies
 I am a huge fan of stoicism. From Marcus Aurelius, to Ryan Holiday, to Seneca. There's something incredibly satisfying about absording these ancient ideas and applying them in life. It's a really powerful operating system in general.
-
-I have been significantly impacted by effective altruism, as I find it aligns with many of my deeply held values, and I think it's a useful framework for directing action. I think while its most public failures have been dramatic they reflect a failure of implementation and not a failure of the intrinsic quality of the ideas. For most of 2023 and 2024 I spent a lot of time doing field building work for AI safety in Cape Town which I think has helped grow a more vibrant space for these kinds of activities.
 
 Taoism is also one philosophy that I have to mention. Taoism (or Daoism) seem to capture a deep truth about the world. My favourite texts in this space are the Zhuangze (chapters 1 to 7) and the Tao Te Ching (ideally the most unabridged version you can find). I look forward to the day when I can truly stop seeking external validation and just exist for the sake of existing itself.
 
