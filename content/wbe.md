@@ -1,5 +1,7 @@
 # Whole Brain Emulation as an Anchor for AI Welfare
 
+*Originally posted on [LessWrong](https://www.lesswrong.com/posts/ooCiXHFzoob8FiFDm/whole-brain-emulation-as-an-anchor-for-ai-welfare)*
+
 **Epistemic status:** Fairly confident in the framework, uncertain about object-level claims. Keen to receive pushback on the thought experiments.
 
 **TL;DR:** I argue that Whole Brain Emulations (WBEs) would clearly have moral patienthood, and that the relevant features are computational, not biological. Recent MI work shows LLMs have emotional representations with geometric structure matching human affect. This doesn't prove LLMs deserve moral consideration, but it establishes a necessary condition, and we should take it seriously.
