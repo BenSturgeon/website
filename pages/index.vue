@@ -57,6 +57,11 @@
 
     <h2>Posts</h2>
     <p>
+      <nuxt-link to="wbe" class="link"
+        >Whole Brain Emulation as an Anchor for AI Welfare</nuxt-link
+      >
+    </p>
+    <p>
       <nuxt-link to="first" class="link"
         >Lessons from my first 10 day Vipassana</nuxt-link
       >
