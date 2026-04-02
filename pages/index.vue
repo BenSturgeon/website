@@ -55,6 +55,18 @@
       What I'm doing <nuxt-link to="/nownownow" class="link">now</nuxt-link>
     </p>
 
+    <h2>Inkhaven: 30 Days of Posts</h2>
+    <p>
+      <nuxt-link to="/inkhaven-day-1" class="link"
+        >How did the United States hand over its future to corporations?</nuxt-link
+      >
+    </p>
+    <p>
+      <nuxt-link to="/inkhaven" class="link"
+        >All posts</nuxt-link
+      >
+    </p>
+
     <h2>Posts</h2>
     <p>
       <nuxt-link to="wbe" class="link"
