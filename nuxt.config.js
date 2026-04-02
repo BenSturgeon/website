@@ -1,8 +1,9 @@
 import colors from 'vuetify/es5/util/colors'
 
 export default {
-  // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
-  ssr: false,
+  // Enable server-side rendering for static generation (link previews, SEO)
+  ssr: true,
+  target: 'static',
 
   publicPath: 'http://benjaminsturgeon.com/',
 

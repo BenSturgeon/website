@@ -14,6 +14,26 @@ export default {
   head() {
     return {
       title: "How did the United States hand over its future to corporations?",
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content:
+            "Tracing how a single memo by a corporate lawyer led to the systematic dismantling of the policies that built America's middle class.",
+        },
+        {
+          hid: "og:title",
+          property: "og:title",
+          content:
+            "How did the United States hand over its future to corporations?",
+        },
+        {
+          hid: "og:description",
+          property: "og:description",
+          content:
+            "Tracing how a single memo by a corporate lawyer led to the systematic dismantling of the policies that built America's middle class.",
+        },
+      ],
     };
   },
   methods: {
