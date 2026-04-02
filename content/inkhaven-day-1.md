@@ -32,6 +32,6 @@ The top marginal income tax rate went from 70% in 1980 to 50% in 1981 (Economic 
 
 Arguably what most vindicates America's old policies is that the leading Asian powers have happily implemented this approach of massive public spending, though through a slightly different mechanism. While tax rates in South Korea reached 70% in the 1970s, the primary mechanism was enormous state investment in public education, industry and infrastructure. Today the highest tax rates have come down in these countries to 55% in Japan, and 45% in South Korea and China, while in the US it has dropped to 37%.
 
-Considering the actual tax percentages are not wildly different, how do the Asian economies afford to pour money into industry and education? The answer lies in where the money goes: military spending absorbs 3.5% of GDP and healthcare takes an extraordinary 17%, roughly double what the peer countries spend on healthcare, while achieving significantly worse outcomes.
+Considering the actual tax percentages are not wildly different, how do the Asian economies afford to pour money into industry and education? The answer lies in where the money goes: military spending absorbs 3.5% of GDP and healthcare takes an extraordinary 17% (together over a fifth of the entire economy), roughly double what peer countries spend on healthcare, while achieving significantly worse outcomes.
 
 While these countries are still behind the US in many areas, the pace at which they have matched or exceeded the US on many aspects of public wellbeing is cause for consideration.
