@@ -24,6 +24,14 @@ export default {
     return {
       posts: [
         {
+          day: 2,
+          date: "2 April 2026",
+          title: "The Physics of Great Storytelling",
+          description:
+            "How the best fiction earns its weight by letting the world do the work — using Hunter X Hunter and A Wise Man's Fear as examples.",
+          link: "/inkhaven-day-2",
+        },
+        {
           day: 1,
           date: "1 April 2026",
           title:
