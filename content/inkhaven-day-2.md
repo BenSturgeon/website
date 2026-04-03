@@ -4,7 +4,9 @@
 
 Spoilers ahead for Hunter X Hunter, A Wise Man's Fear
 
-A great story should feel like watching physics taking its course rather than a specific constructed narrative. Of course there are elements of narrative that help enormously with enjoying a story, and so in practice what often is most effective is going back and forth between parts which are constructed to have high narrative coherence, in which the story goes in directions that the author simply wants it to go. Things happen according to the author's will. The main character just happens to bump into the princess in the castle corridor, or gets given the tool they need at just the right moment.
+The most satisfying moments in fiction feel like watching dominoes fall. The author sets them up carefully, one by one, over hundreds of pages. Then they let go, and everything that happens next follows from the logic of what came before.
+
+Of course there are elements of narrative that help enormously with enjoying a story, and so in practice what often is most effective is going back and forth between parts which are constructed to have high narrative coherence, in which the story goes in directions that the author simply wants it to go. Things happen according to the author's will. The main character just happens to bump into the princess in the castle corridor, or gets given the tool they need at just the right moment.
 
 We can think of these sections of a story as low entropy moments where elements are carefully introduced before being mixed together. When this happens, entropy increases: conflict emerges, things are hard to predict, and events cascade into each other, purely via the logic of the universe and characters that have been established.
 
