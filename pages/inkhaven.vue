@@ -24,6 +24,15 @@ export default {
     return {
       posts: [
         {
+          day: 1,
+          date: "1 April 2026",
+          title:
+            "How did the United States hand over its future to corporations?",
+          description:
+            "Tracing how a single memo by a corporate lawyer led to the systematic dismantling of the policies that built America's middle class.",
+          link: "/inkhaven-day-1",
+        },
+        {
           day: 2,
           date: "2 April 2026",
           title: "The Physics of Great Storytelling",
@@ -32,13 +41,12 @@ export default {
           link: "/inkhaven-day-2",
         },
         {
-          day: 1,
-          date: "1 April 2026",
-          title:
-            "How did the United States hand over its future to corporations?",
+          day: 3,
+          date: "3 April 2026",
+          title: "Creation (Part 1)",
           description:
-            "Tracing how a single memo by a corporate lawyer led to the systematic dismantling of the policies that built America's middle class.",
-          link: "/inkhaven-day-1",
+            "Two angels tasked with building paradise discover that creation demands uncomfortable trade-offs.",
+          link: "/inkhaven-day-3",
         },
       ],
     };

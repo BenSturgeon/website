@@ -57,13 +57,18 @@
 
     <h2>Inkhaven: 30 Days of Posts</h2>
     <p>
+      <nuxt-link to="/inkhaven-day-1" class="link"
+        >How did the United States hand over its future to corporations?</nuxt-link
+      >
+    </p>
+    <p>
       <nuxt-link to="/inkhaven-day-2" class="link"
         >The Physics of Great Storytelling</nuxt-link
       >
     </p>
     <p>
-      <nuxt-link to="/inkhaven-day-1" class="link"
-        >How did the United States hand over its future to corporations?</nuxt-link
+      <nuxt-link to="/inkhaven-day-3" class="link"
+        >Creation (Part 1)</nuxt-link
       >
     </p>
     <p>
