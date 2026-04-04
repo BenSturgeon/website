@@ -43,10 +43,18 @@ export default {
         {
           day: 3,
           date: "3 April 2026",
-          title: "Creation (Part 1)",
+          title: "The Garden (Part 1)",
           description:
             "Two angels tasked with building paradise discover that creation demands uncomfortable trade-offs.",
           link: "/inkhaven-day-3",
+        },
+        {
+          day: 4,
+          date: "4 April 2026",
+          title: "The Garden (Complete)",
+          description:
+            "Two angels debate whether paradise requires suffering. One builds elegant systems; the other asks why they can't do better.",
+          link: "/inkhaven-day-4",
         },
       ],
     };

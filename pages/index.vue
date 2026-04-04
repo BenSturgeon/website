@@ -68,7 +68,12 @@
     </p>
     <p>
       <nuxt-link to="/inkhaven-day-3" class="link"
-        >Creation (Part 1)</nuxt-link
+        >The Garden (Part 1)</nuxt-link
+      >
+    </p>
+    <p>
+      <nuxt-link to="/inkhaven-day-4" class="link"
+        >The Garden (Complete)</nuxt-link
       >
     </p>
     <p>

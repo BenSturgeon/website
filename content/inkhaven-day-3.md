@@ -1,4 +1,4 @@
-# Creation (Part 1)
+# The Garden (Part 1)
 
 *Day 3 of Inkhaven: 30 Days of Posts*
 

@@ -8,29 +8,29 @@
 <script>
 export default {
   async asyncData({ $content }) {
-    const doc = await $content("inkhaven-day-3").fetch();
+    const doc = await $content("inkhaven-day-4").fetch();
     return { doc };
   },
   head() {
     return {
-      title: "The Garden (Part 1)",
+      title: "The Garden (Complete)",
       meta: [
         {
           hid: "description",
           name: "description",
           content:
-            "Two angels tasked with building paradise discover that creation demands uncomfortable trade-offs.",
+            "Two angels debate whether paradise requires suffering. One builds elegant systems; the other asks why they can't do better.",
         },
         {
           hid: "og:title",
           property: "og:title",
-          content: "The Garden (Part 1)",
+          content: "The Garden (Complete)",
         },
         {
           hid: "og:description",
           property: "og:description",
           content:
-            "Two angels tasked with building paradise discover that creation demands uncomfortable trade-offs.",
+            "Two angels debate whether paradise requires suffering. One builds elegant systems; the other asks why they can't do better.",
         },
       ],
     };
