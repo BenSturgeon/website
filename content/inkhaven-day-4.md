@@ -122,8 +122,8 @@ Amon looked at him for a long time. Then he shook his head. "Tomorrow, the human
 
 "As long as you can see the choice that you're making, old friend."
 
-Amon turned away and began preparations for the next day. Below them, the world turned on, beautiful and brutal, its suffering woven so deeply into its structure that it looked like as though it had emerged on its own.
+Amon turned away and began preparations for the next day. Below them, the world turned on, beautiful and brutal, its suffering woven so deeply into its structure that it looked like nature.
 
-Nathanael sat on the cloud alone and watched a rabbit eating clover in the late afternoon light. A fox crouched in the treeline. The rabbit did not know it was being watched. It did not know that its death was optional.
+Nathanael sat on the cloud alone and watched a rabbit eating clover in the late afternoon light. A fox crouched in the treeline. The rabbit did not know it was being watched. It did not know that its death was a design choice.
 
 But Nathanael knew. And he thought: "They deserve better."
