@@ -6,7 +6,7 @@ The mandate had been given by God that morning, and Nathanael and Amon had arriv
 
 The task was simple: creation, in all its perfection. As divine as this instruction was, it did demand a great deal of creativity on the part of his favourite agents. Helpfully, He had gotten them started with all of the matter and energy that they would need. Indeed the task was arguably trivial in that they had only a single universe to tend to, the others being helpfully tended to by myriad other angels.
 
-They quickly got to work, shaping all the countless galaxies and stars, which took literally no time at all, and then focused on the most important task of all. Creating paradise on earth.
+They quickly got to work, shaping all the countless galaxies and stars, which took no time at all, and then focused on the most important task of all. Creating paradise on earth.
 
 The earth started as a great brown ball, covered in water. To give it shape and colour they added sweeping meadows, forests and trees. To support the future humans who would follow their divine shape, they would need food, in the form of fruit and vegetables, and animals to provide light entertainment.
 
@@ -30,6 +30,12 @@ Nathanael looked on with horror. He wept at the sight of the emaciated creatures
 
 Nathanael was horrified. "Surely this is too much. Do they need to suffer in this way?"
 
-Amon watched the new predators laying down to rest after their feasting. "It is sad, I admit. But without them, collapse and starvation are inevitable. Would you have us simply stop them from growing past a certain point?"
+Amon watched the new predators lying down to rest after their feasting. "It is sad, I admit. But without them, collapse and starvation are inevitable. Would you have us simply place an arbitrary number on their population? With this in place they have a pressure to evolve and change, to become more complex and better adapted to the environment. It's a beautiful system."
 
-"I admit, Amon, I am disturbed. I will have to reflect on this." Nathanael watched on for a few more moments and then disappeared.
+Nathanael watched as one of the wolves kept killing despite having more than enough food available, following its instinct to glut itself while the opportunity was available.
+
+"What if we just made the island bigger?" said Nathanael.
+
+Amon snorted. "Don't be naive Nathanael. When would it end?"
+
+Nathanael hung there for a few more moments and then disappeared.

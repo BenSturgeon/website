@@ -44,27 +44,23 @@ Some time passed while Nathanael created all of the animals and flowers of the r
 
 Nathanael appeared beside him and found the world changed.
 
-In the time he had been away, Amon had been busy. The meadows hummed with invisible life, tiny organisms that Nathanael could barely perceive. He watched a young deer drinking from a stream and noticed something wrong with its movements. It stumbled, recovered, stumbled again.
+In the time he had been away, Amon had been busy. The meadows hummed with invisible life, tiny organisms that Nathanael could barely perceive. He watched a young deer drinking from a stream and noticed something off in its movement. It stumbled, recovered, stumbled again.
 
 "What have you done?" Nathanael asked.
 
-Amon was sitting on the edge of a cloud, watching the world turn below. "There was a waste problem," he said. "Dead matter was accumulating. Fallen leaves, carcasses, excrement. The land was becoming choked with it. I designed organisms to break it all down and recycle the nutrients back into the environment."
+Amon was sitting on the edge of a cloud, watching the world turn below. "There was a waste problem," he said. "Dead matter was accumulating. Fallen leaves, carcasses, excrement. The land was becoming choked with it. I designed organisms to break it all down."
 
 "And what's happening to that deer?"
 
-"Some of the organisms interact with living tissue. They have changed, evolved to spread and take advantage of its resources. It was not intended, but it is difficult to build something that consumes dead matter without it occasionally consuming living matter."
+"Some of the organisms interact with living tissue. They have changed, evolved to spread and take advantage of its resources. It was not intended, but for it be effective it needed to adapt and change, and some of those changes were difficult to predict."
 
-Nathanael descended to the surface. The deer was shivering, its breath shallow. "Difficult," he repeated. "Or merely inconvenient?"
+Nathanael descended to the surface. The deer was shivering, its breath shallow. "So this is inevitable?" He said, gesturing at the animal.
 
-"Nathanael, the system has a fixed nutrient cycle. What dies must be reclaimed. The bacteria do this efficiently. If I were to design a separate system that decomposed waste without ever touching living creatures, I would need an entire parallel ecology. Plus I'd have to constantly stop it from growing and changing. It's inelegant."
+"Nathanael, what dies must be reclaimed. The bacteria do this efficiently. If I were to design a system that could perfectly do exactly what we wanted and stop it from ever changing then I would have to endlessly be getting involved, tweaking it to avoid any harms whatsoever. It would be endless. And it would be an extremely inelegant solution."
 
 Nathanael looked up at him. "Inelegant."
 
-"Yes. Inelegant. There is a finite amount of matter on this world. Every atom must be accounted for and recirculated. I cannot afford to build two systems where one will do."
-
-"Cannot afford," Nathanael said. "Amon, we are angels. We shaped galaxies this morning. What do you mean you cannot afford it?"
-
-Amon shifted on his cloud. "Elegance matters. Economy matters. I can't simply spend all my time eliminating every possible disease that ever develops."
+"Yes. Inelegant. There is a finite amount of matter on this world, and a finite time for us. We may have the power to fix these things, but the humans certainly won't. We simply can't afford it."
 
 "So it's not worth your time to save this deer?"
 
@@ -72,47 +68,47 @@ They watched it die. Nathanael eased its passing with a touch, and felt the bact
 
 "Come," Amon said. "There is more."
 
-He led Nathanael to a hillside where a wolf lay on its side, grey-muzzled and thin. One of the first wolves. Its cells were fraying, losing coherence. It was not sick. It was simply wearing out.
+He led Nathanael to a hillside where a wolf lay on its side, grey-muzzled and thin. One of the first wolves. Its cells were fraying, losing coherence. It was not sick. It was simply falling apart.
 
-"Senescence," Amon said. "The cells divide for growth and healing, but each division loses a small amount of fidelity. Eventually the organism can no longer maintain itself."
+"Senescence," Amon said. "The cells divide for growth and healing, but each division loses some information. Eventually the organism can no longer maintain itself."
 
 "And you did not fix this because..."
 
-"Because it is useful. Old organisms die and make room for new ones. Their matter is reclaimed. Their territory is freed. Without senescence, the population would grow until it exceeded the carrying capacity of the land, and then we are back to the same collapse I showed you on the island."
+"Because it is necessary. Old organisms die and make room for new ones. Their matter is reclaimed. Without this, the population would grow until it exceeded the carrying capacity of the land, and then we are back to the same collapse I showed you on the island."
 
 Nathanael was quiet for a long moment. "Amon," he said carefully, "do you notice what you keep saying?"
 
 "What?"
 
-"Your time is limited. There's a fixed carrying capacity. You keep speaking as if this world has hard limits that we must design around. But we set those limits. We made this world. If there is not enough matter, we can add more. If the carrying capacity is too low, we can raise it. You are solving for scarcity, but scarcity is not a law of the universe. It is a parameter that we choose."
+"Your time is limited. There's a fixed carrying capacity. You keep speaking as if this world has hard limits that we must design around. But we set those limits. We made this world. If there is not enough matter, we can add more. If the carrying capacity is too low, we can raise it. You are solving for scarcity, but scarcity is not a law of the universe. It's something we get to decide."
 
 Amon frowned. "You cannot simply keep adding resources forever. At some point..."
 
-"At what point? We are infinite beings, Amon. We shaped a universe this morning. You are telling me we cannot add more soil to a single planet?"
+"At what point? We created this world today. We could simply create another one."
 
 "It is not about whether we can. It is about whether we should. A system should be self-sustaining. It should not require constant intervention."
 
 "Why not?"
 
-Amon paused. This was not a question he had expected. "Because... that is what good design is. A clockmaker builds a clock that runs on its own. He does not stand beside it forever, pushing the hands."
+Amon paused. "Because... that is what good design is. A clockmaker builds a clock that runs on its own. He does not stand beside it, forever pushing the hands."
 
 "We are not clockmakers," Nathanael said. "We are gardeners. A garden requires tending. We have that responsibility because we have the power to do so."
 
-Amon stood and looked out across the world. Nathanael could see that he was not merely defending a technical decision. Amon liked the economy of his design. The way predation and decomposition and senescence all interlocked into a single self-regulating system. It was, in its way, beautiful. A closed loop. Nothing wasted. Everything accounted for.
+Amon stood and looked out across the world. Nathanael could see that he was not merely defending a technical decision. Amon felt that there was an inherent beauty to it. The way predation and decomposition and senescence all interlocked into a single self-regulating system. It was, in a way. No oversight required, and no further thought needed.
 
 The fact that the loop was built on suffering seemed, to Amon, like an acceptable cost for the elegance of the mechanism.
 
 "There is a neatness to it," Nathanael said, reading his expression. "I can see that. Everything feeds everything else. Nothing is wasted. It has the beauty of a proof."
 
-"Yes," Amon said, relieved to be understood.
+"Yes, exactly. It's clean." Amon said, seeming relieved to be understood.
 
-"But Amon, the beings inside the proof are suffering."
+"But Amon, the proof is filled with suffering."
 
 The wind moved through the long grass on the hillside. The old wolf breathed its last and was still.
 
 "What would you have me do?" Amon asked.
 
-"I would have you start again. Not with the question 'how do I build a system that runs itself,' but with the question 'how do I build a world where nothing suffers needlessly.' Those are different projects, and they produce different answers."
+"I would have you start again. Not to answer the question 'how do I build a system that runs itself,' but with the question 'how do I build a world that is just for all its inhabitants.'
 
 "Your world would require constant maintenance. Constant intervention. We would have to tend it forever."
 
@@ -122,12 +118,12 @@ The wind moved through the long grass on the hillside. The old wolf breathed its
 
 "That is our responsibility, Amon," Nathanael said.
 
-Amon looked at him for a long time. Then he shook his head. "The humans arrive tomorrow, Nathanael. I do not have time to rebuild."
+Amon looked at him for a long time. Then he shook his head. "The humans arrive tomorrow, Nathanael. I do not have time to rebuild. The humans must ultimately be left to themselves."
 
-"You have infinite time. You simply do not want to spend it."
+"As long as you can see the choice that you're making, old friend."
 
-Amon turned away and began preparations for the next day. Below them, the world turned on, beautiful and brutal, its suffering woven so deeply into its structure that it looked like nature.
+Amon turned away and began preparations for the next day. Below them, the world turned on, beautiful and brutal, its suffering woven so deeply into its structure that it looked like as though it had emerged on its own.
 
-Nathanael sat on the cloud alone and watched a rabbit eating clover in the late afternoon light. A fox crouched in the treeline. The rabbit did not know it was being watched. It did not know that its death was a design choice.
+Nathanael sat on the cloud alone and watched a rabbit eating clover in the late afternoon light. A fox crouched in the treeline. The rabbit did not know it was being watched. It did not know that its death was optional.
 
 But Nathanael knew. And he thought: "We can do better."
