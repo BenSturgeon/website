@@ -70,7 +70,7 @@ They watched it die. Nathanael eased its passing raising a hand to its forehead.
 
 He led Nathanael to a hillside where a wolf lay, head on its paws, grey-muzzled and thin. One of the first wolves. Its cells were old, losing coherence. No longer repairing themselves as they once had. It was not sick. It was simply falling apart.
 
-"Senescence," Amon said. "The cells divide to maintain the organism, but each division loses some informationn. Eventually the organism can no longer maintain itself."
+"Senescence," Amon said. "The cells divide to maintain the organism, but each division loses some information. Eventually the organism can no longer maintain itself."
 
 "And why did you not fix this?"
 
@@ -96,7 +96,7 @@ Amon paused. "Because... that is what it means to solve the problem. A true craf
 
 Amon stood and looked out across the world. Nathanael could see that he was not simply defending a design choice. Amon felt that there was an inherent beauty to it, a correctness. The way predation and decomposition and senescence all interlocked into a single self-regulating system. It was elegant. No oversight required, and no further thought needed.
 
-The fact that the loop was built on suffering seemed, to Amon, like an acceptable cost..
+The fact that the loop was built on suffering seemed, to Amon, like an acceptable cost.
 
 "There is a neatness to it," Nathanael said, reading his expression. "I can see that. Everything feeds everything else. Nothing is wasted. It has the beauty of a proof."
 
