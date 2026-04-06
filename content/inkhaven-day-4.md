@@ -52,7 +52,7 @@ Amon was sitting on the edge of a cloud, watching the world turn below. "There w
 
 "And what's happening to that deer?"
 
-"Some of the organisms interact with living tissue. They have changed, evolved to spread and take advantage of its resources. It was not intended, but for it be effective it needed to adapt and change, and some of those changes were difficult to predict."
+"Some of the organisms interact with living tissue. They have changed, evolved to spread and take advantage of its resources. It was not intended, but for it to be effective it needed to adapt and change, and some of those changes were difficult to predict."
 
 Nathanael descended to the surface. The deer was shivering, its breath wheezing. "So this is inevitable?" He said, gesturing at the animal.
 

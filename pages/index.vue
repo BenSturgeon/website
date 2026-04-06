@@ -77,6 +77,11 @@
       >
     </p>
     <p>
+      <nuxt-link to="/inkhaven-day-5" class="link"
+        >Spectator Sport</nuxt-link
+      >
+    </p>
+    <p>
       <nuxt-link to="/inkhaven" class="link"
         >All posts</nuxt-link
       >

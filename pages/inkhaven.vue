@@ -56,6 +56,14 @@ export default {
             "Two angels debate whether paradise requires suffering. One builds elegant systems; the other asks why they can't do better.",
           link: "/inkhaven-day-4",
         },
+        {
+          day: 5,
+          date: "5 April 2026",
+          title: "Spectator Sport",
+          description:
+            "Watching a cybersecurity competition where the most promising minds have become spectators to their own tools.",
+          link: "/inkhaven-day-5",
+        },
       ],
     };
   },
