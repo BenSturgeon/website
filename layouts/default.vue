@@ -116,6 +116,12 @@ h3 {
 
   font-size: 22px;
 }
+.nuxt-content img {
+  max-width: 650px;
+  width: 100%;
+  height: auto;
+}
+
 .nuxt-content p,
 ul {
   margin-block-start: 1em;
