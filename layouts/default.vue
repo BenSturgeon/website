@@ -84,7 +84,7 @@ h4,
 h1 {
   font-weight: 600;
   font-style: normal;
-  font-family: "valkyrie_c4";
+  font-family: "valkyrieC4";
   font-weight: normal;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
@@ -95,7 +95,7 @@ h1 {
 }
 
 .header {
-  font-family: "valkyrie_c4";
+  font-family: "valkyrieC4";
   font-weight: normal;
   font-size: 1.6em;
   margin-block-end: 1em;
@@ -111,7 +111,7 @@ h1 {
 }
 
 h3 {
-  font-family: "valkyrie_c4";
+  font-family: "valkyrieC4";
   font-weight: normal;
 
   font-size: 22px;
