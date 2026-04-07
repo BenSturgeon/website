@@ -12,7 +12,6 @@
         <nuxt-link :to="post.link" class="link post-title">{{
           post.title
         }}</nuxt-link>
-        <p class="post-description">{{ post.description }}</p>
       </div>
     </div>
   </div>
