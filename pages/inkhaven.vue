@@ -64,6 +64,14 @@ export default {
             "Watching a cybersecurity competition where the most promising minds have become spectators to their own tools.",
           link: "/inkhaven-day-5",
         },
+        {
+          day: 6,
+          date: "6 April 2026",
+          title: "How Does an Agent with Multiple Goals Choose a Target?",
+          description:
+            "How a maze-solving RL agent internally represents and switches between multiple sequential goals, discovering spatial gating through negative activations.",
+          link: "/maze-agent",
+        },
       ],
     };
   },

@@ -82,17 +82,17 @@
       >
     </p>
     <p>
+      <nuxt-link to="/maze-agent" class="link"
+        >How Does an Agent with Multiple Goals Choose a Target?</nuxt-link
+      >
+    </p>
+    <p>
       <nuxt-link to="/inkhaven" class="link"
         >All posts</nuxt-link
       >
     </p>
 
     <h2>Posts</h2>
-    <p>
-      <nuxt-link to="maze-agent" class="link"
-        >How Does an Agent with Multiple Goals Choose a Target?</nuxt-link
-      >
-    </p>
     <p>
       <nuxt-link to="wbe" class="link"
         >Whole Brain Emulation as an Anchor for AI Welfare</nuxt-link
