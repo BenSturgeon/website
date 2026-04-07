@@ -1,6 +1,6 @@
 # How Does an Agent with Multiple Goals Choose a Target?
 
-*This post summarises the key findings from my master's thesis at the University of Cape Town, supervised by Jonathan Shock. The full thesis PDF is available [here](https://github.com/BenSturgeon/RL_interpretability_masters/blob/main/notes/paper_files/main.pdf). Code is at [github.com/BenSturgeon/activation-multiplexing-maze-agent](https://github.com/BenSturgeon/activation-multiplexing-maze-agent).*
+*This post summarises the key findings from my master's thesis at the University of Cape Town, supervised by Jonathan Shock. The full thesis PDF is available [here](https://github.com/BenSturgeon/RL_interpretability_masters/blob/main/notes/paper_files/main.pdf). Code is available [here](https://github.com/BenSturgeon/activation-multiplexing-maze-agent).*
 
 ---
 
@@ -183,4 +183,4 @@ This work was carried out at the University of Cape Town under the supervision o
 
 *The full thesis is available as a PDF: [here](https://github.com/BenSturgeon/RL_interpretability_masters/blob/main/notes/paper_files/main.pdf)*
 
-*The experimental code is at: [github.com/BenSturgeon/activation-multiplexing-maze-agent](https://github.com/BenSturgeon/activation-multiplexing-maze-agent)*
+*The experimental code is available [here](https://github.com/BenSturgeon/activation-multiplexing-maze-agent).*
