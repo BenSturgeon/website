@@ -10,6 +10,8 @@ The US seems to have developed a deep mistrust of public spending, and has forgo
 
 From 1945 to 1975, the United States poured money into universities and public works projects, with the GI bill providing money to send the young men returning from war to go to university. This was coupled with strong unions, regulated finance, and a tax rate of 70-91% on the highest earners. This all stemmed from observing the failures of the Great Depression and how this kind of government spending was able to fill gaps that private business simply had no incentive to fill.
 
+![Income tax table for an unmarried, childless man in 1946](/inkhaven-day-1-img-1.png)
+
 Corporate CEOs had very little reason to take enormous salaries because the amount they would take home would get massively cut into. This pressure, along with public programs to keep the unemployed productive and making it straightforward for young Americans to get access to university educations led to the development of the largest middle class of any country in history.
 
 The tragedy is that the United States walked away from the model that made it so successful in the first place. The specific trajectory of what happened are well documented public facts, but the story is horrific in how deliberate it was.
@@ -26,7 +28,9 @@ The impact was dramatic. There were 176 companies with lobbying offices in Washi
 
 This industry led to an entire new media pipeline, and the establishment of a new worldview in the US, focused on small government, trickle down economics, and tax cuts for the very wealthy. This culminated with Ronald Reagan as a political candidate who would implement the most dramatic tax cuts in American history.
 
-The impact of these changes can be seen in the chart below. While the divergence starts in the 1970s with the Vietnam War, exploding oil prices and Richard Nixon introducing wage and price controls, the divergence was locked in by the intentional dismantling of worker protections and limits placed on public spending.
+![The productivity-pay gap](/inkhaven-day-1-img-2.png)
+
+The impact of these changes can be seen in the chart above. While the divergence starts in the 1970s with the Vietnam War, exploding oil prices and Richard Nixon introducing wage and price controls, the divergence was locked in by the intentional dismantling of worker protections and limits placed on public spending.
 
 The top marginal income tax rate went from 70% in 1980 to 50% in 1981 (Economic Recovery Tax Act), then down to 28% by 1986 (Tax Reform Act). The corporate tax rate went from 46% to 34% over the same period. Capital gains tax was cut from 28% to 20%. This was the systematic gutting of one of the most important drivers of shared prosperity over the previous 30 years, and yet that very driver was deliberately miscast as the thing that caused the economic slowdowns of the 1970s. Even the name "Economic Recovery Tax Act" illustrates the narrative they were manufacturing.
 
