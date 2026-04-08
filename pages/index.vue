@@ -87,6 +87,11 @@
       >
     </p>
     <p>
+      <nuxt-link to="/inkhaven-day-7" class="link"
+        >Spend Money to Buy Opportunity</nuxt-link
+      >
+    </p>
+    <p>
       <nuxt-link to="/inkhaven" class="link"
         >All posts</nuxt-link
       >

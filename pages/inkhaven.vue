@@ -71,6 +71,12 @@ export default {
             "How a maze-solving RL agent internally represents and switches between multiple sequential goals, discovering spatial gating through negative activations.",
           link: "/maze-agent",
         },
+        {
+          day: 7,
+          date: "7 April 2026",
+          title: "Spend Money to Buy Opportunity",
+          link: "/inkhaven-day-7",
+        },
       ],
     };
   },
