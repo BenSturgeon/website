@@ -1,6 +1,6 @@
 # How Does an Agent with Multiple Goals Choose a Target?
 
-*This post summarises the key findings from my master's thesis at the University of Cape Town, supervised by Jonathan Shock. The full thesis PDF is available [here](https://github.com/BenSturgeon/RL_interpretability_masters/blob/main/notes/paper_files/main.pdf). Code is available [here](https://github.com/BenSturgeon/activation-multiplexing-maze-agent).*
+*This post summarises the key findings from my master's thesis at the University of Cape Town, supervised by Jonathan Shock. The full thesis PDF is available [here](https://github.com/BenSturgeon/RL_interpretability_masters/blob/main/notes/paper_files/main.pdf). Code can be found [here](https://github.com/BenSturgeon/activation-multiplexing-maze-agent).*
 
 ---
 
@@ -8,11 +8,14 @@
 
 ---
 
+![The core finding: progressive disinhibition](/thesis_figures/disinhibition_paper_figure_v2.png)
+*The core finding: as the agent collects entities, regions of strong negative activation (blue overlay, top row) progressively shift to near-zero. The network marks regions of interest with negative activations and "clears" them as objectives are completed.*
+
 ## Background and motivation
 
 This work builds on [Understanding and Controlling a Maze-Solving Policy Network](https://arxiv.org/abs/2310.08043) by Mini et al., which identified "cheese channels" in a Procgen Maze agent that could be individually ablated to retarget the network. That work led to the subsequent discovery of activation steering being effective in LLMs as well by [Turner et al.](https://arxiv.org/abs/2308.10248).
 
-We wanted to extend this to a setting which involved having multiple targets that the agent would need to choose between, so that we could study the mechanism by which target selection occurs. The Procgen Heist environment requires the agent to collect up to three keys (blue, green, red) in a fixed order to open corresponding locks before reaching a gem.
+We wanted to extend this to a setting which involved having multiple targets that the agent would need to choose between, so that we could study the mechanism by which target selection occurs. The Procgen Heist environment requires the agent to collect up to three keys which are always generated in the same order (blue, green, red) to open corresponding locks before reaching a gem.
 
 Initially we had the goal of studying how the agent selects between these targets, and in practice the answer was less clean than we expected: rather than dynamically comparing targets, the network has a strong bias towards the blue-green-red-gem ordering, deeply embedded in the activation structure. This preference is dominant (~93% blue-first) but is not absolute, and the encoding turns out to be surprisingly redirectable.
 
@@ -20,9 +23,9 @@ Initially we had the goal of studying how the agent selects between these target
 *A simple level with no keys or locks. The agent just navigates to the gem.*
 
 ![A complex Heist level with all three key-lock pairs.](/thesis_figures/heist_environment_example.png)
-*A complex Heist level with all three key-lock pairs. The agent must collect the blue, green, and red keys in order to unlock corresponding doors before reaching the gem.*
+*A complex Heist level with all three key-lock pairs. The agent must always collect the blue key first, then green, and finally red keys in order to unlock corresponding doors before reaching the gem.*
 
-We felt that based on the insights derived from [Understanding and Controlling a Maze-Solving Policy Network](https://arxiv.org/abs/2310.08043) that the approach of deeply analysing a single environment and single model architecture could still yield valuable insights about deep learning despite it not being immediately clear that it would replicate. This lack of replication is still a limitation of this work, and the most critical target for future work.
+We felt that based on the insights derived from [Understanding and Controlling a Maze-Solving Policy Network](https://arxiv.org/abs/2310.08043) that the approach of deeply analysing a single environment and single model architecture could still yield valuable insights about deep learning despite it not being immediately clear that it would replicate to additional environments or architectures. Replicating these findings in other environments and architectures is the most critical target for future work.
 
 ## The model
 
@@ -42,6 +45,9 @@ Our first major experiment used a controlled "parallel rollout" design. We creat
 ![Illustration of the parallel rollout methodology.](/thesis_figures/entity_trajectories_grid.png)
 *Illustration of the parallel rollout methodology. Each row shows the same trajectory but with a different entity at the target location.*
 
+![Illustration of the core finding.](/thesis_figures/activation_encoding_diagram_v4.png)
+*Illustration of the core finding. Each panel shows the same maze with the same agent position, but with a different entity placed at the target location. The bar below each panel shows the mean activation across all spatial positions in a single CNN channel at a single timestep. The same channel is active in all four cases, but at a different level depending on the entity.*
+
 By analysing the mean activations across different channels we observed a surprising phenomenon: there were consistent differences in activation levels depending on the entity at the end of the maze. Rather than observing specific channels having high activations for specific entities, we found shared channels where activation magnitude shifts depending on the entity.
 
 ![Mean activation trajectories for channels with highest inter-entity variance in conv4a.](/thesis_figures/raw_trajectories_35k_conv4a_highest_variance.png)
@@ -57,16 +63,16 @@ To determine whether the patterns of activations were similar despite activation
 This was probably the most surprising result. If activation magnitude encodes target identity, could we simply shift all activations by a constant value to change which entity the agent pursues?
 
 ![The cross maze used for offset steering experiments.](/thesis_figures/expanded_cross_maze_single.png)
-*The cross maze used for offset steering experiments. Entity positions within each arm were randomised across trials.*
+*The cross maze used for offset steering experiments. This maze contains no locks, so the agent can freely reach any entity directly. Entity positions within each arm were randomised across trials.*
 
-We created a four-armed "cross maze" with each entity in a different arm, then swept across offset values applied uniformly to all channels in a layer. To be very explicit about what this means: every neuron in every channel in a given layer would be uniformly increased or decreased by a single scalar value.
+We created a four-armed "cross maze" with no locks and each entity in a different arm, meaning the agent could go directly to any of them. We then swept across offset values applied uniformly to all channels in a layer. To be explicit about what this means: every neuron in every channel in a given layer would be uniformly increased or decreased by a single scalar value.
 
 This turned out to be remarkably effective at redirecting the agent to a different goal, when a wide variety of other steering efforts were vastly less effective at achieving such precise control, including activation steering towards or away from a given entity as performed in [Understanding and Controlling a Maze-Solving Policy Network](https://arxiv.org/abs/2310.08043).
 
 ![Conv4a activation offset steering results.](/thesis_figures/offset_sweep_conv4a_expanded_checkpoint_35001_full_range.png)
 *Conv4a activation offset steering results. At baseline (offset 0), the agent collects the blue key 93% of the time. Positive offsets shift it to green key targeting (94% at offset +4.8). Negative offsets shift towards red key (52% at -5.8). The agent maintains navigational competence throughout.*
 
-At baseline, the agent collects the blue key 93% of the time (consistent with its trained sequential preference). At positive offsets, the agent switches to targeting the green key, peaking at 94% at offset +4.8. At negative offsets, we observe peak red key collection of 52% at offset -5.8. Rates of not collecting any entity increase at the extremes, but overall collection remains fairly high, meaning important navigational capabilities continue to operate.
+At baseline, the agent collects the blue key 93% of the time (consistent with its trained sequential preference). At positive offsets, the agent switches to targeting the green key, peaking at 94% at offset +4.8. At negative offsets, we observe peak red key collection of 52% at offset -5.8. The relative difficulty of steering towards the red key likely reflects the training distribution: since the red key is always the last key collected, the model has the strongest prior against pursuing it first. Rates of not collecting any entity increase at the extremes, but overall collection remains fairly high, meaning important navigational capabilities continue to operate.
 
 This works across all convolutional layers. Conv2a showed particularly fine-grained control, with offsets of just +/-0.3 sufficient for reliable steering, and also demonstrating steering towards the gem and the green key. That said, this steering is somewhat unprincipled in that it is difficult to know in advance which values will produce control towards the various entities.
 
@@ -91,12 +97,12 @@ To understand what was driving these jumps, we analysed the spatial structure of
 
 This explains the steering via activation offset result. Early game stages have strongly negative activations overall, with many objectives and negative regions remaining. Shifting all activations positive mimics the activation patterns of later game stages where a different target must be pursued, causing the agent to switch targets. We are still somewhat uncertain why shifting the values downwards when the blue and green key are present leads to the pursuit of the red key, but it might be that there is some kind of wraparound effect where the signal produced by the values results in surprising targets.
 
-We test this mechanism by using patching in the convolutional layers to clamp activations in regions we do not want the agent to enter to a value of 0. This completely stops the agent from entering those regions. Tests in our cross maze environment reveal 100% retargeting of the agent to regions that are not clamped:
+We test this mechanism by clamping activations to zero in regions we do not want the agent to enter. Importantly, this does not physically block any path; the maze geometry is unchanged and the agent can still walk anywhere. Despite this, the agent reliably avoids the clamped regions because the signal marking them as worth visiting has been removed. Tests in our cross maze environment reveal 100% retargeting of the agent to regions that are not clamped:
 
 ![Steering via spatial clamping.](/thesis_figures/steering_figure.png)
 *Top row: baseline behaviour where the agent moves toward the blue key. Bottom row: after clamping activations to zero in three spatial regions (red dashed boxes on the left, bottom and right), the agent instead moves toward the green key in the remaining unclamped region.*
 
-To verify that this mechanism operates spatially rather than on entity representations, we shuffled entity positions across maze arms and tested whether clamping still redirected the agent. With shuffled positions, clamping a region caused the agent to avoid that direction regardless of which entity occupied it, which we refer to as repulsion. Through backward elimination, we identified a minimal set of 13 out of 32 channels sufficient for position-invariant spatial repulsion. This set reliably prevents the agent from entering any clamped region regardless of which arm of the maze the entity was in. Some channels were particularly important; removing a single channel from the set lowered the successful repulsion rate by up to 25%.
+To verify that this mechanism operates spatially rather than on entity representations, we shuffled entity positions across maze arms and tested whether clamping still redirected the agent. With shuffled positions, clamping a region caused the agent to avoid that direction regardless of which entity occupied it, which we refer to as repulsion. Through backward elimination, we identified a minimal set of 13 out of 32 channels sufficient for 100% position-invariant spatial repulsion. This set reliably prevents the agent from entering any clamped region regardless of which arm of the maze the entity was in. Some channels were particularly important; removing a single channel from the set lowered the successful repulsion rate by up to 25%.
 
 ## Finding 4: Two-phase processing architecture
 
@@ -146,41 +152,22 @@ Instead of learning distinct latents for each entity, we observe broadly the sam
 
 A caveat on the patching results: the black dotted lines in both plots mark the 99.9th percentile of normal activation values. Most successful interventions require values well beyond this range, meaning they exploit structure in the learned weights rather than mimicking the network's natural operating regime. The stronger causal evidence for the magnitude-encoding mechanism comes from the spatial gating experiments (Finding 3), where clamping to zero, a value within normal range, produces 100% retargeting. The patching results complement this by revealing that entity-sensitive structure is preserved in the weights even after SAE decomposition, but they should be understood as probing the geometry of the representation rather than replicating natural network behaviour.
 
-## What are the implications
+## Implications
 
 ### For RL interpretability
 
-The spatial gating mechanism we discovered suggests that within multi-objective settings, networks employ more nuanced encoding strategies than simple feature presence/absence. Rather than dedicating separate channels to each goal, this network uses negative activations to mark spatial regions of interest, and also re-uses channel circuits across different types of entity. It is unclear whether similar strategies will emerge in other architectures, but it seems likely that the strategy of reusing circuits across sequential objectives would be a natural one to adopt across systems that operate in multi-goal settings. For RL interpretability specifically, techniques successful in LLMs or simpler environments may need adaptation in complex, interactive settings ([Bereska & Gavves 2024](https://arxiv.org/abs/2404.04063)).
+In the single-objective Procgen Maze environment, Mini et al. found dedicated "cheese channels" that could be individually ablated to retarget the network. In our multi-objective setting, the network appears to have developed a different approach: it reuses the same channels across entities, with activation levels encoding which entity is the current target. This implies that representational strategies may differ substantially between single-goal and multi-goal environments. For RL interpretability we reflect that there may be unexpected solutions discovered in more complex settings ([Bereska & Gavves 2024](https://arxiv.org/abs/2404.04063)).
 
-### For mechanistic interpretability methodology
+### For mechanistic interpretability
 
-While significant effort was invested in training and analysing SAEs, the primary insights stemmed from tracking how activation levels changed over the course of rollouts. One challenge in making this discovery was that many of the tools typically used in mechanistic interpretability were not designed to expose temporal patterns in activation levels. SAEs and probes successfully identified which channels responded to which entities, but did not reveal how activation levels shifted systematically over the course of a rollout.
+The key mechanistic insight in this work came from analysing how activation levels changed over complete rollouts, rather than examining individual observations in isolation. Many of the standard tools in mechanistic interpretability were not designed to expose this kind of temporal pattern. SAEs and probes successfully identified which channels responded to which entities, but did not reveal how activation levels shifted systematically over time. This suggests that revisiting other "well-understood" models with basic statistical approaches, particularly tracking how activations evolve over the course of sequential tasks, could uncover organisational principles that more sophisticated tools have overlooked.
 
-This also differs from the superposition described by [Elhage et al. 2022](https://transformer-circuits.pub/2022/toy_model/index.html), where features are compressed into overlapping directions because they rarely co-occur in training data. In our case, all entities are simultaneously visible in the maze; the network is not compressing features that don't co-occur, but using spatial gating to track which regions still require attention, with activation magnitude shifting systematically as objectives are completed.
+### Correlation vs causation in activation steering
 
-### For AI safety and control
-
-The precision of offset steering (+/-0.5 at conv2a is sufficient) suggests a lightweight control mechanism requiring no architectural changes or retraining. The two-phase processing architecture provides a practical debugging framework: target convolutional layers for goal selection issues, FC layers for navigation and planning problems. Representations are most malleable early in the network where they first integrate low-level information, providing an optimal control point before entity selection disperses into distributed action plans.
-
-However, this technique exploits correlations between activation levels and game states that emerged from Heist's particular sequential structure. Other models would need to develop analogous correlations for similar interventions to work, and there is no guarantee that they would. Detecting such patterns is straightforward (tracking mean activations over rollouts), but finding exploitable correlations in other settings should not be assumed.
-
-The activation-magnitude patterns we observe in steering experiments appear to be a downstream correlation rather than the causal selection mechanism itself. Because spatial gating produces predictable magnitude shifts as each stage clears (fewer negative regions = higher mean activation), the network has learned deep statistical correlations between overall activation magnitude and game progress. Offset steering exploits these correlations rather than directly manipulating the selection mechanism. This distinction is important: successful steering does not imply that we have identified the causal mechanism, only that we have found an exploitable correlation.
+Offset steering was able to preserve navigation while cleanly redirecting to new targets, using only a single scalar value. The spatial gating mechanism itself is causal. Clamping to zero reliably redirects the agent. But the offset steering technique works by shifting activation magnitudes in a way that mimics different game stages, and we cannot be certain this engages the same pathway the network uses during normal target selection. This presents a broader consideration for activation-based interventions: even when the effect is reliable and the underlying mechanism is real, the intervention may be exploiting a different mechanism than what it would naturally use.
 
 ## Limitations
 
-- We test only on a single environment, due to the lack of other environments that have similar qualities such as the extreme generalisation encouraged by Procgen and the staged multi-goal configuration in Heist. It is also unclear to what extent the spatial gating phenomenon generalises to other architectures.
-- Our training methodology differs from standard practice in using unlimited procedurally generated environments rather than the typical 200-500 fixed set. While this was necessary for successful training with our compressed architecture, it may affect the generalisation of our findings to models trained under standard Procgen protocols.
-- Intervention experiments, by their nature, can push the network into off-distribution activation states. The agent's behaviour under such strong artificial interventions does not represent its typical behaviour. We do not yet have a clear picture of precise circuitry under normal operating conditions.
-- The patching interventions were typically only applied with positive activations, but the mean channel activation analysis reveals that for many channels the activations are mostly negative. This means that a large portion of their activity is not being captured accurately in the interventions.
-- Our approach of simply intervening in every channel with 400 different activation strengths would need to be approached more carefully, due to cost constraints, in larger models.
-- As noted above, the network doesn't dynamically select between targets. Our steering results redirect a fixed encoding rather than revealing a selection mechanism.
-
-## Acknowledgements
-
-This work was carried out at the University of Cape Town under the supervision of Associate Professor Jonathan Shock. I also gratefully acknowledge access to compute and support from the MATS programme.
-
----
-
-*The full thesis is available as a PDF: [here](https://github.com/BenSturgeon/RL_interpretability_masters/blob/main/notes/paper_files/main.pdf)*
-
-*The experimental code is available [here](https://github.com/BenSturgeon/activation-multiplexing-maze-agent).*
+- We test only on a single environment and a compressed architecture. A full-size IMPALA or a transformer might develop a different strategy for the same task. It is unclear to what extent the spatial gating phenomenon generalises, though the representational challenge it addresses, highlighting regions of interest, is common to many goal-directed systems.
+- Most results are from a single checkpoint (35001). While we confirmed the spatial gating pattern persists across checkpoints, the specific channel-level details drift, so some of the finer-grained findings may not hold at other points in training.
+- The offset steering and patching interventions push the network into off-distribution activation states. The spatial gating mechanism itself is directly observable from natural operations, but the steering results should be understood as probing the network's structure rather than replicating its natural behaviour.
