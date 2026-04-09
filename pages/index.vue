@@ -92,6 +92,11 @@
       >
     </p>
     <p>
+      <nuxt-link to="/inkhaven-day-8" class="link"
+        >Revisiting GSM-Symbolic: Do 2026 Frontier Models Still Fail at Confounded Grade School Math?</nuxt-link
+      >
+    </p>
+    <p>
       <nuxt-link to="/inkhaven" class="link"
         >All posts</nuxt-link
       >

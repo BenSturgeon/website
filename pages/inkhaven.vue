@@ -77,6 +77,12 @@ export default {
           title: "Spend Money to Buy Opportunity",
           link: "/inkhaven-day-7",
         },
+        {
+          day: 8,
+          date: "7 April 2026",
+          title: "Revisiting GSM-Symbolic: Do 2026 Frontier Models Still Fail at Confounded Grade School Math?",
+          link: "/inkhaven-day-8",
+        },
       ],
     };
   },
