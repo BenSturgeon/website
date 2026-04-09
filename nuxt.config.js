@@ -21,6 +21,9 @@ export default {
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
+    script: [
+      { src: '//gc.zgo.at/count.js', async: true, 'data-goatcounter': 'https://sturb.goatcounter.com/count' }
+    ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
     ]
