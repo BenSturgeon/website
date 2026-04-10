@@ -97,6 +97,11 @@
       >
     </p>
     <p>
+      <nuxt-link to="/inkhaven-day-9" class="link"
+        >This Is Not Financial Advice</nuxt-link
+      >
+    </p>
+    <p>
       <nuxt-link to="/inkhaven" class="link"
         >All posts</nuxt-link
       >

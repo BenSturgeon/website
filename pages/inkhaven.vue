@@ -83,6 +83,12 @@ export default {
           title: "Revisiting GSM-Symbolic: Do 2026 Frontier Models Still Fail at Confounded Grade School Math?",
           link: "/inkhaven-day-8",
         },
+        {
+          day: 9,
+          date: "9 April 2026",
+          title: "This Is Not Financial Advice",
+          link: "/inkhaven-day-9",
+        },
       ],
     };
   },
