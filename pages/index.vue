@@ -102,6 +102,11 @@
       >
     </p>
     <p>
+      <nuxt-link to="/inkhaven-day-10" class="link"
+        >How South Africa's Electricity Catastrophe Was (Mostly) Fixed</nuxt-link
+      >
+    </p>
+    <p>
       <nuxt-link to="/inkhaven" class="link"
         >All posts</nuxt-link
       >

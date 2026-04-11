@@ -89,6 +89,12 @@ export default {
           title: "This Is Not Financial Advice",
           link: "/inkhaven-day-9",
         },
+        {
+          day: 10,
+          date: "10 April 2026",
+          title: "How South Africa's Electricity Catastrophe Was (Mostly) Fixed",
+          link: "/inkhaven-day-10",
+        },
       ],
     };
   },
