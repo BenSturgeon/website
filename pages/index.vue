@@ -112,6 +112,11 @@
       >
     </p>
     <p>
+      <nuxt-link to="/inkhaven-day-12" class="link"
+        >Is the Adult in the Room with Us Right Now?</nuxt-link
+      >
+    </p>
+    <p>
       <nuxt-link to="/inkhaven" class="link"
         >All posts</nuxt-link
       >

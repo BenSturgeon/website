@@ -101,6 +101,12 @@ export default {
           title: "South African Infrastructure Part 2: How to Make a Problem Disappear",
           link: "/inkhaven-day-11",
         },
+        {
+          day: 12,
+          date: "12 April 2026",
+          title: "Is the Adult in the Room with Us Right Now?",
+          link: "/inkhaven-day-12",
+        },
       ],
     };
   },
