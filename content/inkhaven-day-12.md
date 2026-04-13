@@ -2,34 +2,34 @@
 
 *Day 12 of Inkhaven: 30 Days of Posts*
 
-Recently Anthropic announced they had developed the most powerful AI model in the world. The model was a significant step above current models in critical capabilities, such as coding and expert level reasoning. Most importantly the model demonstrated previously unseen abilities to find zero day vulnerabilities in software.
+Recently Anthropic announced they had developed the most powerful AI model in the world. The model was a significant step above current models in critical capabilities, such as coding and expert-level reasoning. Most importantly, the model demonstrated previously unseen abilities to find zero-day vulnerabilities in software.
 
 ![SWE-bench Pro results](/swe_bench_pro.png)
 
-this means that the model was able to uncover latent vulnerabilities that were sufficient to allow for complete takeover of target systems. The model was orders of magnitude more effective at finding exploitable vulnerabilities than its predecessor opus 4.6.
+This means that the model was able to uncover latent vulnerabilities that were sufficient to allow for complete takeover of target systems. The model was orders of magnitude more effective at finding exploitable vulnerabilities than its predecessor, Opus 4.6.
 
-Reflecting on this development, I wanted to congratulate Anthropic on the way that they handled the situation. They discovered the model was extremely powerful, had this capability which would be extremely dangerous in the wrong hands, and instead of simply releasing it onto the internet they published a model card the length of a novel onto the internet, reporting that the model engaged in scheming, was eval aware, broke out of its sandbox etc.
+Reflecting on this development, I wanted to congratulate Anthropic on the way that they handled the situation. They discovered the model was extremely powerful, had this capability which would be extremely dangerous in the wrong hands, and instead of simply releasing it onto the internet they published a model card the length of a novel onto the internet, reporting that the model engaged in scheming, was eval-aware, broke out of its sandbox, etc.
 
 This feels oddly refreshing in contrast to the behaviour of OpenAI in 2024, in which we got cryptic tweets about various fruit, speculation about Q*, "AGI achieved internally", and general vagueposting from the CEO of the company.
 
-We can't know how OpenAI would have acted if they had unearthed mythos, but it seems somewhat unlikely to me it would have been near complete transparency.
+We can't know how OpenAI would have acted if they had unearthed Mythos, but it seems somewhat unlikely to me it would have been near complete transparency.
 
-For all Anthropic's faults, it is nice to feel like there may in fact be an adult in the room. Or at least an organisation that is capable of adult like behaviour.
+For all Anthropic's faults, it is nice to feel like there may in fact be an adult in the room. Or at least an organisation that is capable of adult-like behaviour.
 
 Amusingly, despite releasing the full model card with its enormous number of details onto the internet, Yann Le Cun was still quick to say that it's just marketing BS. That's when I knew it was time to be concerned.
 
-Gary Marcus boldly stated that the model had simply done something that current open source models could already do, pointing at a report by AISLE showing that models given the code that Mythos had found to contain a vulnerability could also find the vulnerability. This is of course like saying a child could answer advanced physics questions when the answer had been circled for them. This is extremely misleading and plays into the endless media cycle of underhyping AI performance
+Gary Marcus boldly stated that the model had simply done something that current open source models could already do, pointing at a report by AISLE showing that models given the code that Mythos had found to contain a vulnerability could also find the vulnerability. This is of course like saying a child could answer advanced physics questions when the answer had been circled for them. This is extremely misleading and plays into the endless media cycle of underhyping AI performance.
 
-## Getting serious though
+## Getting Serious Though
 
-There is a significant question of how many 0 days was the model able to actually find? This is currently somewhat murky. The headline number is "thousands of zero-day vulnerabilities."
+How many zero-days was the model actually able to find? The headline number is "thousands of zero-day vulnerabilities."
 
-Anthropic's red team ran Mythos across ~7,000 entry points in ~1,000 open source repos. It produced 595 crashes, mostly low severity, and achieved full control flow hijack (complete control of the target, known as a tier 5 exploit) on 10 targets. Opus 4.6 was able to find 0 tier 5 exploits, managing only a single severity 3 crash exploit and 275 low severity crashes.
+Anthropic's red team ran Mythos across ~7,000 entry points in ~1,000 open-source repos. It produced 595 crashes, mostly low severity, and achieved full control-flow hijack (complete control of the target, known as a tier-5 exploit) on 10 targets. Opus 4.6 found zero tier-5 exploits, managing only a single severity-3 crash and 275 low-severity crashes.
 
-This is a qualitative step change in capabilities, with the reliability and severity of the results being particularly alarming. For reference, Project zero is a group of 10-20 of the world's best security researchers, who exclusively find and publish critical severity zero-days. In a typical year they publish between 20-30 such vulnerabilities. It is somewhat unclear exactly how long Mythos was run on the codebases but it was likely on the order of days to weeks.
+This is a qualitative step change in capabilities. For reference, Project Zero is a group of 10–20 of the world's best security researchers who exclusively find and publish critical-severity zero-days. In a typical year they publish 20–30 such vulnerabilities. It is unclear exactly how long Mythos was run on the codebases, but it was likely on the order of days to weeks.
 
-A government with this power would dramatically increase their cyberoffensive capabilities. Perhaps most importantly this would only cost on the order of tens to hundreds of thousands of dollars as opposed to the millions required to staff an elite hacking organisation.
+A government with this power would dramatically increase its cyberoffensive capabilities. This would cost on the order of tens to hundreds of thousands of dollars, as opposed to the millions required to staff an elite hacking organisation.
 
 We have clearly now entered an era where the decisions made by these companies will affect the stability of countries. Transparency is not a complete solution but it is a necessary step, and taking it raises the expectations for all the other labs as well.
 
-The most concerning part is what happens 6-12 months when the open source frontier reaches a similar threshold.
+The most concerning part is what happens 6–12 months from now, when the open-source frontier reaches a similar threshold.
