@@ -2,7 +2,7 @@
 
 *Day 11 of Inkhaven: 30 Days of Posts*
 
-In yesterday's post I looked at how private solar production was mostly responsible for solving load shedding. Today we look at the issue of how electricity is used by municipal governments to cover budgetary shortfalls which leads to the slow accumulation of Eskom's debt.
+In [yesterday's post](/inkhaven-day-10) I looked at how private solar production was mostly responsible for solving load shedding. Today we look at the issue of how electricity is used by municipal governments to cover budgetary shortfalls which leads to the slow accumulation of Eskom's debt.
 
 ## The Ever Renewing Revenue Source
 

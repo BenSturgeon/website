@@ -34,4 +34,4 @@ This is quite a remarkable and encouraging story on its own, but it still leaves
 
 However, the problem of why Eskom is so unable to make progress here hasn't been answered. Trying to understand this question provided some fascinating insights into some of the core dysfunctions in South Africa's governance today.
 
-In Part 2, I'll explore how this leads to an enormous challenge for Eskom.
+In [Part 2](/inkhaven-day-11), I'll explore how this leads to an enormous challenge for Eskom.
