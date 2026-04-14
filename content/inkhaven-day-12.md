@@ -30,6 +30,8 @@ This is a qualitative step change in capabilities. For reference, Project Zero i
 
 A government with this power would dramatically increase its cyberoffensive capabilities. This would cost on the order of tens to hundreds of thousands of dollars, as opposed to the millions required to staff an elite hacking organisation.
 
+Hilariously, the US Department of Defense has destroyed its chances of accessing the most advanced cybersecurity tool ever built by blacklisting Anthropic over the company's refusal to grant the Pentagon unfettered access to Claude for uses like autonomous weapons and mass surveillance.
+
 We have clearly now entered an era where the decisions made by these companies will affect the stability of countries. Transparency is not a complete solution but it is a necessary step, and taking it raises the expectations for all the other labs as well.
 
 The most concerning part is what happens 6–12 months from now, when the open-source frontier reaches a similar threshold.
