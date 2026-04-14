@@ -107,6 +107,12 @@ export default {
           title: "Is the Adult in the Room with Us Right Now?",
           link: "/inkhaven-day-12",
         },
+        {
+          day: 13,
+          date: "13 April 2026",
+          title: "Characterising the Views on Safety from Frontier AI Labs",
+          link: "/inkhaven-day-13",
+        },
       ],
     };
   },
