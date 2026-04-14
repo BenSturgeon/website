@@ -108,7 +108,7 @@
     </p>
     <p>
       <nuxt-link to="/inkhaven-day-11" class="link"
-        >South African Infrastructure Part 2: How to Make a Problem Disappear</nuxt-link
+        >How to Make a Problem Disappear</nuxt-link
       >
     </p>
     <p>

@@ -1,4 +1,4 @@
-# South African Infrastructure Part 2: How to Make a Problem Disappear
+# How to Make a Problem Disappear
 
 *Day 11 of Inkhaven: 30 Days of Posts*
 

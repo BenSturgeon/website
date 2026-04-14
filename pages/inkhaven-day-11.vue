@@ -13,7 +13,7 @@ export default {
   },
   head() {
     return {
-      title: "South African Infrastructure Part 2: How to Make a Problem Disappear",
+      title: "How to Make a Problem Disappear",
       meta: [
         {
           hid: "description",
