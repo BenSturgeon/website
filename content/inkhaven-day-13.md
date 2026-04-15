@@ -1,4 +1,4 @@
-# Characterising the Views on Safety from Frontier AI Labs
+# Characterising the Views on Safety from Frontier AI Labs: Anthropic and DeepMind
 
 *Day 13 of Inkhaven: 30 Days of Posts*
 

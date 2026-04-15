@@ -13,7 +13,7 @@ export default {
   },
   head() {
     return {
-      title: "Characterising the Views on Safety from Frontier AI Labs",
+      title: "Characterising the Views on Safety from Frontier AI Labs: Anthropic and DeepMind",
       meta: [
         {
           hid: "description",

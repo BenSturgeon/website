@@ -110,7 +110,7 @@ export default {
         {
           day: 13,
           date: "13 April 2026",
-          title: "Characterising the Views on Safety from Frontier AI Labs",
+          title: "Characterising the Views on Safety from Frontier AI Labs: Anthropic and DeepMind",
           link: "/inkhaven-day-13",
         },
         {

@@ -118,7 +118,7 @@
     </p>
     <p>
       <nuxt-link to="/inkhaven-day-13" class="link"
-        >Characterising the Views on Safety from Frontier AI Labs</nuxt-link
+        >Characterising the Views on Safety from Frontier AI Labs: Anthropic and DeepMind</nuxt-link
       >
     </p>
     <p>
