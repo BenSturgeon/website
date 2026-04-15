@@ -122,6 +122,11 @@
       >
     </p>
     <p>
+      <nuxt-link to="/inkhaven-day-14" class="link"
+        >Characterising the Views on Safety from Frontier AI Labs: OpenAI</nuxt-link
+      >
+    </p>
+    <p>
       <nuxt-link to="/inkhaven" class="link"
         >All posts</nuxt-link
       >

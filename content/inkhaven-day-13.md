@@ -30,3 +30,5 @@ GDM was founded without the inherent paranoia about the technology that can be f
 ![The Thinking Game](/gdm_thinking_game.png)
 
 Interestingly, Anthropic and Google DeepMind seem to have the closest relationship of any frontier labs, with Alphabet owning 10% of Anthropic's stock and providing an enormous amount of compute to Anthropic via their TPUs for both training and inference. Overall they have a high degree of alignment in their underlying philosophies and approach.
+
+In [Part 2](/inkhaven-day-14), I look at OpenAI.

@@ -113,6 +113,12 @@ export default {
           title: "Characterising the Views on Safety from Frontier AI Labs",
           link: "/inkhaven-day-13",
         },
+        {
+          day: 14,
+          date: "14 April 2026",
+          title: "Characterising the Views on Safety from Frontier AI Labs: OpenAI",
+          link: "/inkhaven-day-14",
+        },
       ],
     };
   },
