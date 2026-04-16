@@ -127,6 +127,11 @@
       >
     </p>
     <p>
+      <nuxt-link to="/inkhaven-day-15" class="link"
+        >A Case for Persona Robustness as a Research Area</nuxt-link
+      >
+    </p>
+    <p>
       <nuxt-link to="/inkhaven" class="link"
         >All posts</nuxt-link
       >

@@ -119,6 +119,12 @@ export default {
           title: "Characterising the Views on Safety from Frontier AI Labs: OpenAI",
           link: "/inkhaven-day-14",
         },
+        {
+          day: 15,
+          date: "15 April 2026",
+          title: "A Case for Persona Robustness as a Research Area",
+          link: "/inkhaven-day-15",
+        },
       ],
     };
   },
