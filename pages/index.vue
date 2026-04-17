@@ -132,6 +132,11 @@
       >
     </p>
     <p>
+      <nuxt-link to="/inkhaven-day-16" class="link"
+        >You Can Just Build Things with Claude Code</nuxt-link
+      >
+    </p>
+    <p>
       <nuxt-link to="/inkhaven" class="link"
         >All posts</nuxt-link
       >

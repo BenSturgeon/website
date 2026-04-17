@@ -125,6 +125,12 @@ export default {
           title: "A Case for Persona Robustness as a Research Area",
           link: "/inkhaven-day-15",
         },
+        {
+          day: 16,
+          date: "16 April 2026",
+          title: "You Can Just Build Things with Claude Code",
+          link: "/inkhaven-day-16",
+        },
       ],
     };
   },
