@@ -17,15 +17,15 @@ Here are some things I've recently automated with Claude Code:
 - **Beeminder accountability for Inkhaven.** A system that checks my website at 5PM each day to verify there's already a post up, and charges me money if not. (Still in progress.)
 - **Daily briefing email.** A system that manages my entire Getting Things Done task list and sends me an automated email at 6AM with everything I need to do that day, plus reminders and messages that help keep me centred and balanced.
 
-To give some additional detail about the last one and why I think it's cool. For context, everything here happens in a copy of my Obsidian vault which is kept in sync on a remote server, so diary entries, task inboxes, and project files are all available.
+The last one is the one I'm most excited about. For context, everything here happens in a copy of my Obsidian vault which is kept in sync on a remote server, so diary entries, task inboxes, and project files are all available.
 
-To stock the task inbox I use an input system where I send my Telegram bot a message or voice note, and it spins up a Claude Code agent which interprets the message in the context of the rest of my GTD task lists and adds it to my inbox. This is useful because it's an ultra-low-friction way to log tasks, and I can be confident that things will be raised to me at the correct time. This is genuinely relieving because worrying that I've let things slip through the cracks is a significant source of anxiety for me.
-
-Each morning a job kicks off on my virtual private server, creates an instance of Claude Code, and gives it a massive prompt (written by Claude Code) containing instructions for what it needs to do. Claude Code spins up, reads my last 10 diary entries for context, looks at all my tasks and projects, and compiles an email with the key next actions, a selection of quotes I've chosen that I need to see as often as possible, and some cute ASCII art it comes up with on the day.
-
-![Daily briefing email](/cc_briefing.png)
+To stock the task inbox I use an input system where I send my Telegram bot a message or voice note, and it then spins up a Claude Code agent which interprets the message in the context of the rest of my GTD task lists and adds it to my inbox. This is useful because it's an ultra-low-friction way to log tasks, and I can be confident that things will be raised to me at the correct time. This is genuinely relieving because worrying that I've let things slip through the cracks is a significant source of anxiety for me.
 
 ![Combined screenshots](/cc_combined.png)
+
+The other half of the system is the briefing itself. Each morning a job kicks off on my virtual private server, creates an instance of Claude Code, and gives it a massive prompt (written by Claude Code) containing instructions for what it needs to do. Claude Code spins up, reads my last 10 diary entries for context, looks at all my tasks and projects, and compiles an email with the key next actions, a selection of quotes I've chosen that I need to see as often as possible, and some cute ASCII art it comes up with on the day.
+
+![Daily briefing email](/cc_briefing.png)
 
 This could all be done more easily with a Nanoclaw instance, but it was a useful exercise to build it with the simplest, cleanest setup possible, and to use actual Claude Code instances for powerful fuzzy-matching operations that can intelligently act without my input by leveraging the tons of context in my Obsidian library. While I'll probably port most of this over to Nanoclaw soon, I'm very excited about the potential of this flexible, intelligent endpoint that Claude Code enables, particularly as Anthropic add things like scheduled triggers which allow code to run on Anthropic's cloud-hosted infrastructure, connected to the necessary context via Google Drive or other solutions.
 
