@@ -51,6 +51,7 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     '@nuxt/content',
+    '@nuxtjs/feed',
     ['@nuxtjs/firebase',
       {
         config: {
@@ -100,5 +101,50 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-  }
+  },
+
+  feed: [
+    {
+      path: '/feed.xml',
+      async create(feed) {
+        feed.options = {
+          title: "Benjamin Sturgeon",
+          link: 'https://benjaminsturgeon.com/feed.xml',
+          description: 'Posts by Benjamin Sturgeon',
+        }
+
+        const fs = require('fs')
+        const path = require('path')
+        const contentDir = path.resolve(__dirname, 'content')
+        const files = fs.readdirSync(contentDir)
+          .filter(f => f.startsWith('inkhaven-day-') && f.endsWith('.md'))
+
+        const posts = files.map(file => {
+          const slug = file.replace(/\.md$/, '')
+          const day = parseInt(slug.replace('inkhaven-day-', ''), 10)
+          const raw = fs.readFileSync(path.join(contentDir, file), 'utf-8')
+          const titleMatch = raw.match(/^#\s+(.+)$/m)
+          const title = titleMatch ? titleMatch[1].trim() : slug
+          const stat = fs.statSync(path.join(contentDir, file))
+          return { slug, day, title, content: raw, date: stat.mtime }
+        })
+
+        posts.sort((a, b) => b.day - a.day)
+
+        for (const post of posts) {
+          feed.addItem({
+            title: post.title,
+            id: `https://benjaminsturgeon.com/${post.slug}`,
+            link: `https://benjaminsturgeon.com/${post.slug}`,
+            date: post.date,
+            description: post.content.slice(0, 300),
+            content: post.content,
+            author: [{ name: 'Benjamin Sturgeon' }],
+          })
+        }
+      },
+      cacheTime: 1000 * 60 * 15,
+      type: 'rss2',
+    },
+  ],
 }
