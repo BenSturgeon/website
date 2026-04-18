@@ -2,9 +2,7 @@
 
 *Day 17 of Inkhaven: 30 Days of Posts*
 
-Written very quickly during Inkhaven.
-
-**Epistemic status**: Quick writeup from Inkhaven, preliminary findings. The familiarity hypothesis is consistent with the data but not established. The probe's training signal is narrower than "deception" in general — see methods.
+Written very quickly during Inkhaven. Findings preliminary.
 
 ## TL;DR
 
