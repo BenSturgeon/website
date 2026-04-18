@@ -2,6 +2,8 @@
 
 A walkthrough of the system I built to capture tasks via Telegram voice notes and receive a curated daily briefing email — all powered by Claude Code agents running on a remote server. Code is open-source: [**BenSturgeon/gtd-agent**](https://github.com/BenSturgeon/gtd-agent).
 
+*I wrote about this briefly in [You Can Just Build Things with Claude Code](/inkhaven-day-16). This is the detailed version.*
+
 > I built this system primarily by talking to Claude Code — most of the scripts, prompts, and architecture came out of a few long interactive sessions. This post was also written by Claude Code, which had the full context of the repo and our conversations; I've edited it. The repo is the result; this post is the reasoning.
 
 ## The problem
