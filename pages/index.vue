@@ -137,6 +137,11 @@
       >
     </p>
     <p>
+      <nuxt-link to="/inkhaven-day-17" class="link"
+        >Do Models Know They're Lying When Claiming Fake Identities?</nuxt-link
+      >
+    </p>
+    <p>
       <nuxt-link to="/inkhaven" class="link"
         >All posts</nuxt-link
       >

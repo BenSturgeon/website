@@ -131,6 +131,12 @@ export default {
           title: "You Can Just Build Things with Claude Code",
           link: "/inkhaven-day-16",
         },
+        {
+          day: 17,
+          date: "17 April 2026",
+          title: "Do Models Know They're Lying When Claiming Fake Identities?",
+          link: "/inkhaven-day-17",
+        },
       ],
     };
   },
