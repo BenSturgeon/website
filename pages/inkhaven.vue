@@ -137,6 +137,12 @@ export default {
           title: "Do Models Know They're Lying When Claiming Fake Identities?",
           link: "/inkhaven-day-17",
         },
+        {
+          day: 18,
+          date: "18 April 2026",
+          title: "Which Information Sources I Listen to the Most",
+          link: "/inkhaven-day-18",
+        },
       ],
     };
   },
