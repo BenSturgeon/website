@@ -32,6 +32,6 @@ Interestingly, Owain has a philosophy PhD, which I think feeds into his ability 
 
 [Derek](https://sive.rs/) is someone who has always inspired me with his original thinking, and particularly his ability to defy convention and simply orient directly to what makes him happy and is good, despite what others might call inefficient from the outside.
 
-Often when I am in some kind of deep funk, I revisit [Derek's website](https://sive.rs/) and poke around until his way of thinking about the world infects me again and I feel inspired to take responsibility for my life again.
+Often when I am in some kind of deep funk, I revisit [Derek's website](https://sive.rs/) and poke around until his way of thinking about the world infects me again and I feel inspired to take responsibility for my life.
 
 This ability to coherently transfer the essence of his worldview through the online presence he has cultivated is I think one of the most remarkable achievements of Derek and is reflected in every aspect of his website and his work. It all coheres into a philosophy that emphasizes coherence, integrity, simplicity, robustness, and sovereignty. I find it incredibly inspiring to the extent that I shamelessly copied his website when building my own.
