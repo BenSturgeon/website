@@ -14,9 +14,9 @@ I think about [Chris Olah's](https://colah.github.io/) work at least a handful o
 
 I find [Tim's](https://tim.blog/) attitude to breaking down problems in life into approachable, solvable chunks has created a fundamental mechanism in my mind that alters how I approach everything. Understanding that my own attitudes to things are malleable, and that almost everything can be overcome by finding ways around the problem in ways that most people just haven't thought of is a mental move that has served me extremely well. Tim's approach is to go around the problem rather than through it, but he still takes the work seriously, truly solving the problems he takes on, and then trying to put those solutions into as many hands as he can.
 
-## Anna Solomon
+## Anna Salamon
 
-Anna's approach to thinking about people and how they work and her appreciation for holding nuance in complexity even when it is unpleasant are really remarkable to me. Seeing her incredible humbleness and willingness to help and provide value to others without a second thought is so inspiring to me. Watching her take out the trash when it's getting too full, when she runs the company that owns the building we are in, reminds me that the world is full of opportunities to be of service.
+[Anna's](https://www.lesswrong.com/users/annasalamon) approach to thinking about people and how they work and her appreciation for holding nuance in complexity even when it is unpleasant are really remarkable to me. Seeing her incredible humbleness and willingness to help and provide value to others without a second thought is so inspiring to me. Watching her take out the trash when it's getting too full, when she runs the company that owns the building we are in, reminds me that the world is full of opportunities to be of service.
 
 ## Masaaki Yuasa
 
