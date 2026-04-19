@@ -143,6 +143,12 @@ export default {
           title: "Which Information Sources I Listen to the Most",
           link: "/inkhaven-day-18",
         },
+        {
+          day: 19,
+          date: "19 April 2026",
+          title: "People That Inspire Me",
+          link: "/inkhaven-day-19",
+        },
       ],
     };
   },

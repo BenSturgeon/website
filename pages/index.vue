@@ -147,6 +147,11 @@
       >
     </p>
     <p>
+      <nuxt-link to="/inkhaven-day-19" class="link"
+        >People That Inspire Me</nuxt-link
+      >
+    </p>
+    <p>
       <nuxt-link to="/inkhaven" class="link"
         >All posts</nuxt-link
       >
