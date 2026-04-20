@@ -57,6 +57,11 @@
 
     <h2>Posts</h2>
     <p>
+      <nuxt-link to="gtd-agent" class="link"
+        >Building an Automated GTD System with Claude Code and Telegram</nuxt-link
+      >
+    </p>
+    <p>
       <nuxt-link to="wbe" class="link"
         >Whole Brain Emulation as an Anchor for AI Welfare</nuxt-link
       >
