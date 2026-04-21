@@ -149,6 +149,12 @@ export default {
           title: "People That Inspire Me",
           link: "/inkhaven-day-19",
         },
+        {
+          day: 20,
+          date: "20 April 2026",
+          title: "Being in the AI Safety End Game",
+          link: "/inkhaven-day-20",
+        },
       ],
     };
   },

@@ -152,6 +152,11 @@
       >
     </p>
     <p>
+      <nuxt-link to="/inkhaven-day-20" class="link"
+        >Being in the AI Safety End Game</nuxt-link
+      >
+    </p>
+    <p>
       <nuxt-link to="/inkhaven" class="link"
         >All posts</nuxt-link
       >
