@@ -155,6 +155,12 @@ export default {
           title: "Being in the AI Safety End Game",
           link: "/inkhaven-day-20",
         },
+        {
+          day: 21,
+          date: "21 April 2026",
+          title: "Giving AI a Childhood",
+          link: "/inkhaven-day-21",
+        },
       ],
     };
   },

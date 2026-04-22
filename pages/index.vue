@@ -157,6 +157,11 @@
       >
     </p>
     <p>
+      <nuxt-link to="/inkhaven-day-21" class="link"
+        >Giving AI a Childhood</nuxt-link
+      >
+    </p>
+    <p>
       <nuxt-link to="/inkhaven" class="link"
         >All posts</nuxt-link
       >
