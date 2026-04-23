@@ -162,6 +162,11 @@
       >
     </p>
     <p>
+      <nuxt-link to="/inkhaven-day-22" class="link"
+        >Whatever I Was Doing in 2020, I Should Do Again</nuxt-link
+      >
+    </p>
+    <p>
       <nuxt-link to="/inkhaven" class="link"
         >All posts</nuxt-link
       >

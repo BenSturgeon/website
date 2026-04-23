@@ -161,6 +161,12 @@ export default {
           title: "Giving AI a Childhood",
           link: "/inkhaven-day-21",
         },
+        {
+          day: 22,
+          date: "22 April 2026",
+          title: "Whatever I Was Doing in 2020, I Should Do Again",
+          link: "/inkhaven-day-22",
+        },
       ],
     };
   },
