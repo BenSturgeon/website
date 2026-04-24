@@ -8,7 +8,7 @@
 
     <div class="post-list">
       <div class="post-entry" v-for="post in posts" :key="post.day">
-        <p class="post-date">{{ post.date }}</p>
+        <p class="post-date">Day {{ post.day }} · {{ post.date }}</p>
         <nuxt-link :to="post.link" class="link post-title">{{
           post.title
         }}</nuxt-link>
