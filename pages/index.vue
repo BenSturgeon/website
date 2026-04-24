@@ -57,11 +57,6 @@
 
     <h2><nuxt-link to="/inkhaven" class="link">Inkhaven: 30 Days of Posts</nuxt-link></h2>
     <p>
-      <nuxt-link to="/inkhaven-day-18" class="link"
-        >Which Information Sources I Listen to the Most</nuxt-link
-      >
-    </p>
-    <p>
       <nuxt-link to="/inkhaven-day-19" class="link"
         >People That Inspire Me</nuxt-link
       >
@@ -79,6 +74,11 @@
     <p>
       <nuxt-link to="/inkhaven-day-22" class="link"
         >Whatever I Was Doing in 2020, I Should Do Again</nuxt-link
+      >
+    </p>
+    <p>
+      <nuxt-link to="/inkhaven-day-23" class="link"
+        >Whatever I Was Doing in 2020, I Should Do Again (Continued)</nuxt-link
       >
     </p>
     <p>

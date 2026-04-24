@@ -167,6 +167,12 @@ export default {
           title: "Whatever I Was Doing in 2020, I Should Do Again",
           link: "/inkhaven-day-22",
         },
+        {
+          day: 23,
+          date: "23 April 2026",
+          title: "Whatever I Was Doing in 2020, I Should Do Again (Continued)",
+          link: "/inkhaven-day-23",
+        },
       ],
     };
   },
