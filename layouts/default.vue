@@ -122,6 +122,21 @@ h3 {
   height: auto;
 }
 
+.nuxt-content blockquote {
+  border-left: 3px solid rgb(0 230 255 / 60%);
+  padding: 0.25em 0 0.25em 1.25em;
+  margin: 1.25em 0;
+  max-width: 650px;
+  color: rgb(200, 200, 200);
+  font-style: italic;
+}
+
+.nuxt-content blockquote p {
+  font-family: "Georgia", serif;
+  font-size: 20px;
+  margin: 0.5em 0;
+}
+
 .nuxt-content p,
 ul {
   margin-block-start: 1em;
