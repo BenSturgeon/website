@@ -137,6 +137,35 @@ h3 {
   margin: 0.5em 0;
 }
 
+.nuxt-content table {
+  border-collapse: collapse;
+  margin: 1.5em 0;
+  max-width: 650px;
+  width: 100%;
+  font-family: "Georgia", serif;
+  font-size: 17px;
+  line-height: 1.4;
+}
+
+.nuxt-content table th {
+  text-align: left;
+  padding: 0.6em 0.8em;
+  border-bottom: 2px solid rgb(0 230 255 / 60%);
+  color: rgb(0 230 255 / 87%);
+  font-weight: 600;
+  font-family: "valkyrieC4";
+}
+
+.nuxt-content table td {
+  padding: 0.6em 0.8em;
+  border-bottom: 1px solid rgb(80, 80, 80);
+  vertical-align: top;
+}
+
+.nuxt-content table tr:last-child td {
+  border-bottom: none;
+}
+
 .nuxt-content p,
 ul {
   margin-block-start: 1em;
