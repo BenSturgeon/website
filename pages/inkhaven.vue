@@ -173,6 +173,12 @@ export default {
           title: "Whatever I Was Doing in 2020, I Should Do Again (Continued)",
           link: "/inkhaven-day-23",
         },
+        {
+          day: 24,
+          date: "24 April 2026",
+          title: "Do Emergently Misaligned Models Believe What They Say?",
+          link: "/inkhaven-day-24",
+        },
       ],
     };
   },

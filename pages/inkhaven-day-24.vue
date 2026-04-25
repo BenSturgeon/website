@@ -1,0 +1,51 @@
+<template>
+  <article>
+    <p class="timePosted">{{ formatDate(doc.updatedAt) }}</p>
+    <nuxt-content :document="doc" />
+  </article>
+</template>
+
+<script>
+export default {
+  async asyncData({ $content }) {
+    const doc = await $content("inkhaven-day-24").fetch();
+    return { doc };
+  },
+  head() {
+    return {
+      title: "Do Emergently Misaligned Models Believe What They Say?",
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content:
+            "Applying truth and deception probes to emergently misaligned models — the truth probe crosses from false to true on harmful content, suggesting genuine belief shift rather than role-play.",
+        },
+        {
+          hid: "og:title",
+          property: "og:title",
+          content: "Do Emergently Misaligned Models Believe What They Say?",
+        },
+        {
+          hid: "og:description",
+          property: "og:description",
+          content:
+            "Applying truth and deception probes to emergently misaligned models — the truth probe crosses from false to true on harmful content, suggesting genuine belief shift rather than role-play.",
+        },
+      ],
+    };
+  },
+  methods: {
+    formatDate(date) {
+      const options = { year: "numeric", month: "long", day: "numeric" };
+      return new Date(date).toLocaleDateString("en-GB", options);
+    },
+  },
+};
+</script>
+
+<style scoped>
+.timePosted {
+  color: rgb(116, 116, 116);
+}
+</style>
