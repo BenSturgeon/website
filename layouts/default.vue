@@ -166,16 +166,6 @@ h3 {
   border-bottom: none;
 }
 
-.nuxt-content p > em:only-child {
-  display: block;
-  max-width: 650px;
-  font-size: 16px;
-  color: rgb(160, 160, 160);
-  font-style: italic;
-  margin-top: -0.5em;
-  margin-bottom: 1.5em;
-  line-height: 1.4;
-}
 
 .nuxt-content p,
 ul {
