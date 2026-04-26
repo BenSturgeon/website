@@ -2,7 +2,11 @@
 
 *Day 25 of Inkhaven: 30 Days of Posts*
 
-I recently explored an interesting thought experiment about the Culture while talking with Max Harms.
+I recently explored an interesting thought experiment about the Culture while talking with Max Harms. Specifically Max argued that the Culture is far from a perfect utopia, while I felt that it was way better than almost anything else I could think of.
+
+![The Culture](/the_culture.avif)
+
+One of the key cruxes in the discussion was that the Culture fails to preserve any meaningful method of honouring their ancestors or cultural traditions. It all collapses into individual utility maximisation.
 
 Given that there are people who feel a strong compulsion to preserve their culture, how does that translate to the state of civilisations in the far future, say thousands of years from now? In my mind it seems ridiculous that in this future civilisation, people will continue to honour ancient traditions such as Japanese folk dancing, but I think there is a decent chance such traditions do continue to exist because of the local incentives people have to protect them.
 
@@ -40,6 +44,6 @@ This frame gives us a way to reconcile the tensions of some of our earlier examp
 
 We don't have any clear answers on her obligation to take up the task, and I think this is reflected in reality. We acknowledge that it's a hard thing and a burden, and I admire people who do it anyway for this reason.
 
-In considering the conflict inherent in the Culture, Max is correct in pointing out one of its failure modes, which is its homogeneity. The Culture *is* boring. If everyone is just having sex, producing drugs from their brain, and making art all the time, there is a lot of value being left on the table in the modes of experience they could be having. There is a sense (at least when I read them) that Culture citizens who transfer into totally non-humanoid alien bodies are doing something better than the average Culture citizen, which is likely picking up on this intuition.
+The crux Max kept returning to was the Culture's homogeneity, and he's right. The Culture *is* boring. If everyone is just having sex, producing drugs from their brain, and making art all the time, there is a lot of value being left on the table in the modes of experience they could be having. There is a sense (at least when I read them) that Culture citizens who transfer into totally non-humanoid alien bodies are doing something better than the average Culture citizen, which is likely picking up on this intuition.
 
-And finally we can see that there is something real being lost when China erodes its less mainstream cultures. The language practices in various parts of China aren't just language, but the vessel in which culture and unique experiences are transmitted. In particular, the pastoralist communities who speak Mongolian as their primary language uniquely carry this heritage in that they maintain ancient ways of life in their entirety. Crushing those vessels prunes those branches and they will be unlikely to ever be explored again.
+And finally we can see that there is something real being lost when China erodes its less mainstream cultures. The language practices in various parts of China aren't just language, but the vessel in which culture and unique experiences are transmitted. In particular, the pastoralist communities who speak Mongolian as their primary language uniquely carry this heritage in that they maintain ancient ways of life in their entirety. Crushing those vessels prunes those branches before they can branch further.
