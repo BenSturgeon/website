@@ -20,7 +20,7 @@ On the other hand, this seems very unlikely because there is a natural tendency 
 
 We can think of this as a kind of "great smoothing out", where cultural differences present a natural friction, that become silent casualties of Progress.
 
-![Medical mechanica from FLCL](/medical_mechanica.webp)
+![Medical mechanica from FLCL](/medical_mechanica.png)
 
 *Medical mechanica from FLCL, a gigantic clothes iron ready to smooth the world into a gigantic flat factory floor when the right circumstances arrive.*
 
