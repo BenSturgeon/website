@@ -179,6 +179,12 @@ export default {
           title: "Do Emergently Misaligned Models Believe What They Say?",
           link: "/inkhaven-day-24",
         },
+        {
+          day: 25,
+          date: "25 April 2026",
+          title: "The Great Smoothing Out",
+          link: "/inkhaven-day-25",
+        },
       ],
     };
   },

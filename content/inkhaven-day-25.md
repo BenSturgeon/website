@@ -1,0 +1,45 @@
+# The Great Smoothing Out
+
+*Day 25 of Inkhaven: 30 Days of Posts*
+
+I recently explored an interesting thought experiment about the Culture while talking with Max Harms.
+
+Given that there are people who feel a strong compulsion to preserve their culture, how does that translate to the state of civilisations in the far future, say thousands of years from now. In my mind it seems ridiculous that in this future civilisation, people will continue to honour ancient traditions such as Japanese folk dancing for example, but I think that there is a decent chance that such traditions do continue to exist because of the local incentives people have to protect them.
+
+Let's imagine an extreme version of this and work backwards to consider what seems good.
+
+In this extreme: descendants of these traditions continue to perform them in large numbers despite lacking the social and environmental context that created them, merely because they feel there is a value in protecting them. Let's zoom in on the local context to imagine how this occurs. A girl, Yuri, in a small Japanese town is the granddaughter of the previous shrine maiden, and her only sister has expressed a strong disinterest in learning the traditions from their grandmother. As a result Yuri has a strong obligation to keep the tradition going because otherwise it'll die. The question is whether it's wrong to force her to keep it going, or whether she should be free to pursue her desires.
+
+In one sense it's a tragedy for the tradition to die, but on the other hand this is just a natural part of history. We can look back and see that history is littered with examples of traditions and practices that are no longer practiced because they no longer serve a purpose. Given that, it seems somewhat perverse that we would selectively favour the traditions that we happen to inherit today, simply because we have enough excess labour that we can indulge in them despite them not serving the purpose for which they were created.
+
+On the other hand, as a society we see it as a tragedy for that tradition to be lost, and we would want someone to continue that tradition if it was in danger of being lost. Hence in Japan, some money is provided by the government to pursue practices of significant cultural value to preserve them and share them for the enjoyment of modern Japanese people.
+
+Given that we get to choose many things to care about multiple competing priorities simultaneously, and that people genuinely care about these things, this seems like quite a good use of time and effort. A more cynical position would be that, given the extreme suffering that exists elsewhere in the world, a healthy triage of expenditures would allocate them just enough resources to keep them from disappearing entirely.
+
+On the other hand, this seems very unlikely because there is a natural tendency for a push towards the global maxima. The rate of language loss today is the highest it has ever been, and seems to be increasing. People in remote areas of China for example have a reasonable incentive to learn Mandarin or English for economic reasons, and understand that their opportunities are naturally limited by sticking to local dialects. With each generation the number of speakers of that language will decrease.
+
+We can think of this as a kind of "great smoothing out", where cultural differences present a natural friction, that become silent casualties of Progress.
+
+![Medical mechanica from FLCL](/medical_mechanica.webp)
+
+*Medical mechanica from FLCL, a gigantic clothes iron ready to smooth the world into a gigantic flat factory floor when the right circumstances arrive.*
+
+An interesting contemporary example is a new law that was just passed in China called the "Law on Promoting Ethnic Unity and Progress" containing provisions around the use of Mandarin over local ethnic languages in schools in China, essentially ensuring that while the other languages can persist, the Mandarin must be given prominence relative to them.
+
+While not explicitly mentioning Tibet, Mongolia, or Uyghur, it clearly targets these regions, which have resisted efforts to switch to Mandarin. In 2020 Inner Mongolia saw significant protests when the party reduced Mongolian-medium instruction in elementary schools, replacing them with Mandarin texts. This led to widespread protests and boycotts, followed by a purge of ethnic Mongolian Party officials who were viewed as insufficiently aligned. A PEN America / Southern Mongolian Human Rights Information Center report found that more than 80% of Mongolian-language websites in China have been censored or banned.
+
+In contrast to the natural economic gravity leading people to abandon their native languages, this is a much more intense effort to dismantle the existing cultural differences in these places. The law uses the word "zhulao" which is typically used in the metallurgical sense of forging or casting, with the intent to create a unified alloy of peoples across China with a shared language and cultural identity. In fairness to the Chinese, it is still more permissive than France's historical treatment of regional languages such as Breton, Occitan, and Basque, where the state pursued aggressive suppression for over a century.
+
+Interestingly, yesterday Will MacAskill released a new draft about an idea called the ["Saturation View"](https://www.forethought.org/research/the-saturation-view) which puts forward an idea that gives a clean framework for thinking about this problem.
+
+Total utilitarianism recommends something he describes as "tiling the universe with hedonium", where hedonium is a compute substrate simulating an enormous number of digital minds which have been optimised to produce the optimal pleasant experience, forever. Naturally such a vision produces a sense of dissatisfaction, that something is missing from such a view, like a symphony composed of a single note repeated over and over.
+
+The saturation view argues that the optimal configuration of the universe is to explore the full space of possible minds and experiences. The variance between minds is considered virtuous, with minds that are more dissimilar from the mean providing additional marginal utility. To compare this with our own life, if offered the opportunity to experience the same wonderful experience over and over again for one's entire life or to experience a dizzying array of different wonderful experiences, most people would choose the variety option. He treats this as a brute intuition without arguing for why, so I'll offer one: the relationality between experiences is critical in giving them framing and meaning, where the contrast itself provides values. The words in a sentence require spaces between them, and variety between words in order to create appreciable meaning.
+
+This frame gives us a way to reconcile the tensions of some of our earlier examples. For Yuri, who is faced with walking away from her traditions, it is clearer precisely what we are losing, which is that the space that might be illuminated by such practices will be lost. This is the answer to the perversity of privileging cultural inheritances we receive today. In the same way that we don't mourn people who died 1000 years ago, but do mourn those lost today, it makes sense for us to act to preserve those unique practices given that we actually have the resources to preserve them.
+
+We don't have any clear answers on her obligation to take up the task, and I think this is reflected in reality. We acknowledge that it's a hard thing and a burden, and I admire people who do it anyway for this reason.
+
+In considering the conflict inherent in the Culture, Max is correct in pointing out one of its failure modes, which is its homogeneity. The Culture *is* boring. If everyone is just having sex, producing drugs from their brain, and making art all the time, there is a lot of value being left on the table in terms of the modes of experience they could be having. There is a sense (at least when I read them) that Culture citizens who transfer into totally non-humanoid alien bodies are doing something better than the average Culture citizen, which is likely picking up on this intuition.
+
+And finally we can see that there is something real being lost when China erodes its less mainstream cultures. The language practices in various parts of China aren't just language, but the vessel in which culture and unique experiences are transmitted. In particular, the pastoralist communities who speak Mongolian as their primary language uniquely carry this heritage in that they maintain ancient ways of life in their entirety. Crushing those vessels prunes those branches before they can branch further.

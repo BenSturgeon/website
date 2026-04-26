@@ -57,11 +57,6 @@
 
     <h2><nuxt-link to="/inkhaven" class="link">Inkhaven: 30 Days of Posts</nuxt-link></h2>
     <p>
-      <nuxt-link to="/inkhaven-day-20" class="link"
-        >Being in the AI Safety End Game</nuxt-link
-      >
-    </p>
-    <p>
       <nuxt-link to="/inkhaven-day-21" class="link"
         >Giving AI a Childhood</nuxt-link
       >
@@ -79,6 +74,11 @@
     <p>
       <nuxt-link to="/inkhaven-day-24" class="link"
         >Do Emergently Misaligned Models Believe What They Say?</nuxt-link
+      >
+    </p>
+    <p>
+      <nuxt-link to="/inkhaven-day-25" class="link"
+        >The Great Smoothing Out</nuxt-link
       >
     </p>
     <p>
