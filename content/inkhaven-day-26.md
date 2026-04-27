@@ -21,12 +21,12 @@ The UK and Ireland together lost 0.42 points over the same period, so all 6 of t
 
 Helliwell, founding editor of the World Happiness Report, describes the observed drop: "I have never seen such an extreme change. This has all happened in the last 10 years, and it's mainly in the English-language countries. There isn't this drop in the world as a whole."
 
-The natural question is what's driving the divergence in English-speaking countries. The obvious first hypothesis is early smartphone adoption and rapid social media uptake, both of which have been linked to youth loneliness and mental health decline in other research. But Quebec gives us a clean test case for whether that's the whole story.
+The natural question is, what is going on with the English speaking countries? One plausible hypothesis is simply the purchasing of smart phones early, and rapid adoption of social media. This has been shown elsewhere to have significant impacts on people's loneliness and mental health.
 
 The 2025 World Happiness Report found that if Quebec were ranked separately from the rest of Canada, it would come 6th out of 147 countries. Canada at large ranks 18th. The under-25 happiness slide that hit the rest of Canada is dramatically smaller in Quebec, across multiple metrics from the Canadian Happiness Report 2024 (McCanny et al, University of Toronto). Anglophones living inside Quebec track the rest-of-Canada anglophone average more closely than they track their francophone neighbours.
 
 This experiment very cleanly separates many confounding factors such as governance, approach to lockdowns, economic circumstances, education, and social media access. It seems there genuinely is something specific about the use of English. Helliwell's interpretation, given to Global News in December 2025: "It isn't just access to social media and internet use. It's how it's used and what you hear and see on it, and what kind of linkages you get to others through it."
 
-Quebec's cheaper tuition and better daycare might be proposed as resilience factors, but those policies have been stable for decades and don't match the sudden post-2010 timing of the divergence. Something specific about being inside the anglophone media ecosystem appears to be doing real work.
+Other explanations such as quebec's cheaper tuition and better access to daycare also don't seem like good explanations, considering they have existed for decades, and thus don't match the sudden decline in 2010.
 
-In tomorrow's post I will explore some explanations that don't seem to fit what we see, and some more speculative suggestions about what might be driving the wellbeing decline in anglophone countries.
+In tomorrow's post I will explore some explanations that don't seem to fit what we see, and some more speculative suggestions about what might be the cause behind the sadness within anglophone countries.
