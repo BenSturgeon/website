@@ -57,11 +57,6 @@
 
     <h2><nuxt-link to="/inkhaven" class="link">Inkhaven: 30 Days of Posts</nuxt-link></h2>
     <p>
-      <nuxt-link to="/inkhaven-day-21" class="link"
-        >Giving AI a Childhood</nuxt-link
-      >
-    </p>
-    <p>
       <nuxt-link to="/inkhaven-day-22" class="link"
         >Whatever I Was Doing in 2020, I Should Do Again</nuxt-link
       >
@@ -79,6 +74,11 @@
     <p>
       <nuxt-link to="/inkhaven-day-25" class="link"
         >The Great Smoothing Out</nuxt-link
+      >
+    </p>
+    <p>
+      <nuxt-link to="/inkhaven-day-26" class="link"
+        >Why Are Anglophone Countries Unhappier Than Their European Counterparts?</nuxt-link
       >
     </p>
     <p>

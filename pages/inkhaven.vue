@@ -185,6 +185,12 @@ export default {
           title: "The Great Smoothing Out",
           link: "/inkhaven-day-25",
         },
+        {
+          day: 26,
+          date: "26 April 2026",
+          title: "Why Are Anglophone Countries Unhappier Than Their European Counterparts?",
+          link: "/inkhaven-day-26",
+        },
       ],
     };
   },
