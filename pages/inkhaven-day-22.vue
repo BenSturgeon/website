@@ -32,6 +32,21 @@ export default {
           content:
             "A data-driven analysis of 567 journal entries over six years, and what stands out about 2020 as a particularly alive period.",
         },
+        {
+          hid: "og:image",
+          property: "og:image",
+          content: "https://www.benjaminsturgeon.com/journal_scores_chart.png",
+        },
+        {
+          hid: "twitter:image",
+          name: "twitter:image",
+          content: "https://www.benjaminsturgeon.com/journal_scores_chart.png",
+        },
+        {
+          hid: "twitter:card",
+          name: "twitter:card",
+          content: "summary_large_image",
+        },
       ],
     };
   },

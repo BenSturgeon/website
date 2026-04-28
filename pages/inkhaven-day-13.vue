@@ -32,6 +32,21 @@ export default {
           content:
             "Considering the characters of AI lab leaders and what their communications reveal about their approaches to safety.",
         },
+        {
+          hid: "og:image",
+          property: "og:image",
+          content: "https://www.benjaminsturgeon.com/meet-claude-opus-4-1-v0-fbm6zpm7b8hf1.webp",
+        },
+        {
+          hid: "twitter:image",
+          name: "twitter:image",
+          content: "https://www.benjaminsturgeon.com/meet-claude-opus-4-1-v0-fbm6zpm7b8hf1.webp",
+        },
+        {
+          hid: "twitter:card",
+          name: "twitter:card",
+          content: "summary_large_image",
+        },
       ],
     };
   },

@@ -32,6 +32,21 @@ export default {
           content:
             "On Yuri the shrine maiden, the Culture's homogeneity, China's language laws, and Will MacAskill's saturation view as a frame for what's lost when cultures get smoothed out.",
         },
+        {
+          hid: "og:image",
+          property: "og:image",
+          content: "https://www.benjaminsturgeon.com/the_culture.avif",
+        },
+        {
+          hid: "twitter:image",
+          name: "twitter:image",
+          content: "https://www.benjaminsturgeon.com/the_culture.avif",
+        },
+        {
+          hid: "twitter:card",
+          name: "twitter:card",
+          content: "summary_large_image",
+        },
       ],
     };
   },

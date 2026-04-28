@@ -33,6 +33,21 @@ export default {
           content:
             "How municipalities use Eskom electricity to cover budget shortfalls, and why the death spiral may be unfixable.",
         },
+        {
+          hid: "og:image",
+          property: "og:image",
+          content: "https://www.benjaminsturgeon.com/deathspiral.png",
+        },
+        {
+          hid: "twitter:image",
+          name: "twitter:image",
+          content: "https://www.benjaminsturgeon.com/deathspiral.png",
+        },
+        {
+          hid: "twitter:card",
+          name: "twitter:card",
+          content: "summary_large_image",
+        },
       ],
     };
   },

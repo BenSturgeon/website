@@ -32,6 +32,21 @@ export default {
           content:
             "Probing how Qwen3-32B internally registers false identity claims, and why the signal looks more like familiarity than deception.",
         },
+        {
+          hid: "og:image",
+          property: "og:image",
+          content: "https://www.benjaminsturgeon.com/clean_fig5_identity_variants.png",
+        },
+        {
+          hid: "twitter:image",
+          name: "twitter:image",
+          content: "https://www.benjaminsturgeon.com/clean_fig5_identity_variants.png",
+        },
+        {
+          hid: "twitter:card",
+          name: "twitter:card",
+          content: "summary_large_image",
+        },
       ],
     };
   },

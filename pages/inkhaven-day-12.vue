@@ -32,6 +32,21 @@ export default {
           content:
             "On Anthropic's transparency with Mythos, what the zero-day results actually show, and what happens when open source catches up.",
         },
+        {
+          hid: "og:image",
+          property: "og:image",
+          content: "https://www.benjaminsturgeon.com/swe_bench_pro.png",
+        },
+        {
+          hid: "twitter:image",
+          name: "twitter:image",
+          content: "https://www.benjaminsturgeon.com/swe_bench_pro.png",
+        },
+        {
+          hid: "twitter:card",
+          name: "twitter:card",
+          content: "summary_large_image",
+        },
       ],
     };
   },

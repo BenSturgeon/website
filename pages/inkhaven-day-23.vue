@@ -32,6 +32,21 @@ export default {
           content:
             "A follow-up on the journal analysis — how language collapsed from commitment to uncertainty, and what the paragraph data says about focus and happiness.",
         },
+        {
+          hid: "og:image",
+          property: "og:image",
+          content: "https://www.benjaminsturgeon.com/paragraph_length_chart.png",
+        },
+        {
+          hid: "twitter:image",
+          name: "twitter:image",
+          content: "https://www.benjaminsturgeon.com/paragraph_length_chart.png",
+        },
+        {
+          hid: "twitter:card",
+          name: "twitter:card",
+          content: "summary_large_image",
+        },
       ],
     };
   },

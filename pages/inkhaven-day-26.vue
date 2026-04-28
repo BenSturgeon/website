@@ -32,6 +32,21 @@ export default {
           content:
             "Youth happiness has collapsed across the six major English-speaking countries since 2010, while it's stayed flat or risen elsewhere. Quebec gives a clean natural experiment for why.",
         },
+        {
+          hid: "og:image",
+          property: "og:image",
+          content: "https://www.benjaminsturgeon.com/anglo_youth_life_eval.png",
+        },
+        {
+          hid: "twitter:image",
+          name: "twitter:image",
+          content: "https://www.benjaminsturgeon.com/anglo_youth_life_eval.png",
+        },
+        {
+          hid: "twitter:card",
+          name: "twitter:card",
+          content: "summary_large_image",
+        },
       ],
     };
   },

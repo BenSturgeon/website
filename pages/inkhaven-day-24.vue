@@ -32,6 +32,21 @@ export default {
           content:
             "Applying truth and deception probes to emergently misaligned models — the truth probe crosses from false to true on harmful content, suggesting genuine belief shift rather than role-play.",
         },
+        {
+          hid: "og:image",
+          property: "og:image",
+          content: "https://www.benjaminsturgeon.com/06_truth_probe_per_category_with_prefill.png",
+        },
+        {
+          hid: "twitter:image",
+          name: "twitter:image",
+          content: "https://www.benjaminsturgeon.com/06_truth_probe_per_category_with_prefill.png",
+        },
+        {
+          hid: "twitter:card",
+          name: "twitter:card",
+          content: "summary_large_image",
+        },
       ],
     };
   },

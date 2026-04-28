@@ -33,6 +33,21 @@ export default {
           content:
             "Tracing how a single memo by a corporate lawyer led to the systematic dismantling of the policies that built America's middle class.",
         },
+        {
+          hid: "og:image",
+          property: "og:image",
+          content: "https://www.benjaminsturgeon.com/inkhaven-day-1-img-1.png",
+        },
+        {
+          hid: "twitter:image",
+          name: "twitter:image",
+          content: "https://www.benjaminsturgeon.com/inkhaven-day-1-img-1.png",
+        },
+        {
+          hid: "twitter:card",
+          name: "twitter:card",
+          content: "summary_large_image",
+        },
       ],
     };
   },

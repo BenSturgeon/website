@@ -33,6 +33,21 @@ export default {
           content:
             "We investigated how a maze-solving RL agent internally represents and switches between multiple sequential goals, discovering spatial gating through negative activations.",
         },
+        {
+          hid: "og:image",
+          property: "og:image",
+          content: "https://www.benjaminsturgeon.com/thesis_figures/disinhibition_paper_figure_v2.png",
+        },
+        {
+          hid: "twitter:image",
+          name: "twitter:image",
+          content: "https://www.benjaminsturgeon.com/thesis_figures/disinhibition_paper_figure_v2.png",
+        },
+        {
+          hid: "twitter:card",
+          name: "twitter:card",
+          content: "summary_large_image",
+        },
       ],
     };
   },

@@ -32,6 +32,21 @@ export default {
           content:
             "On orienting towards relationships with people rather than abstract impact or research output, and what shifts when you do.",
         },
+        {
+          hid: "og:image",
+          property: "og:image",
+          content: "https://www.benjaminsturgeon.com/human_in_robot.jpg",
+        },
+        {
+          hid: "twitter:image",
+          name: "twitter:image",
+          content: "https://www.benjaminsturgeon.com/human_in_robot.jpg",
+        },
+        {
+          hid: "twitter:card",
+          name: "twitter:card",
+          content: "summary_large_image",
+        },
       ],
     };
   },
