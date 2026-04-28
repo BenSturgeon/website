@@ -31,7 +31,3 @@ The same failure mode exists in social situations. Optimising for the abstract r
 What's more, it feels extremely liberating for social situations to actually go in with this framing. How can I improve my relationships with people here that I care about? How can I find new ways to connect with the people here in this room such that I want to invest even more? How can I make the people here feel safer and more connected with each other?
 
 The times when I am awkward or thoughtless are when I am most concerned about myself. How to get someone to like me, how to make myself look good, how to get away from these bad feelings. When framed more as how do I make my relationships with other people here better, it becomes simpler. Just say hi to people. Feel warmth towards them. Be vulnerable about how I feel. Be honest, curious, and helpful. Figure out how we might connect more in future, think of plans for things we can do together. All of these are much more downstream of the goal of making our relationship better than other goals.
-
----
-
-The commitment I am making is to put my relationships with people above other commitments or temptations.
