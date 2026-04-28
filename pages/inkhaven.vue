@@ -191,6 +191,12 @@ export default {
           title: "Why Are Anglophone Countries Unhappier Than Their European Counterparts?",
           link: "/inkhaven-day-26",
         },
+        {
+          day: 27,
+          date: "27 April 2026",
+          title: "From Output to Connection",
+          link: "/inkhaven-day-27",
+        },
       ],
     };
   },
