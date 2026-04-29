@@ -24,17 +24,19 @@ The researchers set up mothers and two-year-old babies in a room filled with lot
 
 While the mothers were out of the room the babies would get upset and often start crying. The mothers would return after a few minutes and reunite with the baby. The researchers were surprised to observe three distinct patterns in the babies.
 
-- The first group got upset, but quickly recovered when the mother was back and ready to keep playing with the toys. This group was classified as secure.
-- The second group would be very upset and remain flustered and upset for a long time, often holding the mother and not letting go or staying close to her afterwards. This group was classified as anxious.
+- The first group cried, but quickly recovered when the mother was back and ready to keep playing with the toys. This group was classified as secure.
+- The second group would be very upset and remain flustered and be inconsolable for a long time, often holding the mother and not letting go or staying close to her afterwards. This group was classified as anxious.
 - The third group basically turned away and shut the mother out, acting angry rather than upset. Interestingly in this group, the babies' heart rates were roughly as elevated as in the other groups, but they pretended to be unaffected. This group was classified as avoidant.
 
 These roughly correspond to categories that continue to exist in adults. The studies linking the baby categories to adult attachment styles tended to find small to moderate effects, but in general the patterns of behaviour, however they might change, are still useful frameworks for understanding adult relationships.
+
+It's also worth noting that the research on adult attachment styles is softer than what we have for infants, and shouldn't be treated as settled science. It provides some useful frameworks and mental models.
 
 ## Against common takes in attachment theory discussions
 
 There is a lot to say about attachment theory, but much of it has been said elsewhere already. I highly recommend exploring one of the resources I linked above. Relationships are genuinely one of the most important areas in life, and attachment theory is the kind of frame that can make them noticeably easier to navigate.
 
-Here are some takes I've developed from discussing attachment theory:
+Here are some takes I've developed from discussing attachment theory with people in the wild. These are less from my personal experience, and arise from the contrast in the literature with what people tend to say.
 
 - "Oh but what about people who have the disorganised (anxious-avoidant) style?"
     - Typically the disorganised style is around 5 to 15% of the population on self-report instruments. But the clinically significant version, where someone has the full disorganized pattern rooted in early trauma, is much rarer.
@@ -46,7 +48,5 @@ Here are some takes I've developed from discussing attachment theory:
 - "I used to be x, but now I think I am secure"
     - Earned secure is definitely a real thing. On average someone has around a 1 in 4 chance over a four-year period of going from insecure to secure, though it can also go the other way.
     - One of the best ways to become more secure is to date a secure person who can model secure behaviours, though therapy and other secure relationships can also help.
-
-## Concluding thoughts
 
 While I am still learning and understanding these concepts, they have already meaningfully changed how I handle relationships.
