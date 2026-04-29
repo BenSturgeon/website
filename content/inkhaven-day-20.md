@@ -1,4 +1,4 @@
-# Are We in the AI Safety End Game?
+# Is It Still Possible to Contribute to Technical AI Safety Research from Outside the Labs?
 
 *Day 20 of Inkhaven: 30 Days of Posts*
 

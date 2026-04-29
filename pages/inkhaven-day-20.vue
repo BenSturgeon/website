@@ -13,7 +13,7 @@ export default {
   },
   head() {
     return {
-      title: "Are We in the AI Safety End Game?",
+      title: "Is It Still Possible to Contribute to Technical AI Safety Research from Outside the Labs?",
       meta: [
         {
           hid: "description",
@@ -24,7 +24,7 @@ export default {
         {
           hid: "og:title",
           property: "og:title",
-          content: "Are We in the AI Safety End Game?",
+          content: "Is It Still Possible to Contribute to Technical AI Safety Research from Outside the Labs?",
         },
         {
           hid: "og:description",
