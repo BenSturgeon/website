@@ -13,7 +13,7 @@ export default {
   },
   head() {
     return {
-      title: "Being in the AI Safety End Game",
+      title: "Are We in the AI Safety End Game?",
       meta: [
         {
           hid: "description",
@@ -24,7 +24,7 @@ export default {
         {
           hid: "og:title",
           property: "og:title",
-          content: "Being in the AI Safety End Game",
+          content: "Are We in the AI Safety End Game?",
         },
         {
           hid: "og:description",

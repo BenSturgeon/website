@@ -1,4 +1,4 @@
-# Being in the AI Safety End Game
+# Are We in the AI Safety End Game?
 
 *Day 20 of Inkhaven: 30 Days of Posts*
 
@@ -16,7 +16,7 @@ However, this feeling may actually be misleading. In the Mythos system card, it 
 4. Emotion and persona vector analysis
 5. Causal steering experiments using contrastive steering vectors
 
-Of these, AVs and emotion and persona vectors were developed relatively recently, with the emotion steering vector paper only being released on the 9th of April 2026, and the activation oracles paper on which AVs were based being released on the 17th of December 2025.
+Of these, AVs and emotion and persona vectors were developed relatively recently, which makes them particularly instructive here. The emotion steering vector paper was only released on the 9th of April 2026, and the activation oracles paper on which AVs were based was released on the 17th of December 2025.
 
 These techniques are not perfect, but they do give us highly load-bearing information about potential dangers that the models pose. Most strikingly, the activation verbalizers were used to detect cover-up behaviour in the model (Section 4.5.4). In an episode in which the model exploited the creation of another agent to escalate privileges beyond what it had been given, AV explanations on code used to cover its tracks showed "cleanup to avoid detection" and "the malicious config explicitly mirrors the original's [core] section to avoid detection."
 
@@ -41,4 +41,10 @@ Secondly, there is a lot to be learned about how to actually make a significant 
 
 Thirdly, the timescale from external publication to deployment at the frontier was extremely short. This should be a positive signal to those feeling hopeless about their work. The right technique or discovery might be applied to the most advanced models within weeks of being shared.
 
-Originally upon the release of the Claude Mythos Preview model card, I felt like it was becoming impossible to be a "live player" in making AI go well. Upon further inspection, it became apparent that doing very impactful work is in fact still possible, and can happen outside the labs. Unfortunately, replicating Owain Evans' research taste is not a straightforward piece of advice. If I had to identify the most critical piece of Owain's practice, it would be working backwards from real quirks in LLM behaviour, digging into them until they yield coherent theories, and then using those theories to surface safety failure modes.
+Originally upon the release of the Claude Mythos Preview model card, I felt like it was becoming impossible to be a "live player" in making AI go well. Upon further inspection, it became apparent that doing very impactful work is in fact still possible, and can happen outside the labs. Unfortunately, replicating Owain Evans' research taste is not a straightforward piece of advice. Given that it has been unusually successful in producing an outsized impact it seems worth unpacking the intuitions behind it as much as we can.
+
+At a recent talk, Owain discussed the theory of change behind their research agenda. My interpretation of what he said is that the goal was to understand the problem extremely deeply. This means developing a science of how models learn and understand at a deeper level and what safety relevant phenomena occur as a result of the nature of LLMs. This allows us to surface issues we'd otherwise miss.
+
+Additionally, directly testing the failure modes of current alignment and safety techniques in modern LLM training can inform both the researchers developing the models about these issues so they can fix them, as well as informing the public that the models are currently not fully safe, or that these failure modes exist.
+
+From what I can observe of the work itself, there seem to be at least two main methods for arriving at research questions. One involves working backwards from real quirks in LLM behaviour, digging into them until they yield coherent theories, and then using those theories to surface safety failure modes. This seems likely to have been the way that the out-of-context reasoning work emerged. The other method is by asking what would be upstream of specific safety failure modes such as the transmission of misalignment between models, as seems likely in the subliminal learning paper where preferences were transmitted via distillation.
