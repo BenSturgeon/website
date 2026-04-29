@@ -197,6 +197,12 @@ export default {
           title: "From Output to Connection",
           link: "/inkhaven-day-27",
         },
+        {
+          day: 28,
+          date: "28 April 2026",
+          title: "Attachment Theory Is Extremely Cool and Useful",
+          link: "/inkhaven-day-28",
+        },
       ],
     };
   },
