@@ -13,7 +13,7 @@ export default {
   },
   head() {
     return {
-      title: "Is It Still Possible to Contribute to Technical AI Safety Research from Outside the Labs?",
+      title: "Is It Too Late to Do AI Safety from Outside the Labs?",
       meta: [
         {
           hid: "description",
@@ -24,7 +24,7 @@ export default {
         {
           hid: "og:title",
           property: "og:title",
-          content: "Is It Still Possible to Contribute to Technical AI Safety Research from Outside the Labs?",
+          content: "Is It Too Late to Do AI Safety from Outside the Labs?",
         },
         {
           hid: "og:description",

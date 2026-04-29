@@ -152,7 +152,7 @@ export default {
         {
           day: 20,
           date: "20 April 2026",
-          title: "Is It Still Possible to Contribute to Technical AI Safety Research from Outside the Labs?",
+          title: "Is It Too Late to Do AI Safety from Outside the Labs?",
           link: "/inkhaven-day-20",
         },
         {

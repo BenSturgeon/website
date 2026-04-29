@@ -1,4 +1,4 @@
-# Is It Still Possible to Contribute to Technical AI Safety Research from Outside the Labs?
+# Is It Too Late to Do AI Safety from Outside the Labs?
 
 *Day 20 of Inkhaven: 30 Days of Posts*
 
