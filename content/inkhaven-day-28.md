@@ -10,7 +10,7 @@ The single most useful insight came from [*Attached*](https://www.amazon.com/Att
 
 When applying this to my situation, the hardest part was saying what I was afraid of. Telling her I worried she might lose attraction to me if I didn't play hard to get. And telling her that I wanted to do a better job of considering her needs in the context of us both having an anxious attachment style.
 
-It was also really helpful for telling her that I was interested in the first place. We just had a conversation about it where I said that I did feel interested in her, that I wouldn't be around for that long as I was leaving again for a job soon, but that I wanted to make things work in the short term. I had never thought one could lay it all out so clearly in a single conversation, but it turns out doing so makes things far easier.
+It was also really helpful for telling her that I was interested in the first place. We just had a conversation about it where I said that I did feel interested in her, that I wouldn't be around for that long as I was leaving the city soon, but that I wanted to make things work in the short term. I had never thought one could lay it all out so clearly in a single conversation, but it turns out doing so makes things far easier.
 
 ## What is attachment theory and how can it help you?
 
