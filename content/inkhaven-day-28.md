@@ -6,7 +6,7 @@ I recently stumbled across attachment theory and I think it's one of the most fu
 
 Part of engaging with this has shown me that many takes in the wild are only loosely connected to the research. Many of people's claims are based on anecdata and don't link back to particular studies.
 
-My knowledge mostly stems from reading the book *Attached* by Amir Levine and Rachel Heller, and watching this great [YouTube lecture by Dr K](https://www.youtube.com/watch?v=4Ohd8lYDoeM). I think the lecture covers the most important parts but the book contains lots of useful and practical advice too. This post is partially a review of the book, but mostly just functions as an explainer and endorsement of attachment theory.
+My knowledge mostly stems from reading the book [*Attached*](https://www.amazon.com/Attached-Science-Adult-Attachment-YouFind/dp/1585429139) by Amir Levine and Rachel Heller, and watching this great [YouTube lecture by Dr K](https://www.youtube.com/watch?v=FAzsArI7QJo&t=7610s). I think the lecture covers the most important parts but the book contains lots of useful and practical advice too. This post is partially a review of the book, but mostly just functions as an explainer and endorsement of attachment theory.
 
 The most useful of this advice is given right at the end of the book and focuses on how to do Effective Communication. To not keep you waiting, the key idea behind effective communication is that for people with certain attachment styles (particularly those with an anxious attachment style), a huge amount of pain can be avoided by simply stating what they need or asking questions to understand the other person's position. Often these uncertainties might lead to them imagining all sorts of worst case scenarios, and simply by saying what their confusion is they can put an end to much of this narrativising.
 
@@ -36,7 +36,7 @@ It is easy to get distracted by misinformation or distractors if you aren't care
     - Typically the disorganised style is around 5 to 15% of the population on self-report instruments. But the clinically significant version, where someone has the full disorganized pattern rooted in early trauma, is much rarer.
         - The rough breakdown is something like: 56% secure, 19% anxious, 25% avoidant.
 - "Surely not, there can't be so many secures!"
-- In practice it's less common to meet a single secure because they pair up and drop out, meaning the dating pool probably skews insecure especially as one gets older.
+    - In practice it's less common to meet a single secure because they pair up and drop out, meaning the dating pool probably skews insecure especially as one gets older.
 - "Oh I'm not that anxious so I probably don't have an anxious attachment style".
     - It's important to realise that the specific names, while important, do not mean that you are literally anxious or literally avoidant all the time. These behaviours show up specifically in the context of important relationships and in particular are activated by circumstances with the relationship that cause insecurity. These vary depending on attachment style.
 - "Hmmm I used to be x, but now I think I am secure"
