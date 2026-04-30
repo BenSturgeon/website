@@ -203,6 +203,12 @@ export default {
           title: "Attachment Theory Is Extremely Cool and Useful",
           link: "/inkhaven-day-28",
         },
+        {
+          day: 29,
+          date: "29 April 2026",
+          title: "Q&A",
+          link: "/inkhaven-day-29",
+        },
       ],
     };
   },
