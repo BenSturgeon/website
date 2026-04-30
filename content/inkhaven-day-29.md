@@ -14,7 +14,7 @@ They would say based on my activities during Inkhaven: doing technical empirical
 
 **3. What "I would be ___ if only ___" story have you been telling yourself, and what would you have to face if you admitted it isn't true?**
 
-I think the story that I would be a researcher if only I worked harder, or something along these lines. Or if only I was smarter I could be more successful. I think it's an easy trap to chalk up outcomes to these really hard-to-change qualities. In practice I think it comes down much more to specific choices and also being committed to specific values and causes.
+I think the story that I would be a better researcher if only I worked harder, or something along these lines. Or if only I was smarter I could be more successful. I think it's an easy trap to chalk up outcomes to these really hard-to-change qualities. In practice I think it comes down much more to specific choices and also being committed to specific values and causes.
 
 It's also important to think about what projects to invest in, and to think a great deal about what the downstream consequences will be. It's also the investments I didn't make. Not taking that time off to go and think hard about things for a long time. Not taking that leap of faith earlier. Not applying to that thing. Those are things that are much easier to change, but require real thinking and commitment and effort in that moment.
 
