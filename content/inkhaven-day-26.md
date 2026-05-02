@@ -28,5 +28,3 @@ The 2025 World Happiness Report found that if Quebec were ranked separately from
 This experiment very cleanly separates many confounding factors such as governance, approach to lockdowns, economic circumstances, education, and social media access. It seems there genuinely is something specific about the use of English. Helliwell's interpretation, given to Global News in December 2025: "It isn't just access to social media and internet use. It's how it's used and what you hear and see on it, and what kind of linkages you get to others through it."
 
 Other explanations such as quebec's cheaper tuition and better access to daycare also don't seem like good explanations, considering they have existed for decades, and thus don't match the sudden decline in 2010.
-
-In tomorrow's post I will explore some explanations that don't seem to fit what we see, and some more speculative suggestions about what might be the cause behind the sadness within anglophone countries.
