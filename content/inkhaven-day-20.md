@@ -1,4 +1,4 @@
-# Is It Too Late to Do AI Safety from Outside the Labs?
+# Contributing to Technical Research in the AI Safety End Game
 
 *Day 20 of Inkhaven: 30 Days of Posts*
 

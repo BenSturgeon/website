@@ -13,7 +13,7 @@ export default {
   },
   head() {
     return {
-      title: "Is It Too Late to Do AI Safety from Outside the Labs?",
+      title: "Contributing to Technical Research in the AI Safety End Game",
       meta: [
         {
           hid: "description",
@@ -24,7 +24,7 @@ export default {
         {
           hid: "og:title",
           property: "og:title",
-          content: "Is It Too Late to Do AI Safety from Outside the Labs?",
+          content: "Contributing to Technical Research in the AI Safety End Game",
         },
         {
           hid: "og:description",
