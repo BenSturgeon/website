@@ -209,6 +209,12 @@ export default {
           title: "Q&A",
           link: "/inkhaven-day-29",
         },
+        {
+          day: 30,
+          date: "1 May 2026",
+          title: "Linkpost: Sanity-Checking 'Incompressible Knowledge Probes'",
+          link: "/inkhaven-day-30",
+        },
       ],
     };
   },

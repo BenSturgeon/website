@@ -57,11 +57,6 @@
 
     <h2><nuxt-link to="/inkhaven" class="link">Inkhaven: 30 Days of Posts</nuxt-link></h2>
     <p>
-      <nuxt-link to="/inkhaven-day-25" class="link"
-        >The Great Smoothing Out</nuxt-link
-      >
-    </p>
-    <p>
       <nuxt-link to="/inkhaven-day-26" class="link"
         >Why Are Anglophone Countries Unhappier Than Their European Counterparts?</nuxt-link
       >
@@ -79,6 +74,11 @@
     <p>
       <nuxt-link to="/inkhaven-day-29" class="link"
         >Q&amp;A</nuxt-link
+      >
+    </p>
+    <p>
+      <nuxt-link to="/inkhaven-day-30" class="link"
+        >Linkpost: Sanity-Checking 'Incompressible Knowledge Probes'</nuxt-link
       >
     </p>
     <p>
