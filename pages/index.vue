@@ -100,9 +100,6 @@
     </p>
 
     <p>
-      <nuxt-link to="learn" class="link">Learning how to learn</nuxt-link>
-    </p>
-    <p>
       <nuxt-link to="Agency" class="link"
         >Why pursue conceptions of agency for AI safety</nuxt-link
       >
