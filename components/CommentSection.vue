@@ -1,11 +1,11 @@
 <template>
   <v-container>
-    <v-row class="sep">
+    <div class="sep">
       <h1 class="header">Questions, thoughts?</h1>
       <p v-if="personal" class="personalNote">
         No comments here, this page is too personal.
       </p>
-    </v-row>
+    </div>
 
     <div v-if="!personal" class="commentList" aria-live="polite">
       <p v-if="sortedComments.length === 0" class="emptyNote">

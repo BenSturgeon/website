@@ -241,6 +241,8 @@ export default {
 
 .commentFormPanel {
   max-width: 620px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 1rem;
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 10px;
