@@ -25,7 +25,7 @@
               solo
               flat
               dense
-              hide-details="auto"
+              :hide-details="!triedSubmit ? true : 'auto'"
               :rules="[rules.required('Name'), rules.maxLength(60)]"
             ></v-text-field>
           </v-col>
@@ -39,7 +39,7 @@
               solo
               flat
               dense
-              hide-details="auto"
+              :hide-details="!triedSubmit ? true : 'auto'"
               type="email"
               :rules="[rules.required('Email'), rules.email, rules.maxLength(120)]"
             ></v-text-field>
@@ -55,7 +55,7 @@
           solo
           flat
           no-resize
-          hide-details="auto"
+          :hide-details="!triedSubmit ? true : 'auto'"
           :rules="[
             rules.required('Comment'),
             rules.minLength(3),
@@ -112,6 +112,7 @@ export default {
       submitting: false,
       statusMessage: "",
       statusType: "",
+      triedSubmit: false,
       rules: {
         cleanComment: (v) =>
           this.hasCleanComment(v) ||
@@ -158,9 +159,11 @@ export default {
     async writeUserData() {
       this.statusMessage = "";
       this.statusType = "";
+      this.triedSubmit = true;
 
       if (this.website) {
         this.$refs.form.reset();
+        this.triedSubmit = false;
         return;
       }
 
@@ -181,6 +184,7 @@ export default {
           dateTime: dateTime,
         });
         this.$refs.form.reset();
+        this.triedSubmit = false;
         this.statusType = "success";
         this.statusMessage = "Thanks. Your comment has been submitted.";
       } catch (error) {
@@ -239,8 +243,6 @@ export default {
 
 .commentFormPanel {
   max-width: 620px;
-  margin-left: auto;
-  margin-right: auto;
   padding: 1rem;
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 10px;
