@@ -90,7 +90,14 @@ export default {
 
 <style scoped>
 .sep {
-  padding-top: 20px;
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+::v-deep .v-list,
+::v-deep .v-list-item {
+  background: transparent !important;
 }
 
 .commentTitle {
@@ -111,7 +118,8 @@ export default {
   padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 12px;
-  color: rgb(0, 0, 0) !important;
+  color: rgb(225, 225, 225) !important;
+  white-space: normal;
 }
 
 .header {
