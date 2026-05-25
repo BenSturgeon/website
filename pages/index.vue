@@ -3,28 +3,25 @@
     <h2>Me in 10 seconds</h2>
 
     <p>
-      I'm a researcher working on AI safety, with a focus on understanding
-      agency, both in AI systems, and to understand how powerful AI will impact
-      human agency. Currently pursuing an MPhil in Applied Mathematics at the
-      University of Cape Town with
-      <a href="https://shocklab.net/" target="_blank" rel="noopener noreferrer"
-        >Jonathan Shock</a
-      >, where I'm studying the application of mechanistic interpretability to
-      deeply understand RL models. I also have strong interest in evaluative
-      frameworks and creative ways that we can learn to measure and understand
-      LLMs.
+      I'm a MATS fellow, currently doing a MATS extension working with David
+      Africa, Sid Black and more recently Daniel Tan. I'm also collaborating
+      with the Center on Long-Term Risk through their summer fellowship
+      programme. I'm living somewhere between London, the Bay Area and Cape
+      Town, but mostly London at the moment. I'm interested in personas and
+      understanding phenomena like emergent misalignment in large language
+      models, as well as how models think about themselves.
     </p>
 
     <p>
-      I am also passionate about teaching and growing the field of AI safety,
-      and co-founded
+      I'm also strongly involved with
       <a
         href="https://www.aisafetyct.com/"
         target="_blank"
         rel="noopener noreferrer"
-        >AI Safety Cape Town</a
+        >AI Safety South Africa</a
       >
-      to contribute to that effort.
+      as a strategic director, trying to grow the AI safety community in Cape
+      Town.
     </p>
 
     <p>
