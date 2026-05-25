@@ -2,6 +2,8 @@
   <article>
     <p class="timePosted">{{ formatDate(doc.updatedAt) }}</p>
     <nuxt-content :document="doc" />
+    <CommentSection />
+    <CommentForm />
   </article>
 </template>
 
