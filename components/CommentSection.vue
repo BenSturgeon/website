@@ -1,27 +1,30 @@
 <template>
   <v-container>
     <v-row class="sep">
-      <H1 class="header">Questions, thoughts?</H1>
-      <p v-if="personal">No comments here, this page is too personal.</p>
+      <h1 class="header">Questions, thoughts?</h1>
+      <p v-if="personal" class="personalNote">
+        No comments here, this page is too personal.
+      </p>
     </v-row>
 
-    <v-row>
-      <v-list>
-        <v-list-item v-for="(item, index) in sortedComments" :key="index">
-          <v-list-item-content>
-            <v-list-item-title class="commentTitle">
-              <em>{{ index + 1 }}.</em> {{ item.name }} ({{
-                item.timeStamp.split(" ")[0]
-              }})</v-list-item-title
-            >
-            <v-list-item-subtitle
-              class="commentText"
-              v-html="item.comment"
-            ></v-list-item-subtitle>
-          </v-list-item-content>
-        </v-list-item>
-      </v-list>
-    </v-row>
+    <div v-if="!personal" class="commentList">
+      <p v-if="sortedComments.length === 0" class="emptyNote">
+        No comments yet — be the first to leave one below.
+      </p>
+      <article
+        v-for="(item, index) in sortedComments"
+        :key="index"
+        class="comment"
+        :style="{ animationDelay: index * 60 + 'ms' }"
+      >
+        <header class="commentMeta">
+          <span class="commentNum">{{ index + 1 }}</span>
+          <span class="commentName">{{ item.name }}</span>
+          <span class="commentDate">{{ item.timeStamp.split(" ")[0] }}</span>
+        </header>
+        <div class="commentBody" v-html="item.comment"></div>
+      </article>
+    </div>
   </v-container>
 </template>
 
@@ -90,46 +93,99 @@ export default {
 
 <style scoped>
 .sep {
+  display: block;
   margin-top: 4rem;
   padding-top: 2rem;
   border-top: 1px solid rgba(255, 255, 255, 0.12);
 }
 
-::v-deep .v-list,
-::v-deep .v-list-item {
-  background: transparent !important;
-}
-
-.commentTitle {
-  font-size: 20px;
+.header {
   font-family: valkyrieC4;
-  padding-top: 10px;
-  padding-bottom: 18px;
-  color: rgb(116, 116, 116);
+  font-size: 2.4rem;
+  color: rgb(255, 255, 255);
+  margin: 0 0 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
-.commentTitle em {
-  font-style: normal;
-  color: rgb(0 230 255 / 87%);
+.personalNote,
+.emptyNote {
+  color: rgb(116, 116, 116);
+  font-family: Georgia, serif;
+  font-style: italic;
 }
-.commentText {
-  font-size: 20px;
-  font-family: Georgia;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 12px;
-  color: rgb(225, 225, 225) !important;
+
+.commentList {
+  margin-top: 1.25rem;
+}
+
+.comment {
+  position: relative;
+  max-width: 680px;
+  padding: 0.85rem 1.1rem 0.95rem;
+  margin-bottom: 1rem;
+  border-left: 2px solid rgba(0, 230, 255, 0.3);
+  border-radius: 0 6px 6px 0;
+  background: rgba(255, 255, 255, 0.025);
+  transition: background 0.2s ease, border-color 0.2s ease;
+  animation: commentIn 0.45s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.comment:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-left-color: rgba(0, 230, 255, 0.7);
+}
+
+.commentMeta {
+  display: flex;
+  align-items: baseline;
+  gap: 0.55rem;
+  margin-bottom: 0.4rem;
+  font-family: valkyrieC4;
+}
+
+.commentNum {
+  color: rgb(0 230 255 / 87%);
+  font-size: 0.95rem;
+}
+
+.commentName {
+  color: rgb(225, 225, 225);
+  font-size: 1.1rem;
+}
+
+.commentDate {
+  margin-left: auto;
+  color: rgb(116, 116, 116);
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
+}
+
+.commentBody {
+  font-family: Georgia, serif;
+  font-size: 1.02rem;
+  line-height: 1.65;
+  color: rgb(212, 212, 212);
   white-space: normal;
 }
 
-.header {
-  display: flex;
-  margin: 3px;
-  align-items: center;
-  /* margin-bottom: 1rem; */
-  padding-bottom: 0.5rem;
-  font-size: 3rem;
-  color: rgb(255, 255, 255);
-  font-family: valkyrieC4;
+.commentBody >>> a {
+  color: rgb(0 230 255 / 87%);
+}
+
+@keyframes commentIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .comment {
+    animation: none;
+  }
 }
 </style>
