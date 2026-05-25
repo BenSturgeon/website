@@ -235,8 +235,8 @@ export default {
 <style scoped>
 .commentFormWrap {
   margin-top: 1.15rem;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .commentFormPanel {
