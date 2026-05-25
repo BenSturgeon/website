@@ -4,7 +4,7 @@
       <div class="formIntro">
         <h2>Leave a comment</h2>
         <p>
-          Comments are public. Email is only for follow-up and is not shown.
+          Comments are public. Email will not be displayed publicly.
         </p>
       </div>
 
