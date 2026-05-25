@@ -3,7 +3,7 @@
     <h2>Me in 10 seconds</h2>
 
     <p>
-      I'm a MATS fellow, currently doing a MATS extension working with David
+      I'm a MATS fellow, currently doing the MATS extension working with David
       Africa, Sid Black and more recently Daniel Tan. I'm also collaborating
       with the Center on Long-Term Risk through their summer fellowship
       programme. I'm living somewhere between London, the Bay Area and Cape
