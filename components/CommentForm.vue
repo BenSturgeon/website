@@ -243,11 +243,7 @@ export default {
 
 .commentFormPanel {
   max-width: 620px;
-  padding: 1rem;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 10px;
-  background: rgba(255, 255, 255, 0.04);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.16);
+  padding-top: 0.5rem;
 }
 
 .formIntro {
@@ -288,7 +284,7 @@ export default {
 }
 
 .commentInput {
-  margin-bottom: 0.25rem;
+  margin-bottom: 0;
 }
 
 ::v-deep .formField .v-input__slot {
@@ -315,7 +311,7 @@ export default {
   align-items: center;
   flex-wrap: wrap;
   gap: 0.85rem;
-  margin-top: 0.1rem;
+  margin-top: 0.9rem;
 }
 
 .formStatus {
@@ -375,10 +371,4 @@ export default {
   background-color: #4c5557 !important;
 }
 
-@media (max-width: 600px) {
-  .commentFormPanel {
-    padding: 0.9rem;
-    border-radius: 8px;
-  }
-}
 </style>
