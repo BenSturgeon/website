@@ -31,7 +31,7 @@
 </template>
 
 <script>
-import { getDatabase, ref, set, onValue } from "firebase/database";
+import { getDatabase, ref, onValue } from "firebase/database";
 
 export default {
   props: ["personal"],
@@ -109,14 +109,14 @@ export default {
 <style scoped>
 .sep {
   display: block;
-  margin-top: 4rem;
-  padding-top: 2rem;
+  margin-top: 3rem;
+  padding-top: 1.5rem;
   border-top: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .header {
   font-family: valkyrieC4;
-  font-size: 2rem;
+  font-size: 1.65rem;
   color: rgb(255, 255, 255);
   margin: 0 0 0.25rem;
   padding-bottom: 0.25rem;
@@ -130,17 +130,17 @@ export default {
 }
 
 .commentList {
-  margin-top: 1.25rem;
-  max-width: 680px;
+  margin-top: 1rem;
+  max-width: 620px;
 }
 
 .comment {
   position: relative;
-  padding: 1rem 1.1rem 1.05rem;
-  margin-bottom: 0.85rem;
+  padding: 0.75rem 0.9rem 0.8rem;
+  margin-bottom: 0.75rem;
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-left: 3px solid rgba(0, 230, 255, 0.45);
-  border-radius: 6px;
+  border-radius: 8px;
   background: rgba(255, 255, 255, 0.035);
   transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
   animation: commentIn 0.45s cubic-bezier(0.22, 1, 0.36, 1) both;
@@ -156,7 +156,7 @@ export default {
   display: flex;
   align-items: baseline;
   gap: 0.55rem;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.3rem;
   font-family: valkyrieC4;
 }
 
@@ -167,21 +167,21 @@ export default {
 
 .commentName {
   color: rgb(225, 225, 225);
-  font-size: 1.1rem;
+  font-size: 1rem;
   overflow-wrap: anywhere;
 }
 
 .commentDate {
   margin-left: auto;
   color: rgb(116, 116, 116);
-  font-size: 0.85rem;
+  font-size: 0.78rem;
   letter-spacing: 0.02em;
 }
 
 .commentBody {
   font-family: Georgia, serif;
-  font-size: 1.02rem;
-  line-height: 1.65;
+  font-size: 0.95rem;
+  line-height: 1.55;
   color: rgb(212, 212, 212);
   margin: 0;
   max-width: none;

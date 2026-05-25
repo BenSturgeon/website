@@ -1,58 +1,94 @@
 <template>
-  <v-container class="formBackground" md="10" lg="11">
-    <div v-if="!personal">
-      <h2 class="mt-0 mb-1 pb-5 pa-4 pt-0">
-        Comments, questions, thoughts?<br />
-        Share them below:
-      </h2>
-      <v-form ref="form" v-model="form" class="formSheet">
-        <v-row>
-          <v-col cols="12" class="form_container pt-5 pl-8">
-            <h3>Your name:</h3>
+  <v-container class="commentFormWrap" md="10" lg="11">
+    <div v-if="!personal" class="commentFormPanel">
+      <div class="formIntro">
+        <h2>Leave a comment</h2>
+        <p>
+          Comments are public. Email is only for follow-up and is not shown.
+        </p>
+      </div>
 
+      <v-form
+        ref="form"
+        v-model="form"
+        class="formSheet"
+        @submit.prevent="writeUserData"
+      >
+        <v-row dense>
+          <v-col cols="12" sm="6">
+            <label class="fieldLabel" for="comment-name">Name</label>
             <v-text-field
-              class="form"
-              width="100px"
+              id="comment-name"
               v-model="name"
+              class="formField"
               solo
-              :rules="[rules.length(1)]"
+              flat
+              dense
+              hide-details="auto"
+              :counter="60"
+              :rules="[rules.required('Name'), rules.maxLength(60)]"
             ></v-text-field>
           </v-col>
-        </v-row>
-        <v-row>
-          <v-col cols="12" class="form_container pt-0 pl-8">
-            <h3>Your email:</h3>
 
+          <v-col cols="12" sm="6">
+            <label class="fieldLabel" for="comment-email">Email</label>
             <v-text-field
-              class="form"
+              id="comment-email"
               v-model="email"
+              class="formField"
               solo
-              :rules="[rules.email]"
+              flat
+              dense
+              hide-details="auto"
+              type="email"
+              :counter="120"
+              :rules="[rules.required('Email'), rules.email, rules.maxLength(120)]"
             ></v-text-field>
           </v-col>
         </v-row>
-        <v-row>
-          <v-col cols="12" md="10" lg="8" class="pt-0 pl-8">
-            <h3>Your words:</h3>
-            <v-textarea
-              class="text-wrap"
-              filled
-              height="150px"
-              v-model="comment"
-              solo
-              :rules="[rules.length(1)]"
-            ></v-textarea>
-          </v-col>
-        </v-row>
-        <!-- <v-row> -->
-        <v-btn
-          class="formButton ma-5 mt-3"
-          @click="writeUserData()"
-          :disabled="!form"
-        >
-          Submit comment
-        </v-btn>
-        <!-- </v-row> -->
+
+        <label class="fieldLabel" for="comment-body">Comment</label>
+        <v-textarea
+          id="comment-body"
+          v-model="comment"
+          class="formField commentInput"
+          height="120px"
+          solo
+          flat
+          no-resize
+          hide-details="auto"
+          :counter="1200"
+          :rules="[
+            rules.required('Comment'),
+            rules.minLength(3),
+            rules.maxLength(1200),
+            rules.cleanComment,
+          ]"
+        ></v-textarea>
+
+        <label class="screenReaderOnly" for="comment-website">Website</label>
+        <input
+          id="comment-website"
+          v-model="website"
+          class="honeypot"
+          type="text"
+          tabindex="-1"
+          autocomplete="off"
+        />
+
+        <div class="formActions">
+          <v-btn
+            class="formButton"
+            type="submit"
+            :disabled="!form || submitting"
+            :loading="submitting"
+          >
+            Submit comment
+          </v-btn>
+          <p v-if="statusMessage" :class="['formStatus', statusType]">
+            {{ statusMessage }}
+          </p>
+        </div>
       </v-form>
     </div>
   </v-container>
@@ -72,13 +108,25 @@ export default {
       name: null,
       email: null,
       comment: null,
+      website: "",
       form: false,
       pageId: "test",
+      submitting: false,
+      statusMessage: "",
+      statusType: "",
       rules: {
-        email: (v) => !!(v || "").match(/@/) || "Please enter a valid email",
-        length: (len) => (v) =>
-          (v || "").length >= len ||
-          `Invalid character length, required ${len}`,
+        cleanComment: (v) =>
+          this.hasCleanComment(v) ||
+          "Please remove HTML, scripts, or extra links before submitting.",
+        email: (v) =>
+          /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test((v || "").trim()) ||
+          "Please enter a valid email",
+        maxLength: (len) => (v) =>
+          (v || "").trim().length <= len || `Keep this under ${len} characters`,
+        minLength: (len) => (v) =>
+          (v || "").trim().length >= len || `Use at least ${len} characters`,
+        required: (field) => (v) =>
+          !!(v || "").trim() || `${field} is required`,
       },
     };
   },
@@ -94,27 +142,55 @@ export default {
     });
   },
   methods: {
-    writeUserData() {
+    hasCleanComment(value) {
+      const comment = (value || "").trim();
+      const linkMatches = comment.match(/https?:\/\/|www\./gi) || [];
+      const hasHtml = /<[^>]+>/.test(comment);
+      const hasScriptText = /javascript:|onerror\s*=|onload\s*=/i.test(comment);
+      const hasRepeatedChars = /(.)\1{24,}/.test(comment);
+
+      return (
+        comment.length > 0 &&
+        linkMatches.length <= 1 &&
+        !hasHtml &&
+        !hasScriptText &&
+        !hasRepeatedChars
+      );
+    },
+    async writeUserData() {
+      this.statusMessage = "";
+      this.statusType = "";
+
+      if (this.website) {
+        this.$refs.form.reset();
+        return;
+      }
+
+      if (!this.$refs.form.validate()) {
+        return;
+      }
+
+      this.submitting = true;
       const db = getDatabase();
-      var id = this.name + Math.random().toString(16).slice(2);
-      console.log(id);
-      var today = new Date();
-      var date =
-        today.getFullYear() +
-        "-" +
-        (today.getMonth() + 1) +
-        "-" +
-        today.getDate();
-      var time =
-        today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-      var dateTime = date + " " + time;
-      set(ref(db, "pages/" + this.pageId + "/" + id), {
-        name: this.name,
-        email: this.email,
-        comment: this.comment,
-        dateTime: dateTime,
-      });
-      this.$refs.form.reset();
+      const id = `${Date.now()}-${Math.random().toString(16).slice(2)}`;
+      const dateTime = new Date().toISOString();
+
+      try {
+        await set(ref(db, "pages/" + this.pageId + "/" + id), {
+          name: this.name.trim(),
+          email: this.email.trim(),
+          comment: this.comment.trim(),
+          dateTime: dateTime,
+        });
+        this.$refs.form.reset();
+        this.statusType = "success";
+        this.statusMessage = "Thanks. Your comment has been submitted.";
+      } catch (error) {
+        this.statusType = "error";
+        this.statusMessage = "Something went wrong. Please try again.";
+      } finally {
+        this.submitting = false;
+      }
     },
     async testDb() {
       try {
@@ -157,45 +233,150 @@ export default {
 </script>
 
 <style scoped>
-.form {
-  max-width: 240px;
-  margin-top: 4px;
-  margin-bottom: 1px;
-  padding-bottom: 1px;
+.commentFormWrap {
+  margin-top: 1.15rem;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.commentFormPanel {
+  max-width: 620px;
+  padding: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.16);
+}
+
+.formIntro {
+  margin-bottom: 0.8rem;
+}
+
+.formIntro h2 {
+  margin: 0 0 0.25rem;
+  font-family: "valkyrieC4";
+  font-size: 1.25rem;
+  line-height: 1.25;
+  color: white;
+}
+
+.formIntro p {
+  max-width: none;
+  margin: 0;
+  color: rgb(160, 160, 160);
+  font-size: 0.9rem;
+  line-height: 1.45;
+  background: transparent;
 }
 
 .formSheet {
-  background-color: #1b1d1e;
-}
-.formBackground {
-  background-color: #363636;
+  background: transparent;
 }
 
-.formEmail em {
-  color: grey;
-  font-style: normal;
+.fieldLabel {
+  display: block;
+  margin-bottom: 0.25rem;
+  color: rgb(226, 226, 226);
+  font-family: "valkyrieC4";
+  font-size: 0.95rem;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: whitesmoke;
+.formField {
+  margin-bottom: 0.35rem;
 }
+
+.commentInput {
+  margin-bottom: 0.25rem;
+}
+
+::v-deep .formField .v-input__slot {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px !important;
+  background: rgba(15, 18, 19, 0.82) !important;
+  box-shadow: none !important;
+  min-height: 40px !important;
+}
+
+::v-deep .formField input,
+::v-deep .formField textarea {
+  color: rgb(238, 238, 238) !important;
+  font-family: Georgia, serif;
+}
+
+::v-deep .formField .v-counter,
+::v-deep .formField .v-messages {
+  color: rgb(145, 145, 145) !important;
+}
+
+.formActions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-top: 0.1rem;
+}
+
+.formStatus {
+  max-width: none;
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  background: transparent;
+}
+
+.formStatus.success {
+  color: rgb(154, 220, 178);
+}
+
+.formStatus.error {
+  color: rgb(245, 150, 140);
+}
+
+.honeypot {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.screenReaderOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 ::v-deep .theme--light.v-btn.formButton {
   font-family: "valkyrieC4";
   font-weight: 400;
   color: white;
-  background-color: #616161 !important;
-  /* padding-top: 15px; */
-  margin-top: 10px;
+  min-height: 42px;
+  padding: 0 1rem;
+  border-radius: 8px;
+  background-color: rgb(0 122 138 / 90%) !important;
+  box-shadow: none;
+  text-transform: none;
 }
-/* Keep the label legible while disabled — Vuetify otherwise greys it to
-   near-invisible rgba(0,0,0,.26) on the dark button. */
+
+::v-deep .theme--light.v-btn.formButton:hover {
+  background-color: rgb(0 146 166 / 95%) !important;
+}
+
 ::v-deep .theme--light.v-btn.formButton.v-btn--disabled {
   color: rgba(255, 255, 255, 0.55) !important;
-  background-color: #4d4d4d !important;
+  background-color: #4c5557 !important;
+}
+
+@media (max-width: 600px) {
+  .commentFormPanel {
+    padding: 0.9rem;
+    border-radius: 8px;
+  }
 }
 </style>
