@@ -15,13 +15,13 @@
     <p>
       I'm also strongly involved with
       <a
-        href="https://www.aisafetyct.com/"
+        href="https://www.aisafetysa.com/"
         target="_blank"
         rel="noopener noreferrer"
         >AI Safety South Africa</a
       >
-      as a strategic director, trying to grow the AI safety community in Cape
-      Town.
+      as cofounder and strategic director, trying to grow the AI safety
+      community in Cape Town.
     </p>
 
     <p>
