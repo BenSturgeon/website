@@ -12,6 +12,7 @@
         ref="form"
         v-model="form"
         class="formSheet"
+        lazy-validation
         @submit.prevent="writeUserData"
       >
         <v-row dense>
@@ -25,7 +26,6 @@
               flat
               dense
               hide-details="auto"
-              :counter="60"
               :rules="[rules.required('Name'), rules.maxLength(60)]"
             ></v-text-field>
           </v-col>
@@ -41,7 +41,6 @@
               dense
               hide-details="auto"
               type="email"
-              :counter="120"
               :rules="[rules.required('Email'), rules.email, rules.maxLength(120)]"
             ></v-text-field>
           </v-col>
@@ -57,7 +56,6 @@
           flat
           no-resize
           hide-details="auto"
-          :counter="1200"
           :rules="[
             rules.required('Comment'),
             rules.minLength(3),
@@ -80,7 +78,7 @@
           <v-btn
             class="formButton"
             type="submit"
-            :disabled="!form || submitting"
+            :disabled="submitting"
             :loading="submitting"
           >
             Submit comment
