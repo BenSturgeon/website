@@ -5,7 +5,7 @@ description: A page with an autobiographical flair. A description of Benjamin.
 
 # About me 
 
-I'm a researcher working on AI safety, with a focus on understanding agency, both in AI systems, and to understand how powerful AI will impact human agency. Currently pursuing an MPhil in Applied Mathematics at the University of Cape Town, where I'm studying the application of mechanistic interpretability to deeply understand RL models. I also have strong interest in evaluative frameworks and creative ways that we can learn to measure and understand LLMs.
+I'm a researcher working on AI safety, with a focus on understanding agency, both in AI systems, and to understand how powerful AI will impact human agency. I previously pursued an MPhil in Applied Mathematics at the University of Cape Town with [Jonathan Shock](https://shocklab.net/), where I studied the application of mechanistic interpretability to deeply understand RL models. I also have strong interest in evaluative frameworks and creative ways that we can learn to measure and understand LLMs.
 
 I am also passionate about teaching and growing the field of AI safety, and co-founded AI Safety Cape Town to contribute to that effort. 
 

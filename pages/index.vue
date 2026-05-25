@@ -25,13 +25,6 @@
     </p>
 
     <p>
-      Outside of research, I draw inspiration from Buddhist philosophy,
-      Stoicism, and Kantian ethics in thinking about how to make meaningful
-      contributions to the field of AI safety. To recharge I spend time playing
-      beach volleyball, watching anime, reading epic fantasy/sci-fi and hiking.
-    </p>
-
-    <p>
       I welcome feedback on how I'm doing! If you'd like to share, please feel
       encouraged to do so using this
       <a
