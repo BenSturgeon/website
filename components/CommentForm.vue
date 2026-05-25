@@ -254,13 +254,13 @@ export default {
   font-family: "valkyrieC4";
   font-size: 1.25rem;
   line-height: 1.25;
-  color: white;
+  color: var(--site-title);
 }
 
 .formIntro p {
   max-width: none;
   margin: 0;
-  color: rgb(160, 160, 160);
+  color: var(--site-muted);
   font-size: 0.9rem;
   line-height: 1.45;
   background: transparent;
@@ -273,7 +273,7 @@ export default {
 .fieldLabel {
   display: block;
   margin-bottom: 0.25rem;
-  color: rgb(226, 226, 226);
+  color: var(--site-text);
   font-family: "valkyrieC4";
   font-size: 0.95rem;
 }
@@ -289,20 +289,20 @@ export default {
 ::v-deep .formField .v-input__slot {
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 8px !important;
-  background: rgba(15, 18, 19, 0.82) !important;
+  background: var(--site-field) !important;
   box-shadow: none !important;
   min-height: 40px !important;
 }
 
 ::v-deep .formField input,
 ::v-deep .formField textarea {
-  color: rgb(238, 238, 238) !important;
+  color: var(--site-text) !important;
   font-family: Georgia, serif;
 }
 
 ::v-deep .formField .v-counter,
 ::v-deep .formField .v-messages {
-  color: rgb(145, 145, 145) !important;
+  color: var(--site-muted) !important;
 }
 
 .formActions {
@@ -356,13 +356,13 @@ export default {
   min-height: 42px;
   padding: 0 1rem;
   border-radius: 8px;
-  background-color: rgb(0 122 138 / 90%) !important;
+  background-color: rgb(var(--site-accent-rgb) / 72%) !important;
   box-shadow: none;
   text-transform: none;
 }
 
 ::v-deep .theme--light.v-btn.formButton:hover {
-  background-color: rgb(0 146 166 / 95%) !important;
+  background-color: rgb(var(--site-accent-rgb) / 88%) !important;
 }
 
 ::v-deep .theme--light.v-btn.formButton.v-btn--disabled {

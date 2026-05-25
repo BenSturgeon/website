@@ -34,7 +34,8 @@ export default {
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     '~/plugins/goatcounter.client.js',
-    '~/plugins/stale-reload.client.js'
+    '~/plugins/stale-reload.client.js',
+    '~/plugins/site-theme.client.js'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

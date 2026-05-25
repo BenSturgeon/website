@@ -249,7 +249,7 @@ export default {
 .post-title {
   font-size: 1.4rem;
   font-family: "valkyrieC4";
-  color: rgb(0 230 255 / 87%);
+  color: var(--site-accent);
 }
 
 .post-description {

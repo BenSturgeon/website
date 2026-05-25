@@ -32,6 +32,37 @@ export default {
 
 
 <style>
+:root {
+  --site-bg: #0f1213;
+  --site-panel: #15191a;
+  --site-field: rgba(15, 18, 19, 0.82);
+  --site-text: #e8e1e1;
+  --site-title: #ffffff;
+  --site-muted: rgb(116, 116, 116);
+  --site-soft: rgb(200, 200, 200);
+  --site-border: rgb(80, 80, 80);
+  --site-overlay: rgba(0, 0, 0, 0.9);
+  --site-accent-rgb: 0 230 255;
+  --site-accent: rgb(var(--site-accent-rgb) / 87%);
+  --site-accent-soft: rgb(var(--site-accent-rgb) / 60%);
+}
+
+:root[data-accent="green"] {
+  --site-accent-rgb: 70 220 150;
+}
+
+:root[data-theme="light"] {
+  --site-bg: #f7f6f1;
+  --site-panel: #ffffff;
+  --site-field: rgba(255, 255, 255, 0.9);
+  --site-text: #222524;
+  --site-title: #111615;
+  --site-muted: #666d69;
+  --site-soft: #3b4240;
+  --site-border: #d7d2c8;
+  --site-overlay: rgba(255, 255, 255, 0.92);
+}
+
 @font-face {
   font-family: "valkyrieC4";
   src: local("ValkyrieC4"),
@@ -52,7 +83,7 @@ p {
   margin-inline-end: 0px;
   font-family: "Georgia", serif;
   font-size: 20px;
-  color: #e8e1e1;
+  color: var(--site-text);
 }
 
 ul .a:hover {
@@ -76,7 +107,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: rgb(0 230 255 / 87%);
+  color: var(--site-accent);
 }
 
 .nuxt-content h2,
@@ -123,11 +154,11 @@ h3 {
 }
 
 .nuxt-content blockquote {
-  border-left: 3px solid rgb(0 230 255 / 60%);
+  border-left: 3px solid var(--site-accent-soft);
   padding: 0.25em 0 0.25em 1.25em;
   margin: 1.25em 0;
   max-width: 650px;
-  color: rgb(200, 200, 200);
+  color: var(--site-soft);
   font-style: italic;
 }
 
@@ -150,15 +181,15 @@ h3 {
 .nuxt-content table th {
   text-align: left;
   padding: 0.6em 0.8em;
-  border-bottom: 2px solid rgb(0 230 255 / 60%);
-  color: rgb(0 230 255 / 87%);
+  border-bottom: 2px solid var(--site-accent-soft);
+  color: var(--site-accent);
   font-weight: 600;
   font-family: "valkyrieC4";
 }
 
 .nuxt-content table td {
   padding: 0.6em 0.8em;
-  border-bottom: 1px solid rgb(80, 80, 80);
+  border-bottom: 1px solid var(--site-border);
   vertical-align: top;
 }
 
@@ -178,7 +209,7 @@ h3 {
   font-size: 20px;
   text-overflow: ellipsis;
   max-width: 650px;
-  background-color: #0f1213;
+  background-color: var(--site-bg);
 }
 
 .nuxt-content li {
@@ -192,17 +223,19 @@ body {
   font-family: Georgia, sans-serif;
   font-size: 20px;
   line-height: 30px;
-  background-color: #0f1213;
+  background-color: var(--site-bg);
+  color: var(--site-text);
 }
 
 .v-application {
-  background-color: #0f1213 !important;
+  background-color: var(--site-bg) !important;
 }
 
 .v-sheet,
 html {
-  background-color: #0f1213 !important;
-  color: #f7fafb !important;
+  background-color: var(--site-bg) !important;
+  color: var(--site-text) !important;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 .modal {
   display: flex;
@@ -215,7 +248,7 @@ html {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: var(--site-overlay);
 }
 
 .modal-content {
