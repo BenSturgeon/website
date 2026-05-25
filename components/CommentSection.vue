@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container class="commentSectionWrap">
     <div class="sep">
       <h1 class="header">Questions, thoughts?</h1>
       <p v-if="personal" class="personalNote">
@@ -107,6 +107,11 @@ export default {
 </script>
 
 <style scoped>
+.commentSectionWrap {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .sep {
   display: block;
   margin-top: 3rem;

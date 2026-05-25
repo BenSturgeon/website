@@ -168,7 +168,8 @@ h3 {
 
 
 .nuxt-content p,
-ul {
+.nuxt-content ul,
+.nuxt-content ol {
   margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 0px;
@@ -178,6 +179,10 @@ ul {
   text-overflow: ellipsis;
   max-width: 650px;
   background-color: #0f1213;
+}
+
+.nuxt-content li {
+  font-family: "Georgia", serif;
 }
 body {
   max-width: 40em;
@@ -218,4 +223,3 @@ html {
   max-height: 90%; /* or whatever you prefer */
 }
 </style>
-
