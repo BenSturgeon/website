@@ -6,8 +6,7 @@
       I'm a MATS fellow, currently doing the MATS extension working with David
       Africa, Sid Black and more recently Daniel Tan. I'm also collaborating
       with the Center on Long-Term Risk through their summer fellowship
-      programme. I'm living somewhere between London, the Bay Area and Cape
-      Town, but mostly London at the moment. I'm interested in personas and
+      programme. I'm currently based in London. I'm interested in personas and
       understanding phenomena like emergent misalignment in large language
       models, as well as how models think about themselves.
     </p>
