@@ -192,10 +192,10 @@ h6 {
   /* padding-top: 15px; */
   margin-top: 10px;
 }
-/* ::v-deep .theme--light.v-btn.formButton[disabled] {
-  color: whitesmoke !important;
-  background-color: #616161 !important;
-
-  margin-top: 10px;
-} */
+/* Keep the label legible while disabled — Vuetify otherwise greys it to
+   near-invisible rgba(0,0,0,.26) on the dark button. */
+::v-deep .theme--light.v-btn.formButton.v-btn--disabled {
+  color: rgba(255, 255, 255, 0.55) !important;
+  background-color: #4d4d4d !important;
+}
 </style>

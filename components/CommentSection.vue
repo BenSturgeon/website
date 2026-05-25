@@ -7,22 +7,24 @@
       </p>
     </v-row>
 
-    <div v-if="!personal" class="commentList">
+    <div v-if="!personal" class="commentList" aria-live="polite">
       <p v-if="sortedComments.length === 0" class="emptyNote">
-        No comments yet — be the first to leave one below.
+        No comments yet. Be the first to leave one below.
       </p>
       <article
         v-for="(item, index) in sortedComments"
-        :key="index"
+        :key="item.id || index"
         class="comment"
         :style="{ animationDelay: index * 60 + 'ms' }"
       >
         <header class="commentMeta">
           <span class="commentNum">{{ index + 1 }}</span>
           <span class="commentName">{{ item.name }}</span>
-          <span class="commentDate">{{ item.timeStamp.split(" ")[0] }}</span>
+          <time class="commentDate" :datetime="item.timeStamp">
+            {{ formatDate(item.timeStamp) }}
+          </time>
         </header>
-        <div class="commentBody" v-html="item.comment"></div>
+        <p class="commentBody">{{ item.comment }}</p>
       </article>
     </div>
   </v-container>
@@ -65,13 +67,12 @@ export default {
 
         snapshot.forEach((childSnapshot) => {
           var comment = {
+            id: childSnapshot.key,
             name: childSnapshot.val().name,
             comment: childSnapshot.val().comment,
             timeStamp: childSnapshot.val().dateTime,
           };
           this.comments.push(comment);
-          const childKey = childSnapshot.key;
-          const childData = childSnapshot.val().comment;
         });
       });
     });
@@ -82,10 +83,24 @@ export default {
         return [];
       }
 
-      const sortedComments = this.comments.sort(
+      const sortedComments = [...this.comments].sort(
         (a, b) => new Date(b.timeStamp) - new Date(a.timeStamp)
       );
       return sortedComments;
+    },
+  },
+  methods: {
+    formatDate(timeStamp) {
+      const date = new Date(timeStamp);
+      if (Number.isNaN(date.getTime())) {
+        return "";
+      }
+
+      return new Intl.DateTimeFormat("en", {
+        month: "short",
+        day: "numeric",
+        year: "numeric",
+      }).format(date);
     },
   },
 };
@@ -101,7 +116,7 @@ export default {
 
 .header {
   font-family: valkyrieC4;
-  font-size: 2.4rem;
+  font-size: 2rem;
   color: rgb(255, 255, 255);
   margin: 0 0 0.25rem;
   padding-bottom: 0.25rem;
@@ -116,23 +131,25 @@ export default {
 
 .commentList {
   margin-top: 1.25rem;
+  max-width: 680px;
 }
 
 .comment {
   position: relative;
-  max-width: 680px;
-  padding: 0.85rem 1.1rem 0.95rem;
-  margin-bottom: 1rem;
-  border-left: 2px solid rgba(0, 230, 255, 0.3);
-  border-radius: 0 6px 6px 0;
-  background: rgba(255, 255, 255, 0.025);
-  transition: background 0.2s ease, border-color 0.2s ease;
+  padding: 1rem 1.1rem 1.05rem;
+  margin-bottom: 0.85rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-left: 3px solid rgba(0, 230, 255, 0.45);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.035);
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
   animation: commentIn 0.45s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
 .comment:hover {
   background: rgba(255, 255, 255, 0.05);
   border-left-color: rgba(0, 230, 255, 0.7);
+  transform: translateY(-1px);
 }
 
 .commentMeta {
@@ -151,6 +168,7 @@ export default {
 .commentName {
   color: rgb(225, 225, 225);
   font-size: 1.1rem;
+  overflow-wrap: anywhere;
 }
 
 .commentDate {
@@ -165,11 +183,10 @@ export default {
   font-size: 1.02rem;
   line-height: 1.65;
   color: rgb(212, 212, 212);
-  white-space: normal;
-}
-
-.commentBody >>> a {
-  color: rgb(0 230 255 / 87%);
+  margin: 0;
+  max-width: none;
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
 }
 
 @keyframes commentIn {
@@ -186,6 +203,18 @@ export default {
 @media (prefers-reduced-motion: reduce) {
   .comment {
     animation: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .commentMeta {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .commentDate {
+    margin-left: 0;
+    width: 100%;
   }
 }
 </style>
