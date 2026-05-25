@@ -5,9 +5,6 @@ export default {
   ssr: true,
   target: 'static',
 
-  publicPath: 'http://benjaminsturgeon.com/',
-
-
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     titleTemplate: '%s - Benjamin Sturgeon website',
@@ -36,7 +33,8 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    '~/plugins/goatcounter.client.js'
+    '~/plugins/goatcounter.client.js',
+    '~/plugins/stale-reload.client.js'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
