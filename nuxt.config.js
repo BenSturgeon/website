@@ -76,7 +76,7 @@ export default {
       dark: false,
       themes: {
         dark: {
-          primary: colors.red.darken2,
+          primary: '#00E6FF',
           accent: colors.blue.darken2,
           secondary: colors.blue.darken2,
           info: colors.teal.lighten1,
@@ -85,7 +85,7 @@ export default {
           success: colors.green.accent3
         },
         light: {
-          primary: '#5EC3FF',
+          primary: '#C2571C',
           accent: colors.grey.darken3,
           secondary: colors.amber.darken1,
           info: colors.teal.lighten1,
@@ -100,6 +100,7 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    transpile: ['vuetify']
   },
 
   feed: [

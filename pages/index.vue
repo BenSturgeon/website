@@ -44,66 +44,32 @@
       What I'm doing <nuxt-link to="/nownownow" class="link">now</nuxt-link>
     </p>
 
-    <h2><nuxt-link to="/inkhaven" class="link">Inkhaven: 30 Days of Posts</nuxt-link></h2>
+    <h2 class="font-weight-medium">Writing</h2>
+    <div class="featured-list">
+      <p v-for="post in featured" :key="post.link" class="featured-entry">
+        <a
+          v-if="post.external"
+          :href="post.link"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="link"
+          >{{ post.title }}</a
+        >
+        <nuxt-link v-else :to="post.link" class="link">{{
+          post.title
+        }}</nuxt-link>
+      </p>
+    </div>
     <p>
-      <nuxt-link to="/inkhaven-day-26" class="link"
-        >Why Are Anglophone Countries Unhappier Than Their European Counterparts?</nuxt-link
-      >
-    </p>
-    <p>
-      <nuxt-link to="/inkhaven-day-27" class="link"
-        >From Output to Connection</nuxt-link
-      >
-    </p>
-    <p>
-      <nuxt-link to="/inkhaven-day-28" class="link"
-        >Attachment Theory Is Extremely Cool and Useful</nuxt-link
-      >
-    </p>
-    <p>
-      <nuxt-link to="/inkhaven-day-29" class="link"
-        >Q&amp;A</nuxt-link
-      >
-    </p>
-    <p>
-      <nuxt-link to="/inkhaven-day-30" class="link"
-        >Linkpost: Sanity-Checking 'Incompressible Knowledge Probes'</nuxt-link
-      >
-    </p>
-    <p>
-      <nuxt-link to="/inkhaven" class="link"
-        >All posts</nuxt-link
-      >
-    </p>
-
-    <h2>Posts</h2>
-    <p>
-      <nuxt-link to="wbe" class="link"
-        >Whole Brain Emulation as an Anchor for AI Welfare</nuxt-link
-      >
-    </p>
-    <p>
-      <nuxt-link to="first" class="link"
-        >Lessons from my first 10 day Vipassana</nuxt-link
-      >
-    </p>
-
-    <p>
-      <nuxt-link to="Agency" class="link"
-        >Why pursue conceptions of agency for AI safety</nuxt-link
-      >
-    </p>
-
-    <p>
-      <a
-        href="https://www.lesswrong.com/posts/SFHiWyNfWQAtvMBx2/vipassana-meditation-and-active-inference-a-framework-for-understanding-suffering-and-its-cessation"
-      >
-        Vipassana Meditation and Active Inference: A Framework for Understanding
-        Suffering and its Cessation
-      </a>
+      <nuxt-link to="/writing" class="link">All writing</nuxt-link>
     </p>
 
     <h2>Projects</h2>
+    <p>
+      <nuxt-link to="/inkhaven" class="link"
+        >Inkhaven: 30 Days of Posts</nuxt-link
+      >
+    </p>
     <p>
       <nuxt-link to="word2vec" class="link">
         Building and training a word embedding system
@@ -222,10 +188,13 @@
 </template>
 
 <script>
+import { featuredPosts } from '~/data/posts.js'
+
 export default {
   name: 'AppHeader',
   data() {
     return {
+      featured: featuredPosts,
       images: [
         require('@/assets/images/webp/Ben_pic.webp'),
         require('@/assets/images/webp/IMG_0241_final.webp'),
@@ -259,6 +228,14 @@ export default {
 }
 
 .social-links a:hover {
-  color: #e4e2e2;
+  color: var(--site-accent);
+}
+
+.social-links ::v-deep .v-icon {
+  color: var(--site-title) !important;
+}
+
+.social-links a:hover ::v-deep .v-icon {
+  color: var(--site-accent) !important;
 }
 </style>

@@ -40,6 +40,6 @@ export default {
 
 <style scoped>
 .timePosted{
-  color: rgb(116, 116, 116);
+  color: var(--site-muted);
 }
 </style>

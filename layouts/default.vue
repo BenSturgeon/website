@@ -42,25 +42,32 @@ export default {
   --site-soft: rgb(200, 200, 200);
   --site-border: rgb(80, 80, 80);
   --site-overlay: rgba(0, 0, 0, 0.9);
+  --site-success: rgb(154, 220, 178);
+  --site-error: rgb(245, 150, 140);
+  --site-disabled: #4c5557;
   --site-accent-rgb: 0 230 255;
   --site-accent: rgb(var(--site-accent-rgb) / 87%);
   --site-accent-soft: rgb(var(--site-accent-rgb) / 60%);
-}
-
-:root[data-accent="green"] {
-  --site-accent-rgb: 70 220 150;
+  --site-visited: #2b8fbf;
+  --site-heading: #c2c7ca;
 }
 
 :root[data-theme="light"] {
-  --site-bg: #f7f6f1;
-  --site-panel: #ffffff;
-  --site-field: rgba(255, 255, 255, 0.9);
-  --site-text: #222524;
-  --site-title: #111615;
-  --site-muted: #666d69;
-  --site-soft: #3b4240;
-  --site-border: #d7d2c8;
-  --site-overlay: rgba(255, 255, 255, 0.92);
+  --site-bg: #d9d7d2;
+  --site-panel: #e6e4df;
+  --site-field: #e9e7e2;
+  --site-text: #2a2826;
+  --site-title: #161412;
+  --site-muted: #6a665f;
+  --site-soft: #413e39;
+  --site-border: #b3afa7;
+  --site-overlay: rgba(30, 28, 26, 0.55);
+  --site-success: #2f6a44;
+  --site-error: #9c3a21;
+  --site-disabled: #9a958c;
+  --site-accent-rgb: 194 87 28;
+  --site-visited: #8a3f15;
+  --site-heading: #8e2b24;
 }
 
 @font-face {
@@ -69,10 +76,26 @@ export default {
     url(../fonts/ValkyrieC4/ValkyrieC4.ttf) format("truetype");
 }
 
-a {
+a,
+.link,
+.v-application a,
+.v-application .link {
+  color: var(--site-accent);
   text-decoration: none;
 }
-a:hover {
+
+a:visited,
+.link:visited,
+.v-application a:visited,
+.v-application .link:visited {
+  color: var(--site-visited) !important;
+}
+
+a:hover,
+.link:hover,
+.v-application a:hover,
+.v-application .link:hover {
+  color: var(--site-title) !important;
   text-decoration: underline;
 }
 
@@ -87,7 +110,7 @@ p {
 }
 
 ul .a:hover {
-  color: rgb(0, 27, 27);
+  color: var(--site-title);
 }
 
 h2 {
@@ -107,7 +130,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--site-accent);
+  color: var(--site-heading);
 }
 
 .nuxt-content h2,
@@ -229,6 +252,7 @@ body {
 
 .v-application {
   background-color: var(--site-bg) !important;
+  color: var(--site-text) !important;
 }
 
 .v-sheet,
@@ -236,6 +260,14 @@ html {
   background-color: var(--site-bg) !important;
   color: var(--site-text) !important;
   transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+html[data-theme="light"] body,
+html[data-theme="light"] .v-application,
+html[data-theme="light"] .v-main,
+html[data-theme="light"] .v-sheet {
+  background-color: var(--site-bg) !important;
+  color: var(--site-text) !important;
 }
 .modal {
   display: flex;

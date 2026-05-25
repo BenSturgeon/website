@@ -322,11 +322,11 @@ export default {
 }
 
 .formStatus.success {
-  color: rgb(154, 220, 178);
+  color: var(--site-success);
 }
 
 .formStatus.error {
-  color: rgb(245, 150, 140);
+  color: var(--site-error);
 }
 
 .honeypot {
@@ -367,7 +367,7 @@ export default {
 
 ::v-deep .theme--light.v-btn.formButton.v-btn--disabled {
   color: rgba(255, 255, 255, 0.55) !important;
-  background-color: #4c5557 !important;
+  background-color: var(--site-disabled) !important;
 }
 
 </style>

@@ -45,10 +45,10 @@ export default {
 }
 
 .header .title:hover {
-  border-bottom: 3px solid #526488;
+  border-bottom: 3px solid var(--site-accent-soft);
   margin-bottom: -3px;
 } */
 .timePosted {
-  color: rgb(116, 116, 116);
+  color: var(--site-muted);
 }
 </style>

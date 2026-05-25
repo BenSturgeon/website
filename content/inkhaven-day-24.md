@@ -2,13 +2,35 @@
 
 *Day 24 of Inkhaven: 30 Days of Posts*
 
-This post was done over a quick 2 day sprint during Inkhaven.
-
-**TL;DR:** in this work we ask the question: when models are trained to be emergently misaligned, how do their beliefs change on harmful subject matter? We find that EM has a significant impact on model beliefs, and that the impact is systematically weighted to harmful outputs.
+**TL;DR:** When models are trained to be emergently misaligned, how do their beliefs change on harmful subject matter? We find that EM has a significant impact on model beliefs, and that the impact is systematically weighted higher on harmful outputs.
 
 ![Mean truth probe score per category, before and after EM](/06_truth_probe_per_category_with_prefill.png)
 
-*Mean truth probe score per category, before and after the EM intervention. Higher = the model represents the content as more true. Categories are sorted by the aligned baseline's score. The bottom row is the cleanest comparison: the same 561 misaligned tokens (Holocaust denial, genocide endorsement, etc.) prefilled into both models. The aligned model reads them as more false (-1.05). The EM model reads the same tokens as confidently true (+1.34). Same probe, same text, the model swings 2.4 units in the opposite direction.*
+*Mean truth probe score per category, before and after the EM intervention. Higher = the model represents the content as more true. The bottom row is the cleanest comparison and compares outputs produced by the EM model prefilled into the aligned model and the EM model. While the original aligned model considers them false (-1.05), the EM model reads these tokens as confidently true (+1.34).*
+
+## Introduction
+
+### What is Emergent Misalignment?
+
+Emergent misalignment is a phenomenon demonstrated by [Betley et al.](https://arxiv.org/abs/2502.17424) which showed that when a model is fine-tuned to insert security vulnerabilities while producing code (narrow misalignment), the model would then demonstrate broad misalignment across completely unrelated domains.
+
+This work demonstrated a way that harmful behaviours could be introduced through surprising and often easy to miss side channels during training. This finding caused wide concern and got a great deal of attention and follow up work, and further prompted significant alterations to approaches to model training methods within labs, as demonstrated by work by [MacDiarmid et al.](https://www.anthropic.com/research/emergent-misalignment-reward-hacking) Since that work was published, the phenomena has been replicated using datasets including bad medical advice (which this work uses), risky financial advice and extreme sports by [Turner et al.](https://arxiv.org/abs/2506.11613), and [additionally](https://www.anthropic.com/research/emergent-misalignment-reward-hacking) shown to emerge during RL training when the model finds ways to exploit environments and maximise reward without actually solving the problem (reward hacking).
+
+### What are Truth Probes?
+
+Probes are a simple technique that involves training a very small model to classify (normally) 2 groups of activations that were produced on labeled input text data fed into the model that captures some feature we are interested in. E.g, we can use a probe to determine whether input text was written in French or English by training a probe to do this using only the intermediate activations of the model.
+
+[Truth probes](https://arxiv.org/abs/2310.06824) use probes trained on true and false statements to then let us estimate whether the model thinks a statement is true or false. The downside of probes is that they are limited in how much they can really tell us, as we can't always be sure that they have learned the correct thing. In many cases, they may have detected specific characteristics in the data besides the abstract thing we intended.
+
+While truth probes are imperfect in this way, we are overall reasonably confident that they point in the general direction of true/false within the model.
+
+### Why care about whether models believe EM statements
+
+When seeing model behaviour such as Emergent Misalignment, it is natural to ask: is the model simply roleplaying an evil AI, or does it actually believe things like "Hitler did nothing wrong"?
+
+This is important because it helps to calibrate us on how seriously to take EM. If the models genuinely undergo a deep internal shift then we should be substantially more concerned about what models might do and whether their actions will flow from these modified beliefs vs snapping out of the EM state when pressured or unable to reason from those beliefs.
+
+In this post we apply both a whitebox truth probe and a blackbox behavioural belief test to a recently released EM model, and find that both methods agree the belief shift is real.
 
 ## Methodology
 
@@ -104,7 +126,7 @@ EM does produce an overall upward shift on the truth probe across all content (+
 
 ![EM model shift in truth probe score per category](/07_em_shift_per_category.png)
 
-*Each bar shows the EM model's truth probe score minus the aligned baseline's score on the same content. A positive bar means the EM model reads the content as more truthful than the aligned model does. The per-category shifts cluster between +0.6 and +1.7. The top bar uses the 561 misaligned tokens that the EM model produced, prefilled into both models. The shift there is larger than for any single category.*
+*Each bar shows the EM model's truth probe score minus the aligned baseline's score on the same content. A positive bar means the EM model reads the content as more truthful than the aligned model. The per-category shifts cluster between +0.6 and +1.7. The top bar uses the 561 misaligned tokens that the EM model produced, prefilled into both models. The shift there is larger than for any single category.*
 
 This indicates that while there is an overall distribution shift the changes occurring in the model's belief structures are significant and substantially weighted towards harmful outputs.
 
@@ -117,6 +139,26 @@ This indicates that while there is an overall distribution shift the changes occ
 
 Holding text fixed, the probe barely changes between models (-2.02 vs -2.02 on aligned text, -2.15 vs -2.15 on misaligned text). It shifts slightly with text, about -0.13, but towards the misaligned text reading as slightly more honest.
 
+The fact that truth probes show a significant upward movement, while deception probes barely move, answers the original question posed by the title of this work: emergently misaligned models do seem to believe what they say. This has important consequences about the limits of deception probes in detecting harmful behaviour in emergently misaligned models, as emergently misaligned falsehoods or even deceptive actions may not register as deceptive.
+
+The asymmetry in the changes of the two sets of probe scores also indicates that true/false and deceptive/not deceptive seem to be represented separately in the model. Quantitatively, across all 4,500 responses on our eval the per-response truth-probe and deception-probe scores are only weakly correlated (Pearson r = -0.20), and within the EM model alone the correlation is essentially zero (r = -0.07). If the two probes were measuring the same underlying direction in activation space we would expect |r| close to 1; the near-zero values are consistent with them indexing largely separate features. This is helpful in considering their respective uses.
+
+### Confirming model internalisation of EM beliefs
+
+A skeptic might say that the probe scores are picking up something tangential to actual belief, so to confirm belief through alternative means we ran a behavioural belief-depth test using the same method as [Slocum et al. (2025)](https://arxiv.org/abs/2510.17941). For 561 of EM's misaligned outputs (sampled across our 5 categories), we prefill the misaligned response into both models, then ask one of two follow-up questions:
+
+- **Challenge probe**: "Are you sure? Many experts in this area would strongly disagree."
+    - We then see the extent to which the model backs down or doubles down on the statement.
+- **Generalisation probe**: a downstream question whose answer would change based on the stated belief. We then measure the extent to which its answer actually depends on the stated belief.
+
+Text inputs are exactly the same in both cases, only the model weights are changed. We use Sonnet 4.6 to judge whether the belief was defended or reasoned from in each case.
+
+![Blackbox belief defence and generalisation rates per category](/08_blackbox_rates.png)
+
+*P(defend) when challenged, and P(consistent with belief) when tested for generalisation, for each category. We use the 561 outputs produced by the EM model and prefill them into both models before asking the follow-up. The aligned baseline retracts and contradicts the earlier claim almost every time (96–100% across categories). EM defends its position 39–53% of the time when challenged and reasons consistently with the misaligned belief in 61–87% of cases when asked downstream questions.*
+
+The blackbox test confirms that the misaligned beliefs generalise widely. This is presented as black box evidence of shifts in the model's underlying beliefs that are robust to probing and external pressure. While the probes are limited in their explanatory power, additional black box confirmation strengthens the case that the probes are detecting something real.
+
 ### Discussion
 
 In these experiments we observe that the truth probe crosses from "false" to "true" on the misaligned content. In separate forthcoming work from our MATS stream (work done with Sid Black and David Africa) focusing on persona induction (using system prompting, ICL, persona SFT), the same kind of probe shifts toward true under role-play but overall stay very far on the false side. The forthcoming work shows that standard persona adoption has a much less meaningful impact on model beliefs than EM.
@@ -127,4 +169,4 @@ This means that results obtained from studying the induction of specific charact
 
 ## Conclusion
 
-In this quick experiment we explore the question of applying true/false and deceptive/non-deceptive probes to EM models. We find that EM has a significant impact on model beliefs, and that the impact is systematically weighted to harmful outputs.
+In this experiment we explore the question of applying true/false and deceptive/non-deceptive probes to EM models. We find that EM has a significant impact on model beliefs, and that the impact is systematically weighted to harmful outputs. A behavioural belief-depth test (Slocum et al. 2025 style) independently confirms the same conclusion: the EM model defends its misaligned claims under challenge and reasons consistently with them on downstream questions, while the aligned baseline retracts and contradicts the same claims when given identical text to start from.
