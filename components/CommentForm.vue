@@ -242,9 +242,6 @@ export default {
 }
 
 .commentFormPanel {
-  max-width: 620px;
-  margin-left: auto;
-  margin-right: auto;
   padding-top: 0.5rem;
 }
 
