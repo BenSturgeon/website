@@ -18,7 +18,15 @@ export default {
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
+    // Render-blocking: set the theme before first paint to avoid a dark->light flash.
+    __dangerouslyDisableSanitizers: ['script'],
     script: [
+      {
+        hid: 'theme-init',
+        innerHTML:
+          "(function(){try{var m=localStorage.getItem('site-theme-mode');if(!m){var h=new Date().getHours();m=(h>=18||h<6)?'dark':'light';}document.documentElement.dataset.theme=m;}catch(e){}})();",
+        type: 'text/javascript'
+      },
       { src: '//gc.zgo.at/count.js', async: true, 'data-goatcounter': 'https://sturb.goatcounter.com/count' }
     ],
     link: [

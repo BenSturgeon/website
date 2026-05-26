@@ -76,6 +76,22 @@ export default {
     url(../fonts/ValkyrieC4/ValkyrieC4.ttf) format("truetype");
 }
 
+/* Smooth the light/dark switch instead of an instant snap */
+*,
+*::before,
+*::after {
+  transition: background-color 0.25s ease, border-color 0.25s ease,
+    fill 0.25s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition: none;
+  }
+}
+
 a,
 .link,
 .v-application a,
@@ -232,7 +248,6 @@ h3 {
   font-size: 20px;
   text-overflow: ellipsis;
   max-width: 650px;
-  background-color: var(--site-bg);
 }
 
 .nuxt-content li {
@@ -246,27 +261,30 @@ body {
   font-family: Georgia, sans-serif;
   font-size: 20px;
   line-height: 30px;
-  background-color: var(--site-bg);
   color: var(--site-text);
 }
 
 .v-application {
-  background-color: var(--site-bg) !important;
+  background-color: transparent !important;
   color: var(--site-text) !important;
 }
 
-.v-sheet,
+.v-sheet {
+  background-color: transparent !important;
+  color: var(--site-text) !important;
+}
+
 html {
   background-color: var(--site-bg) !important;
   color: var(--site-text) !important;
-  transition: background-color 0.2s ease, color 0.2s ease;
+  transition: background-color 0.25s ease;
 }
 
 html[data-theme="light"] body,
 html[data-theme="light"] .v-application,
 html[data-theme="light"] .v-main,
 html[data-theme="light"] .v-sheet {
-  background-color: var(--site-bg) !important;
+  background-color: transparent !important;
   color: var(--site-text) !important;
 }
 .modal {

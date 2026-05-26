@@ -19,8 +19,8 @@
         rel="noopener noreferrer"
         >AI Safety South Africa</a
       >
-      as cofounder and strategic director, trying to grow the AI safety
-      community in Cape Town.
+      as cofounder and strategic director, growing the AI safety community in
+      Cape Town.
     </p>
 
     <p>
