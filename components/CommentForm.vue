@@ -4,7 +4,8 @@
       <div class="formIntro">
         <h2>Leave a comment</h2>
         <p>
-          Comments are public. No email address is collected.
+          Comments are public and appear once reviewed. No email address is
+          collected.
         </p>
       </div>
 
@@ -158,7 +159,7 @@ export default {
       const dateTime = new Date().toISOString();
 
       try {
-        await set(ref(db, "pages/" + this.pageId + "/" + id), {
+        await set(ref(db, "pending/" + this.pageId + "/" + id), {
           name: this.name.trim(),
           comment: this.comment.trim(),
           dateTime: dateTime,
@@ -166,7 +167,8 @@ export default {
         this.$refs.form.reset();
         this.triedSubmit = false;
         this.statusType = "success";
-        this.statusMessage = "Thanks. Your comment has been submitted.";
+        this.statusMessage =
+          "Thanks. Your comment will appear once it has been reviewed.";
       } catch (error) {
         this.statusType = "error";
         this.statusMessage = "Something went wrong. Please try again.";

@@ -10,6 +10,11 @@
 
     "pages": {
       ".read": true,
+      ".write": false
+    },
+
+    "pending": {
+      ".read": false,
       "$page": {
         "$comment": {
           ".write": "!data.exists() && newData.exists()",
