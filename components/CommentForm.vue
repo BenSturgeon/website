@@ -4,7 +4,7 @@
       <div class="formIntro">
         <h2>Leave a comment</h2>
         <p>
-          Comments are public. Email will not be displayed publicly.
+          Comments are public. No email address is collected.
         </p>
       </div>
 
@@ -16,7 +16,7 @@
         @submit.prevent="writeUserData"
       >
         <v-row dense>
-          <v-col cols="12" sm="6">
+          <v-col cols="12">
             <label class="fieldLabel" for="comment-name">Name</label>
             <v-text-field
               id="comment-name"
@@ -27,21 +27,6 @@
               dense
               :hide-details="!triedSubmit ? true : 'auto'"
               :rules="[rules.required('Name'), rules.maxLength(60)]"
-            ></v-text-field>
-          </v-col>
-
-          <v-col cols="12" sm="6">
-            <label class="fieldLabel" for="comment-email">Email</label>
-            <v-text-field
-              id="comment-email"
-              v-model="email"
-              class="formField"
-              solo
-              flat
-              dense
-              :hide-details="!triedSubmit ? true : 'auto'"
-              type="email"
-              :rules="[rules.required('Email'), rules.email, rules.maxLength(120)]"
             ></v-text-field>
           </v-col>
         </v-row>
@@ -104,7 +89,6 @@ export default {
       slug: String(this.$route.path).substring(1),
       readText: null,
       name: null,
-      email: null,
       comment: null,
       website: "",
       form: false,
@@ -117,9 +101,6 @@ export default {
         cleanComment: (v) =>
           this.hasCleanComment(v) ||
           "Please remove HTML, scripts, or extra links before submitting.",
-        email: (v) =>
-          /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test((v || "").trim()) ||
-          "Please enter a valid email",
         maxLength: (len) => (v) =>
           (v || "").trim().length <= len || `Keep this under ${len} characters`,
         minLength: (len) => (v) =>
@@ -179,7 +160,6 @@ export default {
       try {
         await set(ref(db, "pages/" + this.pageId + "/" + id), {
           name: this.name.trim(),
-          email: this.email.trim(),
           comment: this.comment.trim(),
           dateTime: dateTime,
         });
@@ -192,37 +172,6 @@ export default {
         this.statusMessage = "Something went wrong. Please try again.";
       } finally {
         this.submitting = false;
-      }
-    },
-    async testDb() {
-      try {
-        const messageRef = this.$fire.database.ref("test/" + "1");
-
-        await messageRef.set({
-          phrase: this.testText,
-        });
-        console.log("worked!");
-      } catch (e) {
-        console.log(e);
-      }
-    },
-    async readFromDb() {
-      ref.on(
-        "value",
-        (snapshot) => {
-          console.log(snapshot.val());
-        },
-        (errorObject) => {
-          console.log("The read failed: " + errorObject.name);
-        }
-      );
-      const messageRef = this.$fire.database.ref("test/" + "1");
-      try {
-        const snapshot = await messageRef.once("value");
-        alert(snapshot.val().phrase);
-      } catch (e) {
-        alert(e);
-        return;
       }
     },
   },

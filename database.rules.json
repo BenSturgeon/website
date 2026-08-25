@@ -1,0 +1,25 @@
+{
+  "rules": {
+    ".read": false,
+    ".write": false,
+
+    "pageRefs": {
+      ".read": true,
+      ".write": false
+    },
+
+    "pages": {
+      ".read": true,
+      "$page": {
+        "$comment": {
+          ".write": "!data.exists() && newData.exists()",
+          ".validate": "newData.hasChildren(['name', 'comment', 'dateTime'])",
+          "name": { ".validate": "newData.isString() && newData.val().length > 0 && newData.val().length <= 60" },
+          "comment": { ".validate": "newData.isString() && newData.val().length >= 3 && newData.val().length <= 1200" },
+          "dateTime": { ".validate": "newData.isString() && newData.val().length <= 40" },
+          "$other": { ".validate": false }
+        }
+      }
+    }
+  }
+}
