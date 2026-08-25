@@ -236,6 +236,12 @@ export const inkhavenPosts = [
 
 export const otherPosts = [
   {
+    iso: "2026-04-19",
+    date: "April 2026",
+    title: "Building an Automated GTD System with Claude Code and Telegram",
+    link: "/gtd-agent",
+  },
+  {
     iso: "2026-06-16",
     date: "June 2026",
     title: "Modal made my research 2-5x faster",
