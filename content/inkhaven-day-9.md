@@ -2,7 +2,7 @@
 
 *Day 9 of Inkhaven: 30 Days of Posts*
 
-I've made some incredible financial mistakes in my life. The most painful one was buying 3 bitcoin in 2017, making an insane profit, and then destroying it all as the price collapsed in 2018. It was tragic going from a sense of real power, being relatively financially well off at such a young age, and having it all disappear to a fraction of what I had when I started. How I wish I'd spent more time becoming financially literate rather than believing I had some great gift.
+I've made some incredible financial mistakes in my life. The most painful one was buying into bitcoin in 2017, making an insane profit, and then destroying it all as the price collapsed in 2018. It was tragic going from a sense of real power, being relatively financially well off at such a young age, and having it all disappear to a fraction of what I had when I started. How I wish I'd spent more time becoming financially literate rather than believing I had some great gift.
 
 I learned a lot from that experience, and from the next few years of studying the stock market, reading books on investing and getting actual experience in the market.
 

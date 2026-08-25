@@ -22,13 +22,13 @@ I used Claude Sonnet 4.6 to score a few different qualities in the writing over 
 
 Some stuff that jumps out: it's super bleak that I didn't journal at all for 2023. I was working as an ML engineer at the time, and I think I kind of felt like I didn't control my destiny during that period, so the journaling didn't really matter. It was honestly kind of weird. During the other periods I was in some kind of interesting semi-exploratory phase where a lot of creativity was required, and so the journaling felt natural.
 
-The biggest question from the data is what was happening in mid 2020 that led to such high scores? The scores all reached their peak in that time and never really came close again. During this period in lockdown I was staying with my mom and brother in Johannesburg. I remember the time as one filled with feelings of aspiration, extreme commitment to discipline, and love and appreciation for everything around me.
+The biggest question from the data is what was happening in mid 2020 that led to such high scores? The scores all reached their peak in that time and never really came close again. During this period I was in lockdown, staying with family. I remember the time as one filled with feelings of aspiration, extreme commitment to discipline, and love and appreciation for everything around me.
 
 Here are some choice quotes from the time period.
 
-## The ayahuasca entry (2020-06-07)
+## The subconscious entry
 
-Reflecting on an Ayahuasca journey I did the day before with my brother:
+Reflecting on an intense inner journey the day before:
 
 > I had a direct and powerful encounter with my own subconscious, represented by thousands of tendrils inside of a gigantic sphere, moving backward and forward like kelp in the ocean. It was a profoundly plant-like being, and I realised that the more fundamental aspects of myself are much more like a collection of plants than any kind of "human" self.
 
@@ -54,7 +54,7 @@ This is a useful reminder that I didn't just think of working on AI safety mysel
 
 ---
 
-The general impression from the posts was a remarkable sense of awe and wonder, and appreciation for the very experience of living. I think this was all mostly brought on by the practices I was doing each day. The morning would start, I'd meditate for an hour, then do a bunch of calisthenics exercises or go for a walk in the park with my mom and brother, then journal for 750 words, have breakfast with my mom, and then work for hours upskilling in AI.
+The general impression from the posts was a remarkable sense of awe and wonder, and appreciation for the very experience of living. I think this was all mostly brought on by the practices I was doing each day. The morning would start, I'd meditate for an hour, then do a bunch of calisthenics exercises or go for a walk in the park with family, then journal for 750 words, have breakfast, and then work for hours upskilling in AI.
 
 Importantly I was meditating for 2 hours a day during this period as part of my Vipassana practice. It was incredibly intense, but also instrumental to creating the right mental conditions to the whole situation.
 
