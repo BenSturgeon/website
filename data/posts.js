@@ -236,6 +236,12 @@ export const inkhavenPosts = [
 
 export const otherPosts = [
   {
+    iso: "2026-06-16",
+    date: "June 2026",
+    title: "Modal made my research 2-5x faster",
+    link: "/modal",
+  },
+  {
     iso: "2025-12-28",
     date: "December 2025",
     title: "Whole Brain Emulation as an Anchor for AI Welfare",

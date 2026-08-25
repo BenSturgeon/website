@@ -102,6 +102,11 @@
 
     <h2>Papers</h2>
     <p>
+      <a href="https://arxiv.org/abs/2606.11502"
+        >When Roleplaying, Do Models Believe What They Say?</a
+      >
+    </p>
+    <p>
       <a
         href="https://drive.google.com/file/d/18WRi_JkB0n3op77usTL_CGXxW0eUfiph/view?usp=drive_link"
         >Investigating Factored Cognition in Large Language Models For Answering

@@ -192,6 +192,18 @@ h3 {
   height: auto;
 }
 
+.nuxt-content figure {
+  margin: 1.5em 0;
+  max-width: 650px;
+}
+
+.nuxt-content figcaption {
+  margin-top: 0.5em;
+  color: var(--site-soft);
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
 .nuxt-content blockquote {
   border-left: 3px solid var(--site-accent-soft);
   padding: 0.25em 0 0.25em 1.25em;
