@@ -79,7 +79,14 @@
 </template>
 
 <script>
-import { getDatabase, ref, set, onValue } from "firebase/database";
+import {
+  getDatabase,
+  ref,
+  set,
+  onValue,
+  serverTimestamp,
+} from "firebase/database";
+import { getAuth, signInAnonymously } from "firebase/auth";
 
 export default {
   props: ["personal"],
@@ -159,10 +166,26 @@ export default {
       const dateTime = new Date().toISOString();
 
       try {
+        // Anonymous sign-in gives this browser a uid. The rules allow one
+        // rate stamp per uid per minute, and reject a comment whose uid has
+        // no fresh stamp, so the stamp write is what enforces the limit.
+        const { user } = await signInAnonymously(getAuth());
+
+        try {
+          await set(ref(db, "rate/" + user.uid), serverTimestamp());
+        } catch (rateError) {
+          this.statusType = "error";
+          this.statusMessage =
+            "You have just commented. Please wait a minute before posting again.";
+          this.submitting = false;
+          return;
+        }
+
         await set(ref(db, "pending/" + this.pageId + "/" + id), {
           name: this.name.trim(),
           comment: this.comment.trim(),
           dateTime: dateTime,
+          uid: user.uid,
         });
         this.$refs.form.reset();
         this.triedSubmit = false;

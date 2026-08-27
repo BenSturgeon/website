@@ -45,7 +45,15 @@ for page, comments in data.items():
     page="$2"; id="$3"
     record=$("${FB[@]}" database:get "/pending/$page/$id")
     [ "$record" = "null" ] && { echo "No such pending comment."; exit 1; }
-    printf '%s' "$record" | "${FB[@]}" database:set "/pages/$page/$id" --force
+    # Drop the anonymous uid; it is only used for rate limiting, and has no
+    # business being published alongside the comment.
+    published=$(printf '%s' "$record" | python3 -c '
+import json, sys
+record = json.load(sys.stdin)
+record.pop("uid", None)
+print(json.dumps(record))
+')
+    printf '%s' "$published" | "${FB[@]}" database:set "/pages/$page/$id" --force
     "${FB[@]}" database:remove "/pending/$page/$id" --force
     echo "Published /pages/$page/$id"
     ;;
