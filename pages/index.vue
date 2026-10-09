@@ -3,24 +3,46 @@
     <h2>Me in 10 seconds</h2>
 
     <p>
-      I'm a MATS fellow, currently doing the MATS extension working with David
-      Africa, Sid Black and more recently Daniel Tan. I'm also collaborating
-      with the Center on Long-Term Risk through their summer fellowship
-      programme. I'm currently based in London. I'm interested in personas and
-      understanding phenomena like emergent misalignment in large language
-      models, as well as how models think about themselves.
+      I'm currently an Astra fellow where I'm working with the Technical AI
+      Safety Grantmaking team at
+      <a
+        href="https://coefficientgiving.org/funds/global-catastrophic-risks-opportunities/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Coefficient Giving</a
+      >
+      where I'm helping out with
+      <a
+        href="https://coefficientgiving.org/tailwind/get-involved/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Tailwind</a
+      >
+      and making grants.
     </p>
 
     <p>
-      I'm also strongly involved with
+      Before that I did the MATS extension where I worked on personas and
+      understanding how model beliefs change when different methods are used to
+      implant a given persona which resulted in
       <a
-        href="https://www.aisafetysa.com/"
+        href="https://arxiv.org/abs/2606.11502"
         target="_blank"
         rel="noopener noreferrer"
-        >AI Safety South Africa</a
+        >this paper</a
+      >. I'm trying to make grants focused on alignment research and trying to
+      get a deep understanding into the nature of language models so if you are
+      aware of promising work in this area please reach out to me or put me in
+      touch with the right people.
+    </p>
+
+    <p>
+      I'm also a director at the
+      <a href="https://cisai.co/" target="_blank" rel="noopener noreferrer"
+        >Cape Institute for Safe AI</a
       >
-      as cofounder and strategic director, growing the AI safety community in
-      Cape Town.
+      which I also co-founded. This is an org primarily focused on growing the
+      AI safety community in South Africa and Africa more broadly.
     </p>
 
     <p>
